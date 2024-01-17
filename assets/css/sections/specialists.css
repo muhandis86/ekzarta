@@ -1,0 +1,414 @@
+.specialists {
+
+    &__text {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        display: none;
+    }
+
+    &__option {
+        margin-top: 50px;
+        position: relative;
+
+        &-card {
+            width: 670px;
+            min-height: 365px;
+            padding: 40px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 40px 0px 0px 40px;
+
+            .badges {
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 30px;
+            }
+
+            &:before {
+                content:'';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 670px;
+                height: 365px;
+                background: url('/images/demo/underlay-red.png') lightgray 50% / cover no-repeat;
+            }
+        }
+
+        &-image {
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 568px;
+            height: 365px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+                @mixin bgc;
+                background-size: cover;
+            }
+
+            &:after {
+                content:'';
+                position: absolute;
+                top: -40px;
+                right: -38px;
+                z-index: -1;
+                @mixin icon leaf-blue;
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                background-size: contain;
+            }
+
+            &:before {
+                content:'';
+                position: absolute;
+                bottom: -30px;
+                left: -35px;
+                z-index: -1;
+                @mixin icon leaf-green;
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                background-size: contain;
+            }
+        }
+    }
+
+    &-full {
+
+        .wrapper {
+            margin-bottom: 110px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__personal {
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 111px;
+            margin-top: 80px;
+
+            .doctor {
+
+                width: 500px;
+                min-height: 140px;
+                flex-shrink: 0;
+                position: relative;
+
+                border-radius: 0px 40px 40px 0px;
+                background: #FFF;
+                box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+                margin-left: 70px;
+                padding: 30px 70px 30px 120px;
+
+                h5 {
+                    margin-bottom: 10px;
+                }
+
+                .image {
+
+                    position: absolute;
+                    bottom: 0;
+                    left: -70px;
+                    z-index: 2;
+
+                    width: 170px;
+                    height: 170px;
+                    
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        @mixin icon leaf-blue;
+                        width: 70px;
+                        height: 70px;
+                        background-size: contain;
+                    }
+            
+                    &:after {
+                        content:'';
+                        position: absolute;
+                        bottom: -20px;
+                        left: 90px;
+                        z-index: -1;
+                        @mixin icon leaf-green;
+                        width: 80px;
+                        height: 80px;
+                        background-size: contain;
+                        transform: scaleX(-1);
+                    }    
+
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 85px 85px 85px 0px;
+                        background: lightgray 50% / cover no-repeat;
+
+                        svg {
+                            width: 111px;
+                            height: 91px;
+        
+                            path {
+                                fill: rgba(255, 60, 98, 0.50);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .specialists {
+        &__text {
+            p {
+                margin-bottom: 10px;
+
+                &:not(:nth-child(1)):not(:nth-child(2)) {
+                    display: none;
+                }
+            }
+        }
+
+        &__button {
+            display: block;
+            text-align: right;
+            margin-top: 30px;
+            cursor: pointer;
+
+            #btn-more {
+                span {
+                    pointer-events: none;
+                }
+            }
+        }
+
+        &__option-card {
+            width: 100%;
+            min-height: 250px;
+            padding: 20px;
+            border-radius: 20px 20px 0px 0px;
+
+            .badges {
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 20px;
+            }
+
+            &:after {
+                content:'';
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                @mixin icon bird;
+                width: 90px;
+                height: 74px;
+                background-size: contain;
+            }
+        }
+
+        &__option-image {
+            position: static;
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+            margin-top: -12px;
+
+            span {
+                border-radius: 20px;
+            }
+
+            &:before, &:after {
+                display: none;
+            }
+        }
+
+        &-full {
+            .wrapper {
+                margin-bottom: 80px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &__personal {
+                margin-top: 50px;
+                row-gap: 40px;
+
+                .doctor {
+                    width: 100%;
+                    margin-left: 0;
+                    border-radius: 85px 20px 20px 0px;
+                    padding: 20px 20px 20px 150px;
+
+                    h5 {
+                        font-size: 14px;
+                    }
+                    
+                    p {
+                        font-size: 12px;
+                    }                    
+
+                    .image {
+                        width: 130px;
+                        height: 130px;
+                        top: 0;
+                        left: 0;
+    
+                        &:before, &:after {
+                            display: none;
+                        }
+
+                        span {
+                            svg {
+                                width: 91px;
+                                height: 71px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .specialists {
+
+        &__text {
+            p {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__option {
+            margin-top: 63px;
+    
+            &-card {
+                width: 838px;
+                min-height: 456px;
+                padding: 50px;
+                border-radius: 50px 0px 0px 50px;
+    
+                .badges {
+                    margin-bottom: 63px;
+                    row-gap: 13px;
+                    column-gap: 38px;
+                }
+    
+                &:before {
+                    width: 838px;
+                    height: 456px;
+                }
+            }
+    
+            &-image {
+                width: 710px;
+                height: 456px;
+                border-radius: 50px;
+                box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                span {
+                    border-radius: 50px;
+                }
+    
+                &:after {
+                    top: -50px;
+                    right: -48px;
+                    width: 125px;
+                    height: 125px;
+                }
+    
+                &:before {
+                    bottom: -38px;
+                    left: -44px;
+                    width: 125px;
+                    height: 125px;
+                }
+            }
+        }
+
+        &-full {
+
+            .wrapper {
+                margin-bottom: 138px;
+            }
+    
+            &__personal {
+                row-gap: 139px;
+                margin-top: 100px;
+    
+                .doctor {
+                    width: 625px;
+                    min-height: 175px;    
+                    border-radius: 0px 50px 50px 0px;
+                    box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+                    margin-left: 88px;
+                    padding: 38px 88px 38px 150px;
+    
+                    h5 {
+                        margin-bottom: 13px;
+                    }
+    
+                    .image {
+                        left: -88px;
+                        width: 213px;
+                        height: 213px;
+                        
+                        &:before {
+                            width: 88px;
+                            height: 88px;
+                        }
+                
+                        &:after {
+                            bottom: -25px;
+                            left: 113px;
+                            width: 100px;
+                            height: 100px;
+                        }    
+    
+                        span {
+                            border-radius: 106px 106px 106px 0px;
+    
+                            svg {
+                                width: 139px;
+                                height: 114px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

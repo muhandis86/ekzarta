@@ -1,0 +1,202 @@
+.consultation {
+    
+    &__subtitle {
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        align-items: center;
+        overflow: hidden;
+
+        span {
+            color: #3E5798;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -15px;
+                transform: translateY(-50%);
+                display: block;
+                @mixin icon ellipse;
+                width: 6px;
+                height: 7px;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__lists {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &-adults {
+            width: 570px;
+            min-height: 538px;
+            padding: 40px 50px 40px 30px;
+            position: relative;
+
+            border-radius: 40px;
+            background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+            box-shadow: 4px 4px 50px 0px rgba(62, 87, 152, 0.10);
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 30px;
+                left: -50px;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+                @mixin icon leaf-green;                
+                background-size: contain;
+            }
+        }
+
+        &-kids {
+            width: 570px;
+            min-height: 538px;
+            padding: 40px 50px 40px 30px;
+            position: relative;
+
+            h3 {
+                margin-top: 30px;
+            }
+
+            background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+            border-radius: 40px;
+            box-shadow: 4px 4px 50px 0px rgba(62, 87, 152, 0.10);
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -41px;
+                right: -50px;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+                @mixin icon leaf-green;
+                transform: scaleX(-1);
+                background-size: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .consultation {
+        
+        &__subtitle {
+            flex-wrap: wrap;
+            gap: 20px;
+            row-gap: 9px;
+
+            span {
+                font-size: 16px;
+
+                &:before {
+                    left: -12px;
+                    width: 4px;
+                    height: 4px;
+                }
+            }
+        }
+
+        &__lists {
+
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+
+            &-adults, &-kids {
+                width: 100%;
+                min-height: auto;
+
+                padding: 20px 20px 30px 20px;
+                box-shadow: none;
+                border-radius: 20px;
+
+                h3 {
+                    margin-top: 20px;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .consultation {
+
+        &__subtitle {
+            gap: 30px;
+    
+            span {
+                font-size: 45px;
+    
+                &:before {
+                    left: -19px;
+                    width: 8px;
+                    height: 9px;
+                }
+            }
+        }
+
+        &__lists {
+            margin-top: 63px;
+    
+            &-adults {
+                width: 713px;
+                min-height: 673px;
+                padding: 50px 63px 50px 38px;
+    
+                border-radius: 50px;
+                box-shadow: 5px 5px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                &:before {
+                    bottom: 38px;
+                    left: -63px;
+                    width: 125px;
+                    height: 125px;             
+                }
+            }
+    
+            &-kids {
+                width: 713px;
+                min-height: 673px;
+                padding: 50px 63px 50px 38px;
+    
+                h3 {
+                    margin-top: 38px;
+                }
+    
+                border-radius: 50px;
+                box-shadow: 5px 5px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                &:before {
+                    top: -51px;
+                    right: -63px;
+                    width: 125px;
+                    height: 125px;
+                }
+            }
+        }
+    }    
+}

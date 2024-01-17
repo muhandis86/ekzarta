@@ -1,0 +1,264 @@
+.cta {
+
+    &__image {
+
+        position: absolute;
+        top: -29px;
+        left: 0;
+        width: 370px;
+        height: 350px;
+
+        span  {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            background: lightgray 50% / cover no-repeat;
+        }
+
+        &:before {
+            content:'';
+            position: absolute;
+            bottom: -20px;
+            left: -30px;
+            z-index: -1;
+            @mixin icon leaf-red;
+            width: 100px;
+            height: 100px;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__write {
+        width: 870px;
+        height: 295px;
+        margin-left: 300px;
+        padding: 50px 70px 50px 100px;
+        border-radius: 0px 40px 40px 0px;
+        background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+        box-shadow: 3px 3px 50px 0px rgba(0, 56, 89, 0.10);
+
+        display: flex;
+        justify-content: space-between;
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+            @mixin icon leaf-green;
+            width: 100px;
+            height: 100px;
+        }
+
+        &-info {
+            width: 429px;
+
+            h2 {
+                padding-left: 20px;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    content:'';
+                    position: absolute;
+                    top: -8px;
+                    left: 0;
+                    z-index: -1;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 40px 0px 40px 40px;
+                    background: #F6F9FF;
+                }
+            }
+        }
+
+        &-subtitle {
+            color: #3E5798;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        &-contacts {
+            text-align: right;
+        }
+
+        &-phone {
+            color: #3E5798;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-message {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 26px;
+            margin-bottom: 32px;
+        }
+
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+
+            svg {
+                width: 26px;
+                height: 26px;
+                path {
+                    fill: #3E5798;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .cta {
+
+        &__image {
+            display: none;
+        }
+
+        &__write {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            border-radius: 20px;
+            flex-direction: column;
+            box-shadow: 3px 3px 30px 0px rgba(0, 56, 89, 0.10);
+            padding: 20px 20px 30px 20px;
+            gap: 20px;
+
+            &:after {
+                display: none;
+            }
+
+            &-info {
+                width: 100%;
+
+                h2 {
+                    padding-left: 0;
+    
+                    &:before {
+                        top: -6px;
+                        left: -5px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px 0px 20px 20px;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            &-subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            &-phone {
+                font-size: 28px;
+            }
+
+            &-message {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .cta {
+
+        &__image {
+            top: -36px;
+            width: 463px;
+            height: 438px;
+    
+            span  {
+                border-radius: 50px;
+            }
+    
+            &:before {
+                bottom: -25px;
+                left: -38px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+        }
+
+        &__write {
+            width: 1088px;
+            height: 369px;
+            margin-left: 375px;
+            padding: 63px 88px 63px 125px;
+            border-radius: 0px 50px 50px 0px;
+            box-shadow: 4px 4px 63px 0px rgba(0, 56, 89, 0.10);
+    
+            &:after {
+                top: -63px;
+                right: -63px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+    
+            &-info {
+                width: 536px;
+    
+                h2 {
+                    padding-left: 25px;
+    
+                    &:before {
+                        top: -10px;
+                        width: 88px;
+                        height: 88px;
+                        border-radius: 50px 0px 50px 50px;
+                    }
+                }
+            }
+    
+            &-subtitle {
+                font-size: 25px;
+                margin-bottom: 38px;
+            }
+    
+            &-phone {
+                font-size: 38px;
+            }
+    
+            &-message {
+                margin-top: 33px;
+                margin-bottom: 40px;
+            }
+    
+            &-text {
+                font-size: 18px;
+            }
+    
+            &-link {
+                column-gap: 6px;
+    
+                svg {
+                    width: 33px;
+                    height: 33px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4483 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Экзарта</title>
+	<link href="/bundles/css/app.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="header">
+
+				<div class="header__logo">
+					<a href="#" class="header__logo-img">
+						@@include('../public/images/logo.svg')
+					</a>
+					<a href="#" class="header__logo-img text">
+						@@include('../public/images/logo-text.svg')
+					</a>
+					<a href="#" class="header__logo-img mobile">
+						@@include('../public/images/logo-mobile.svg')
+					</a>
+				</div>
+
+				<div class="header__burger"></div>
+
+				<div class="header__main">
+
+					<div class="header__top">
+						<div class="header__top-address">
+							<div class="select-wrapper">
+								<select name="address" id="city" class="custom-select">
+									<option value="1">г. Нижний Новгород</option>
+									<option value="2">г. Нижний Новгород</option>
+									<option value="2">г. Нижний Новгород</option>
+								</select>
+							</div>
+							<ul class="ul-main fz14">
+								<li>Казанское шоссе, д. 18к1 </li>
+								<li>ул. Республиканская, д. 43к2</li>
+							</ul>
+						</div>
+						<div class="header__top-buttons">
+							<a href="#" class="btn btn-long">
+								<span>Интернет-магазин</span>
+							</a>
+							<a href="#" class="btn btn-long">
+								<span>Школа реабилитации "Экзарта"</span>
+							</a>
+						</div>
+						<div class="header__top-contacts">
+							<a href="tel:+78314290115" class="header__top-phone">+7 (831) 429 01 15</a>
+							<div class="header__top-message">
+								<a href="https://t.me/mamrkurs" target="_blank" class="header__top-link">
+									<span class="header__top-text">Написать в</span>
+									@@include('../public/images/icons/telegram.svg')
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__btn-mobile">
+						<a href="#" class="btn btn-red">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+
+					<div class="header__menu">
+
+						<div class="header__menu-items">
+							<div class="header__menu-items__item service">
+								<a href="#" class="dropdown__service-title">Услуги</a>
+								<div class="dropdown__service-menu hide">
+									<div class="tabheader">
+										<div class="tabheader__items">
+											<div class="tabheader__item tabheader__item_active"
+												data-target="services_menu_category_3">Консультации</div>
+											<div class="tabheader__item" data-target="services_menu_category_18">
+												Профилактика</div>
+											<div class="tabheader__item" data-target="services_menu_category_19">Лечение
+											</div>
+											<div class="tabheader__item" data-target="services_menu_category_20">
+												Реабилитация</div>
+											<div class="tabheader__item" data-target="services_menu_category_21">Другие
+												услуги</div>
+										</div>
+									</div>
+
+									<div class="tabcontent show" id="services_menu_category_3">
+										<div class="tabcontent__col">
+											<ul class="ul-menu">
+												<li><a href="#">Врач
+														невролог</a></li>
+												<li><a href="#">Врач ЛФК</a></li>
+												<li><a href="#">Врач физиотерапевт</a></li>
+												<li><a href="#">Инструктор-методист ЛФК</a></li>
+												<li><a href="#">Врач травматолог-ортопед</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="tabcontent hide" id="services_menu_category_18">
+										<div class="tabcontent__col">
+											<span>Дети:</span>
+											<ul class="ul-menu">
+												<li><a href="#">Профилактика речевых нарушений</a></li>
+												<li><a href="#">Профилактика нарушений памяти и внимания</a></li>
+												<li><a href="#">Профилактика нарушений чтения и письма</a></li>
+												<li><a href="#">Профилактика нарушений осанки</a></li>
+												<li><a href="#">Профилактика нарушений в развитии детей из “группы
+														риска”</a></li>
+												<li><a href="#">Профилактика плоскостопия</a></li>
+												<li><a href="#">Профилактика Х-образных ног</a></li>
+												<li><a href="#">Профилактика вальгусной установки стопы</a></li>
+												<li><a href="#">Профилактика спортивных травм</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Подготовка к операциям</a></li>
+
+											</ul>
+										</div>
+										<div class="tabcontent__col">
+											<span>Взрослые:</span>
+											<ul class="ul-menu">
+												<li><a href="#">Профилактика спортивных травм</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Профилактика повышенной утомляемости</a></li>
+												<li><a href="#">Индивидуальная программа “Сохранение красоты и здоровья
+														женщины”</a>
+												</li>
+												<li><a href="#">Индивидуальная программа “Сохранение мужского
+														здоровья”</a></li>
+												<li><a href="#">Коррекция веса</a></li>
+												<li><a href="#">Подготовка к операциям</a></li>
+											</ul>
+										</div>
+
+									</div>
+
+									<div class="tabcontent hide" id="services_menu_category_19">
+										<div class="tabcontent__col">
+											<span>Дети:</span>
+											<ul class="ul-menu">
+
+												<li><a href="#">Лечение перинатального поражения центральной нервной
+														системы
+														(ППЦНС)</a></li>
+												<li><a href="#">Лечение детского церебрального паралича (ДЦП)</a></li>
+												<li><a href="#">Лечение задержки моторного развития (ЗМР)</a></li>
+												<li><a href="#">Лечение задержки речевого развития (ЗРР)</a></li>
+												<li><a href="#">Лечение нарушений памяти и внимания</a></li>
+												<li><a href="#">Лечение нарушений чтения и письма</a></li>
+												<li><a href="#">Лечение нарушения осанки</a></li>
+												<li><a href="#">Лечение синдрома мышечной дистонии</a></li>
+												<li><a href="#">Лечение сколиоза</a></li>
+												<li><a href="#">Лечение дисплазии тазобедренных суставов</a></li>
+												<li><a href="#">Лечение кривошеи</a></li>
+												<li><a href="#">Лечение мышечной слабости</a></li>
+												<li><a href="#">Лечение головных болей</a></li>
+												<li><a href="#">Лечение болей в спине</a></li>
+												<li><a href="#">Лечение спортивных травм</a></li>
+												<li><a href="#">Лечение травм и переломов</a></li>
+												<li><a href="#">Лечение косоглазия</a></li>
+												<li><a href="#">Лечение плоскостопия</a></li>
+												<li><a href="#">Восстановление после операции</a></li>
+
+											</ul>
+										</div>
+										<div class="tabcontent__col">
+											<span>Взрослые:</span>
+											<ul class="ul-menu">
+
+												<li><a href="#">Лечение неврологических заболеваний</a></li>
+												<li><a href="#">Лечение заболеваний опорно-двигательного аппарата</a>
+												</li>
+												<li><a href="#">Лечение дисфункции мышц тазового дна</a></li>
+												<li><a href="#">Лечение травм и переломов</a></li>
+												<li><a href="#">Лечение боли в стопе</a></li>
+												<li><a href="#">Лечение пяточной шпоры</a></li>
+												<li><a href="#">Лечение плоскостопия</a></li>
+												<li><a href="#">Лечение головных болей</a></li>
+												<li><a href="#">Лечение боли в спине</a></li>
+												<li><a href="#">Лечение боли в суставах</a></li>
+												<li><a href="#">Лечение дисфункции височно-челюстного сустава (ВНЧС)</a>
+												</li>
+												<li><a href="#">Лечение спортивных травм</a></li>
+												<li><a href="#">Восстановление после операции</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="tabcontent hide" id="services_menu_category_20">
+										<div class="tabcontent__col">
+											<span>Дети:</span>
+											<ul class="ul-menu">
+
+												<li><a href="#">Реабилитация детей с дисплазией тазобедренного
+														сустава</a></li>
+												<li><a href="#">Реабилитация детей с кривошеей</a></li>
+												<li><a href="#">Реабилитация детей с речевой патологией</a></li>
+												<li><a href="#">Реабилитация детей при задержке моторного развития
+														(ЗМР)</a></li>
+												<li><a href="#">Реабилитация при детском церебральном параличе (ДЦП)</a>
+												</li>
+												<li><a href="#">Реабилитация детей с поражением периферической нервной
+														системы</a></li>
+												<li><a href="#">Реабилитация детей с генетическими заболеваниями</a>
+												</li>
+												<li><a href="#">Реабилитация детей после онкологии</a></li>
+												<li><a href="#">Реабилитация детей после черепно-мозговой травмы
+														(ЧМТ)</a></li>
+												<li><a href="#">Реабилитация детей с косоглазием</a></li>
+
+											</ul>
+										</div>
+										<div class="tabcontent__col">
+											<span>Взрослые:</span>
+											<ul class="ul-menu">
+
+												<li><a href="#">Реабилитация после инсульта</a></li>
+												<li><a href="#">Реабилитация после черепно-мозговой травмы у взрослых
+														(ЧМТ)</a></li>
+												<li><a href="#">Реабилитация после травмы позвоночника</a></li>
+												<li><a href="#">Реабилитация после операций на позвоночнике</a></li>
+												<li><a href="#">Реабилитация после замены сустава</a></li>
+												<li><a href="#">Реабилитация при переломе шейки бедра</a></li>
+												<li><a href="#">Реабилитация после эндопротезирования суставов</a></li>
+												<li><a href="#">Реабилитация после ортодонтических вмешательств</a></li>
+												<li><a href="#">Реабилитация пациентов с ДЦП</a></li>
+												<li><a href="#">Реабилитация после химиотерапии и облучения</a></li>
+												<li><a href="#">Реабилитация при заболевании рассеянный склероз</a></li>
+												<li><a href="#">Реабилитация после онкологии</a></li>
+												<li><a href="#">Реабилитация после инфекционных заболеваний</a></li>
+												<li><a href="#">Вестибулярная реабилитация</a></li>
+												<li><a href="#">Спортивная реабилитация</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="tabcontent hide" id="services_menu_category_21">
+										<div class="tabcontent__col">
+											<ul class="ul-menu">
+
+												<li><a href="#">Второе мнение</a></li>
+												<li><a href="#">Онлайн-реабилитация</a></li>
+												<li><a href="#">Школа реабилитации “Экзарта”</a></li>
+												<li><a href="#">Адаптация квартиры</a></li>
+												<li><a href="#">Кинезиотейпирование</a></li>
+												<li><a href="#">Массаж</a></li>
+												<li><a href="#">Лечебная физкультура (ЛФК)</a></li>
+												<li><a href="#">Изготовление индивидуальных ортопедических стелек
+														Формтотикс</a></li>
+
+											</ul>
+										</div>
+										<div class="tabcontent__col">
+											<ul class="ul-menu">
+
+												<span>Физиолечение:</span>
+												<li><a href="#">Электротерапия</a></li>
+												<li><a href="#">Магнитотерапия</a></li>
+												<li><a href="#">Грязелечение</a></li>
+												<li><a href="#">Фанго-парафиновое нагревание (термовоздействие)</a></li>
+
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div class="submenu for-mobile">
+
+									<div class="submenu__item">
+										<div class="submenu__item-header">Консультации</div>
+										<div class="submenu__item-content">
+											<div class="submenu__cols">
+												<ul class="col active">
+													<li><a href="#">Врач невролог</a></li>
+													<li><a href="#">Врач ЛФК</a></li>
+													<li><a href="#">Врач физиотерапевт</a></li>
+													<li><a href="#">Инструктор-методист ЛФК</a></li>
+													<li><a href="#">Врач травматолог-ортопед</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="submenu__item">
+										<div class="submenu__item-header">Профилактика</div>
+										<div class="submenu__item-content">
+
+											<div class="submenu__tabs">
+												<div class="submenu__tabs-label active">Детям</div>
+												<div class="submenu__tabs-label">Взрослым</div>
+											</div>
+
+											<div class="submenu__cols">
+												<ul class="col active">
+													<li><a href="#">Профилактика речевых нарушений</a></li>
+													<li><a href="#">Профилактика нарушений памяти и внимания</a></li>
+													<li><a href="#">Профилактика нарушений чтения и письма</a></li>
+													<li><a href="#">Профилактика нарушений осанки</a></li>
+													<li><a href="#">Профилактика нарушений в развитии детей из “группы
+															риска”</a></li>
+													<li><a href="#">Профилактика плоскостопия</a></li>
+													<li><a href="#">Профилактика Х-образных ног</a></li>
+													<li><a href="#">Профилактика вальгусной установки стопы</a></li>
+													<li><a href="#">Профилактика спортивных травм</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Подготовка к операциям</a></li>
+												</ul>
+												<ul class="col">
+													<li><a href="#">Профилактика спортивных травм</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Профилактика повышенной утомляемости</a></li>
+													<li><a href="#">Индивидуальная программа “Сохранение красоты и
+															здоровья
+															женщины”</a>
+													</li>
+													<li><a href="#">Индивидуальная программа “Сохранение мужского
+															здоровья”</a></li>
+													<li><a href="#">Коррекция веса</a></li>
+													<li><a href="#">Подготовка к операциям</a></li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="submenu__item">
+										<div class="submenu__item-header">Лечение</div>
+										<div class="submenu__item-content">
+
+											<div class="submenu__tabs">
+												<div class="submenu__tabs-label active">Детям</div>
+												<div class="submenu__tabs-label">Взрослым</div>
+											</div>
+
+											<div class="submenu__cols">
+												<ul class="col active">
+													<li><a href="#">Лечение перинатального поражения центральной нервной
+															системы
+															(ППЦНС)</a></li>
+													<li><a href="#">Лечение детского церебрального паралича (ДЦП)</a>
+													</li>
+													<li><a href="#">Лечение задержки моторного развития (ЗМР)</a></li>
+													<li><a href="#">Лечение задержки речевого развития (ЗРР)</a></li>
+													<li><a href="#">Лечение нарушений памяти и внимания</a></li>
+													<li><a href="#">Лечение нарушений чтения и письма</a></li>
+													<li><a href="#">Лечение нарушения осанки</a></li>
+													<li><a href="#">Лечение синдрома мышечной дистонии</a></li>
+													<li><a href="#">Лечение сколиоза</a></li>
+													<li><a href="#">Лечение дисплазии тазобедренных суставов</a></li>
+													<li><a href="#">Лечение кривошеи</a></li>
+													<li><a href="#">Лечение мышечной слабости</a></li>
+													<li><a href="#">Лечение головных болей</a></li>
+													<li><a href="#">Лечение болей в спине</a></li>
+													<li><a href="#">Лечение спортивных травм</a></li>
+													<li><a href="#">Лечение травм и переломов</a></li>
+													<li><a href="#">Лечение косоглазия</a></li>
+													<li><a href="#">Лечение плоскостопия</a></li>
+													<li><a href="#">Восстановление после операции</a></li>
+												</ul>
+												<ul class="col">
+													<li><a href="#">Лечение неврологических заболеваний</a></li>
+													<li><a href="#">Лечение заболеваний опорно-двигательного
+															аппарата</a>
+													</li>
+													<li><a href="#">Лечение дисфункции мышц тазового дна</a></li>
+													<li><a href="#">Лечение травм и переломов</a></li>
+													<li><a href="#">Лечение боли в стопе</a></li>
+													<li><a href="#">Лечение пяточной шпоры</a></li>
+													<li><a href="#">Лечение плоскостопия</a></li>
+													<li><a href="#">Лечение головных болей</a></li>
+													<li><a href="#">Лечение боли в спине</a></li>
+													<li><a href="#">Лечение боли в суставах</a></li>
+													<li><a href="#">Лечение дисфункции височно-челюстного сустава
+															(ВНЧС)</a>
+													</li>
+													<li><a href="#">Лечение спортивных травм</a></li>
+													<li><a href="#">Восстановление после операции</a></li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="submenu__item">
+										<div class="submenu__item-header">Реабилитация</div>
+										<div class="submenu__item-content">
+
+											<div class="submenu__tabs">
+												<div class="submenu__tabs-label active">Детям</div>
+												<div class="submenu__tabs-label">Взрослым</div>
+											</div>
+
+											<div class="submenu__cols">
+												<ul class="col active">
+													<li><a href="#">Реабилитация детей с дисплазией тазобедренного
+															сустава</a></li>
+													<li><a href="#">Реабилитация детей с кривошеей</a></li>
+													<li><a href="#">Реабилитация детей с речевой патологией</a></li>
+													<li><a href="#">Реабилитация детей при задержке моторного развития
+															(ЗМР)</a></li>
+													<li><a href="#">Реабилитация при детском церебральном параличе
+															(ДЦП)</a>
+													</li>
+													<li><a href="#">Реабилитация детей с поражением периферической
+															нервной
+															системы</a></li>
+													<li><a href="#">Реабилитация детей с генетическими заболеваниями</a>
+													</li>
+													<li><a href="#">Реабилитация детей после онкологии</a></li>
+													<li><a href="#">Реабилитация детей после черепно-мозговой травмы
+															(ЧМТ)</a></li>
+													<li><a href="#">Реабилитация детей с косоглазием</a></li>
+												</ul>
+												<ul class="col">
+													<li><a href="#">Реабилитация после инсульта</a></li>
+													<li><a href="#">Реабилитация после черепно-мозговой травмы у
+															взрослых
+															(ЧМТ)</a></li>
+													<li><a href="#">Реабилитация после травмы позвоночника</a></li>
+													<li><a href="#">Реабилитация после операций на позвоночнике</a></li>
+													<li><a href="#">Реабилитация после замены сустава</a></li>
+													<li><a href="#">Реабилитация при переломе шейки бедра</a></li>
+													<li><a href="#">Реабилитация после эндопротезирования суставов</a>
+													</li>
+													<li><a href="#">Реабилитация после ортодонтических вмешательств</a>
+													</li>
+													<li><a href="#">Реабилитация пациентов с ДЦП</a></li>
+													<li><a href="#">Реабилитация после химиотерапии и облучения</a></li>
+													<li><a href="#">Реабилитация при заболевании рассеянный склероз</a>
+													</li>
+													<li><a href="#">Реабилитация после онкологии</a></li>
+													<li><a href="#">Реабилитация после инфекционных заболеваний</a></li>
+													<li><a href="#">Вестибулярная реабилитация</a></li>
+													<li><a href="#">Спортивная реабилитация</a></li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="submenu__item">
+										<div class="submenu__item-header">Другие услуги</div>
+										<div class="submenu__item-content">
+
+											<div class="submenu__tabs">
+												<div class="submenu__tabs-label active"></div>
+												<div class="submenu__tabs-label">ِФизиотерапия</div>
+											</div>
+
+											<div class="submenu__cols">
+												<ul class="col active">
+													<li><a href="#">Второе мнение</a></li>
+													<li><a href="#">Онлайн-реабилитация</a></li>
+													<li><a href="#">Школа реабилитации “Экзарта”</a></li>
+													<li><a href="#">Адаптация квартиры</a></li>
+													<li><a href="#">Кинезиотейпирование</a></li>
+													<li><a href="#">Массаж</a></li>
+													<li><a href="#">Лечебная физкультура (ЛФК)</a></li>
+													<li><a href="#">Изготовление индивидуальных ортопедических стелек
+															Формтотикс</a></li>
+												</ul>
+												<ul class="col">
+													<li><a href="#">Электротерапия</a></li>
+													<li><a href="#">Магнитотерапия</a></li>
+													<li><a href="#">Грязелечение</a></li>
+													<li><a href="#">Фанго-парафиновое нагревание (термовоздействие)</a>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#">Методики и оборудование</a>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#">Специалисты</a>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#" class="dropdown-title">Цены</a>
+								<div class="dropdown-menu hide">
+									<a href="#">Наши статьи</a>
+									<a href="#">Акции и скидки</a>
+									<a href="#">Контакты</a>
+								</div>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#">Отзывы</a>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#">Онлайн-услуги</a>
+							</div>
+
+							<div class="header__menu-items__item">
+								<a href="#" class="dropdown-title">О нас</a>
+								<div class="dropdown-menu hide">
+									<a href="#">О медцентрах в Нижнем Новгороде</a>
+									<a href="#">Направление деятельности “Экзарта”</a>
+									<a href="#">Наши статьи</a>
+									<a href="#">Акции и скидки</a>
+									<a href="#">Контакты</a>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" id="btn-scroll" class="btn btn-red btn-small hide">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+
+					<div class="header__buttons-mobile">
+						<a href="#" class="btn btn-long">
+							<span>Интернет-магазин</span>
+						</a>
+						<a href="#" class="btn btn-long">
+							<span>Школа реабилитации "Экзарта"</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="start">
+			<div class="container">
+
+				<div class="start__main">
+					<div class="start__main-info">
+						<h1>Реабилитация пациентов с нарушениями ЦНС и опорно-двигательного аппарата</h1>
+						<p>Экспресс-консультация в подарок</p>
+						<a href="#" class="btn btn-red" data-toggle="modal" data-target=".jsModalMessage">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="start__image">
+					<span style="background-image: url('/images/demo/start.png');"></span>
+				</div>
+				<div class="start__stamp"></div>
+
+				<div class="start__benefits">
+					<div class="start__benefits-item">
+						<p>Европейские методы и технологии реабилитации пациентов</p>
+					</div>
+					<div class="start__benefits-item">
+						<p>Ставим на ноги даже тех пациентов, которые казались "безнадёжными"</p>
+					</div>
+					<div class="start__benefits-item">
+						<p>2000 пациентов в год, 10 лет опыт работы специалистов, 100% результат лечения с ремиссией</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+
+				<div class="consultation__title title">
+					<h2 class="h1">Когда к нам обращаются</h2>
+					<a href="#" class="btn btn-header">
+						<span>Посмотреть все услуги</span>
+					</a>
+				</div>
+				<div class="consultation__subtitle">
+					<span>консультации</span>
+					<span>лечение</span>
+					<span>реабилитация</span>
+					<span>профилактика</span>
+				</div>
+
+				<div class="consultation__lists">
+					<div class="consultation__lists-adults">
+						<h2>Для взрослых:</h2>
+						<ul class="ul-main">
+							<li>Лечение неврологических заболеваний</li>
+							<li>Лечение заболеваний опорно-двигательного аппарата</li>
+							<li>Спортивная реабилитация</li>
+							<li>Функциональная терапия — профилактика застойных явлений организма (лимфодренаж,
+								уменьшение и лечение шрамов, дыхательные практики)</li>
+							<li>Подготовка к оперативному вмешательству</li>
+							<li>Послеоперационная реабилитация</li>
+						</ul>
+					</div>
+					<div class="consultation__lists-kids">
+						<h2>Для детей:</h2>
+						<ul class="ul-main">
+							<li>Лечение детей до 3 лет (профилактика нарушений развития)</li>
+						</ul>
+						<h3 class="h4">После 3 лет лечим:</h3>
+						<ul class="ul-main">
+							<li>Лечение заболеваний опорно-двигательного аппарата</li>
+							<li>Неврологические патологии</li>
+							<li>Заболевания опорно-двигательного аппарата</li>
+							<li>Реабилитация детей-спортсменов</li>
+							<li>Другие функциональные направления (лечение косоглазия, косолапия, искривления
+								позвоночника)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="diseases">
+			<div class="container">
+
+				<div class="diseases__title title">
+					<h2 class="h1">Мы лечим заболевания:</h2>
+					<a href="#" class="btn btn-header">
+						<span>Узнать больше</span>
+					</a>
+				</div>
+
+				<div class="diseases__slider swiper">
+					<div class="diseases__slider-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="diseases__slider-item">
+
+								<div class="diseases__slider-img">
+									<span style="background-image: url('/images/demo/back.png');"></span>
+								</div>
+								<h2>Заболевания <br> опорно-двигательного аппарата</h2>
+
+								<div class="diseases__slider-info">
+									<ul class="ul-main">
+										<li>Нарушение осанки</li>
+										<li>Остеохондроз</li>
+										<li>Грыжа межпозвоночного диска</li>
+										<li>Боли в пояснице</li>
+										<li>Травмы позвоночника</li>
+										<li>Травмы конечностей</li>
+										<li>Плечелопаточный переартроз</li>
+									</ul>
+									<ul class="ul-main">
+										<li>Мышечное напряжение</li>
+										<li>Сколиоз</li>
+										<li>Кифоз</li>
+										<li>Артроз</li>
+										<li>Артрит</li>
+										<li>Коксартроз</li>
+										<li>Гонартроз</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="diseases__slider-item">
+
+								<div class="diseases__slider-img">
+									<span style="background-image: url('/images/demo/back.png');"></span>
+								</div>
+								<h2>Заболевания <br> опорно-двигательного аппарата</h2>
+
+								<div class="diseases__slider-info">
+									<ul class="ul-main">
+										<li>Нарушение осанки</li>
+										<li>Остеохондроз</li>
+										<li>Грыжа межпозвоночного диска</li>
+										<li>Боли в пояснице</li>
+										<li>Травмы позвоночника</li>
+										<li>Травмы конечностей</li>
+										<li>Плечелопаточный переартроз</li>
+									</ul>
+									<ul class="ul-main">
+										<li>Мышечное напряжение</li>
+										<li>Сколиоз</li>
+										<li>Кифоз</li>
+										<li>Артроз</li>
+										<li>Артрит</li>
+										<li>Коксартроз</li>
+										<li>Гонартроз</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="diseases__slider-item">
+
+								<div class="diseases__slider-img">
+									<span style="background-image: url('/images/demo/back.png');"></span>
+								</div>
+								<h2>Заболевания <br> опорно-двигательного аппарата</h2>
+
+								<div class="diseases__slider-info">
+									<ul class="ul-main">
+										<li>Нарушение осанки</li>
+										<li>Остеохондроз</li>
+										<li>Грыжа межпозвоночного диска</li>
+										<li>Боли в пояснице</li>
+										<li>Травмы позвоночника</li>
+										<li>Травмы конечностей</li>
+										<li>Плечелопаточный переартроз</li>
+									</ul>
+									<ul class="ul-main">
+										<li>Мышечное напряжение</li>
+										<li>Сколиоз</li>
+										<li>Кифоз</li>
+										<li>Артроз</li>
+										<li>Артрит</li>
+										<li>Коксартроз</li>
+										<li>Гонартроз</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="diseases__slider-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="methods">
+			<div class="container">
+
+				<div class="methods__title title">
+					<h2 class="h1">Наши методики лечения</h2>
+					<a href="#" class="btn btn-header">
+						<span>Посмотреть все методики</span>
+					</a>
+				</div>
+
+				<div class="methods__subtitle">
+					<span>100% результат =</span>
+					<span>методики + оборудование + специалисты</span>
+				</div>
+
+				<div class="methods__text">
+					<p>Каждый клинический случай индивидуален, и назначить универсальное
+						лечение даже при одном и том же
+						диагнозе — не эффективно. Методы подбираются с помощью функциональной диагностики и телесного
+						теста
+						— на какие мануальные техники реагируют мышцы. А также анамнеза, наследственности и возраста
+						пациента.</p>
+					<p>Мы за индивидуальный подход к каждому пациенту.</p>
+				</div>
+
+				<div class="methods__cards">
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Бобат- терапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/1.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Войта-терапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/2.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Экзарта</span>
+						<span class="image" style="background-image: url('/images/demo/methods/3.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">нейрологопедия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/4.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">методика пнф</span>
+						<span class="image" style="background-image: url('/images/demo/methods/5.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">лимфодренаж</span>
+						<span class="text">по методу Воддера</span>
+						<span class="image rotate" style="background-image: url('/images/demo/methods/6.png');"></span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="stages">
+			<div class="container">
+
+				<div class="stages__title title">
+					<h2 class="h1">Как проходит реабилитация</h2>
+				</div>
+
+				<div class="stages__steps">
+
+					<div class="stages__step">
+						<div class="stages__step-title green">
+							<span>1</span>
+							<h2>Консультация</h2>
+						</div>
+						<div class="stages__step-description green">
+							<p>Консультация врача – первый и самый важный этап оказания медицинской помощи пациенту, от
+								него зависит видимый результат в ожидаемы сроки. <br> Дополнительно врач проводит:
+								тестирование (функциональное , мануально-мышечное , тестирование на подвесной системе
+								«Экзарта»), пробное терапевтическое воздействие и на основании полученной информации
+								врач составит индивидуальный план лечения, определит стратегию и совместно с пациентом и
+								его
+								родственниками поставит цели и сроки лечения.
+							</p>
+						</div>
+					</div>
+
+					<div class="stages__step">
+						<div class="stages__step-description blue">
+							<p>Специалист, пациент и его родственники заинтересованы получении желаемого результата, а
+								также в его удержании на долгие сроки. Поэтому перед специалистом стоит важная задача
+								обучить пациента и его родственников правильным упражнениям и техникам, которые подходят
+								только этому пациенту и дать рекомендации для удержания результата лечения.</p>
+						</div>
+						<div class="stages__step-title blue">
+							<span>2</span>
+							<h2>Обучение <br> пациента</h2>
+						</div>
+					</div>
+
+					<div class="stages__step">
+						<div class="stages__step-title red">
+							<span>3</span>
+							<h2>Курс терапии</h2>
+						</div>
+						<div class="stages__step-description red">В нашем центре проводятся только индивидуальные
+							занятия с
+							пациентом строго по предписанию врача, программа составляется с учетом заболевания и его
+							тяжести. Во время курса специалист проводит промежуточную оценку результата и в случае
+							необходимости врач может внести изменения или дополнения в индивидуальную программу лечения.
+						</div>
+					</div>
+				</div>
+
+				<div class="stages__steps-mobile swiper">
+					<div class="stages__steps-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title green">
+									<span>1</span>
+									<h2>Консультация</h2>
+								</div>
+								<div class="stages__step-description green">
+									<p>Консультация врача – первый и самый важный этап оказания медицинской помощи
+										пациенту, от
+										него зависит видимый результат в ожидаемы сроки. <br> Дополнительно врач
+										проводит:
+										тестирование (функциональное , мануально-мышечное , тестирование на подвесной
+										системе
+										«Экзарта»), пробное терапевтическое воздействие и на основании полученной
+										информации
+										врач составит индивидуальный план лечения, определит стратегию и совместно с
+										пациентом и
+										его
+										родственниками поставит цели и сроки лечения.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title blue">
+									<span>2</span>
+									<h2>Обучение <br> пациента</h2>
+								</div>
+								<div class="stages__step-description blue">
+									<p>Специалист, пациент и его родственники заинтересованы получении желаемого
+										результата, а
+										также в его удержании на долгие сроки. Поэтому перед специалистом стоит важная
+										задача
+										обучить пациента и его родственников правильным упражнениям и техникам, которые
+										подходят
+										только этому пациенту и дать рекомендации для удержания результата лечения.</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title red">
+									<span>3</span>
+									<h2>Курс терапии</h2>
+								</div>
+								<div class="stages__step-description red">
+									<p>В нашем центре проводятся только
+										индивидуальные
+										занятия с
+										пациентом строго по предписанию врача, программа составляется с учетом
+										заболевания и
+										его
+										тяжести. Во время курса специалист проводит промежуточную оценку результата и в
+										случае
+										необходимости врач может внести изменения или дополнения в индивидуальную
+										программу
+										лечения.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="stages__steps-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="stages with__button">
+			<div class="container">
+
+				<div class="stages__title title">
+					<h2 class="h1">Как проходит реабилитация</h2>
+				</div>
+
+				<div class="stages__steps">
+
+					<div class="stages__step">
+						<div class="stages__step-title green">
+							<span>1</span>
+							<h2>Консультация</h2>
+						</div>
+						<div class="stages__step-description green">
+							<p>Консультация врача – первый и самый важный этап оказания медицинской помощи пациенту, от
+								него зависит видимый результат в ожидаемы сроки. <br> Дополнительно врач проводит:
+								тестирование (функциональное , мануально-мышечное , тестирование на подвесной системе
+								«Экзарта»), пробное терапевтическое воздействие и на основании полученной информации
+								врач составит индивидуальный план лечения, определит стратегию и совместно с пациентом и
+								его
+								родственниками поставит цели и сроки лечения.
+							</p>
+						</div>
+					</div>
+
+					<div class="stages__step">
+						<div class="stages__step-description blue">
+							<p>Специалист, пациент и его родственники заинтересованы получении желаемого результата, а
+								также в его удержании на долгие сроки. Поэтому перед специалистом стоит важная задача
+								обучить пациента и его родственников правильным упражнениям и техникам, которые подходят
+								только этому пациенту и дать рекомендации для удержания результата лечения.</p>
+						</div>
+						<div class="stages__step-title blue">
+							<span>2</span>
+							<h2>Обучение <br> пациента</h2>
+						</div>
+					</div>
+
+					<div class="stages__step">
+						<div class="stages__step-title red">
+							<span>3</span>
+							<h2>Курс терапии</h2>
+						</div>
+						<div class="stages__step-description red">В нашем центре проводятся только индивидуальные
+							занятия с
+							пациентом строго по предписанию врача, программа составляется с учетом заболевания и его
+							тяжести. Во время курса специалист проводит промежуточную оценку результата и в случае
+							необходимости врач может внести изменения или дополнения в индивидуальную программу лечения.
+						</div>
+					</div>
+				</div>
+
+				<div class="stages__steps-btn__mobile swiper">
+					<div class="stages__steps-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title green">
+									<span>1</span>
+									<h2>Консультация</h2>
+								</div>
+								<div class="stages__step-description green">
+									<p>Консультация врача – первый и самый важный этап оказания медицинской помощи
+										пациенту, от
+										него зависит видимый результат в ожидаемы сроки. <br> Дополнительно врач
+										проводит:
+										тестирование (функциональное , мануально-мышечное , тестирование на подвесной
+										системе
+										«Экзарта»), пробное терапевтическое воздействие и на основании полученной
+										информации
+										врач составит индивидуальный план лечения, определит стратегию и совместно с
+										пациентом и
+										его
+										родственниками поставит цели и сроки лечения.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title blue">
+									<span>2</span>
+									<h2>Обучение <br> пациента</h2>
+								</div>
+								<div class="stages__step-description blue">
+									<p>Специалист, пациент и его родственники заинтересованы получении желаемого
+										результата, а
+										также в его удержании на долгие сроки. Поэтому перед специалистом стоит важная
+										задача
+										обучить пациента и его родственников правильным упражнениям и техникам, которые
+										подходят
+										только этому пациенту и дать рекомендации для удержания результата лечения.</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="stages__step">
+								<div class="stages__step-title red">
+									<span>3</span>
+									<h2>Курс терапии</h2>
+								</div>
+								<div class="stages__step-description red">
+									<p>В нашем центре проводятся только
+										индивидуальные
+										занятия с
+										пациентом строго по предписанию врача, программа составляется с учетом
+										заболевания и
+										его
+										тяжести. Во время курса специалист проводит промежуточную оценку результата и в
+										случае
+										необходимости врач может внести изменения или дополнения в индивидуальную
+										программу
+										лечения.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="stages__steps-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+				<div class="stages__button">
+					<a href="#" class="btn btn-red">
+						<span>записаться на прием</span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="specialists">
+			<div class="container">
+
+				<div class="specialists__title title">
+					<h2 class="h1">Наши специалисты</h2>
+				</div>
+
+				<div class="specialists__text">
+					<p>В центре работают врачи реабилитологи с обширной практикой восстановления пациентов после
+						сложнейших заболеваний ЦНС и опорно-двигательного аппарата.</p>
+					<p>Это люди, которые понимают, как на самом деле работает тело, как связаны мышцы и как надо
+						воздействовать на мягкие ткани, чтобы снять боль и полностью вернуть человеку двигательную
+						активность, возможность говорить, есть, развиваться самостоятельно и просто отлично себя
+						чувствовать в каждый момент жизни.</p>
+					<p>Здесь работают специалисты с опытом реабилитации от 10 лет, некоторые посвятили этой профессии
+						всю жизнь и продолжают развиваться в ней и находить новые возможности помогать пациентам.</p>
+					<p>В "Экзарте" проходят еженедельные консилиумы, где разбирают сложные клинические случаи и
+						принимают решение по дальнейшему курсу реабилитации, где возможна и смена специалиста, и смена
+						методики лечения. Врачи центра участвуют в практических конференциях в России и за рубежом и
+						применяют полученные знания в ежедневной работе с пациентами.</p>
+					<p>Наши специалисты регулярно повышают квалификацию у практиков европейской и российской школы,
+						которые преподают в Международной академии медицинской реабилитации (МАМР), также одни из первых
+						в
+						России получают новые знания и консультативную поддержку у ведущих преподавателей МАМР.</p>
+				</div>
+
+				<div class="specialists__button">
+					<div id="btn-more" class="btn btn-long">
+						<span>Читать дальше</span>
+					</div>
+				</div>
+
+				<div class="specialists__option">
+					<div class="specialists__option-card">
+						<div class="badges">
+							<span class="badge">неврологи</span>
+							<span class="badge">врачи лфк</span>
+							<span class="badge">травматологи-ортопеды</span>
+							<span class="badge">физиотерапевты</span>
+							<span class="badge">инструкторы-методисты лфк</span>
+						</div>
+
+						<a href="#" class="btn btn-link">
+							<span>выбрать своего специалиста</span>
+						</a>
+					</div>
+
+					<div class="specialists__option-image">
+						<span style="background-image: url('/images/demo/start.png');"></span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+
+				<div class="reviews__title title">
+					<h2 class="h1">Отзывы</h2>
+					<a href="#" class="btn btn-header">
+						<span>Смотреть все видео-отзывы</span>
+					</a>
+				</div>
+
+				<div class="reviews__video">
+					<div class="reviews__video-item">
+						<a href="#" class="reviews__video-image red">
+							<span style="background-image: url('/images/demo/reviews/video1.png');"></span>
+						</a>
+						<a href="#" class="reviews__video-title">
+							<h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+						</a>
+					</div>
+					<div class="reviews__video-item">
+						<a href="#" class="reviews__video-image green">
+							<span style="background-image: url('/images/demo/reviews/video2.png');"></span>
+						</a>
+						<a href="#" class="reviews__video-title">
+							<h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+						</a>
+					</div>
+					<div class="reviews__video-item">
+						<a href="#" class="reviews__video-image blue">
+							<span style="background-image: url('/images/demo/reviews/video3.png');"></span>
+						</a>
+						<a href="#" class="reviews__video-title">
+							<h3 class="h4">Отзыв Евгения о лечении ДЦП</h3>
+						</a>
+					</div>
+				</div>
+
+				<div class="reviews__video-mobile swiper">
+					<div class="reviews__video-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image red">
+									<span style="background-image: url('/images/demo/start.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image green">
+									<span style="background-image: url('/images/demo/start.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image blue">
+									<span style="background-image: url('/images/demo/start.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Евгения о лечении ДЦП</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__video-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="social">
+			<div class="container">
+
+				<div class="social__wrapper">
+					<div class="social__wrapper-title">
+						<h2>Мы в социальных сетях</h2>
+					</div>
+
+					<div class="social__wrapper-links">
+						<a href="#" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+					</div>
+					<a href="#" class="btn btn-red pre-last">
+						<span>записаться на прием</span>
+					</a>
+					<div class="social__wrapper-contacts last">
+						<a href="tel:+78314290115" class="social__wrapper-phone">+7 (831) 429 01 15</a>
+						<div class="social__wrapper-write">
+							<a href="https://t.me/mamrkurs" target="_blank" class="social__wrapper-link">
+								<span class="social__wrapper-text">Написать в</span>
+								@@include('../public/images/icons/telegram.svg')
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="promotion col-2 bg__red">
+			<div class="container">
+
+				<div class="promotion__title title">
+					<h2 class="h1">Акции</h2>
+					<a href="#" class="btn btn-header">
+						<span>Смотреть все акции</span>
+					</a>
+				</div>
+
+				<div class="promotion__sale">
+
+					<div class="promotion__sale-item">
+						<div class="promotion__sale-title">
+							<a href="#">
+								<h2>Общий медицинский массаж (детский прием)</h2>
+							</a>
+							<div class="procent">%</div>
+						</div>
+						<div class="promotion__sale-price">
+							<div class="price"><span>2000 руб</span> 1800 руб</div>
+							<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 30.07.2023</div>
+						</div>
+					</div>
+
+					<div class="promotion__sale-item">
+						<div class="promotion__sale-title">
+							<a href="#">
+								<h2>Индивидуальное занятие по методике PNF</h2>
+							</a>
+							<div class="procent">%</div>
+						</div>
+						<div class="promotion__sale-price">
+							<div class="price"><span>2900 руб</span> 2500 руб</div>
+							<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 05.08.2023</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="promotion__sale-mobile swiper">
+					<div class="promotion__sale-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="promotion__sale-item">
+								<div class="promotion__sale-title">
+									<a href="#">
+										<h2>Общий медицинский массаж (детский прием)</h2>
+									</a>
+									<div class="procent">%</div>
+								</div>
+								<div class="promotion__sale-price">
+									<div class="price"><span>2000 руб</span> 1800 руб</div>
+									<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 30.07.2023</div>
+								</div>
+								<div class="promotion__sale-button">
+									<a href="#" class="btn btn-white">
+										<span>узнать подробнее</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="promotion__sale-item">
+								<div class="promotion__sale-title">
+									<a href="#">
+										<h2>Индивидуальное занятие по методике PNF</h2>
+									</a>
+									<div class="procent">%</div>
+								</div>
+								<div class="promotion__sale-price">
+									<div class="price"><span>2900 руб</span> 2500 руб</div>
+									<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 05.08.2023</div>
+								</div>
+								<div class="promotion__sale-button">
+									<a href="#" class="btn btn-white">
+										<span>узнать подробнее</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="promotion__sale-item">
+								<div class="promotion__sale-title">
+									<a href="#">
+										<h2>Общий медицинский массаж (детский прием)</h2>
+									</a>
+									<div class="procent">%</div>
+								</div>
+								<div class="promotion__sale-price">
+									<div class="price"><span>2000 руб</span> 1800 руб</div>
+									<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 30.07.2023</div>
+								</div>
+								<div class="promotion__sale-button">
+									<a href="#" class="btn btn-white">
+										<span>узнать подробнее</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="promotion__sale-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="promotion col-1">
+			<div class="container">
+
+				<div class="promotion__sale">
+
+					<div class="promotion__sale-item">
+
+						<div class="promotion__sale-title">
+							<a href="#">
+								<h2>Общий медицинский массаж (детский прием)</h2>
+							</a>
+							<div class="procent">%</div>
+						</div>
+
+						<div class="promotion__sale-price">
+							<div class="wrapper">
+								<div class="price"><span>2000 руб</span> 1800 руб</div>
+								<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 30.07.2023</div>
+							</div>
+							<div class="button">
+								<a href="#" class="btn btn-white">
+									<span>подробнее</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="promotion__sale-button">
+							<a href="#" class="btn btn-white">
+								<span>узнать подробнее</span>
+							</a>
+						</div>
+
+					</div>
+
+					<div class="promotion__sale-image">
+						<span style="background-image: url('/images/demo/kid-massage.png');"></span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="funds">
+			<div class="container">
+
+				<div class="funds__title title">
+					<h2 class="h1">Работа с фондами</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="funds__specialist">
+						<div class="funds__specialist-image">
+							<span style="background-image: url('/images/demo/funds.png');"></span>
+						</div>
+						<div class="funds__specialist-label">
+							<h3 class="h6">Специалист по работе с благотворительными фондами</h3>
+							<p>Абрамова Екатерина Сергеевна</p>
+						</div>
+					</div>
+
+					<div class="funds__info">
+						<p>Реабилитация — это длительный процесс, требующий множество сил и средств от семей, чьи дети
+							или
+							взрослые родственники нуждаются в восстановлении двигательных возможностей.</p>
+
+						<p>Медицинский центр «Экзарта» старается оказать помощь всем, кому требуется реабилитация, и
+							вернуть
+							радость самостоятельного передвижения. Для этого мы сотрудничаем с фондами, которые помогают
+							собрать необходимые средства для регулярных курсов и интенсивной работы пациентов со
+							специалистами.</p>
+
+						<div class="funds__info-btns">
+							<a href="#" class="btn btn-white">
+								<span>оставить заявку</span>
+							</a>
+							<a href="#" class="btn btn-link">
+								<span>выбрать фонд</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="awards bg__red">
+			<div class="container">
+
+				<div class="awards__slider swiper">
+					<div class="awards__slider-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="awards__item">
+								<div class="awards__item-img">
+									<span style="background-image: url('/images/demo/awards/prize1.png');"></span>
+								</div>
+								<p class="text-small">Центр Экзарта в 2020 году стал победителем в номинации «Лучший
+									социальный проект года» по Нижегородскому региону.</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="awards__item">
+								<div class="awards__item-img">
+									<span style="background-image: url('/images/demo/awards/prize2.png');"></span>
+								</div>
+								<p class="text-small">Финалист регионального этапа Всероссийского конкурса "Лучший
+									социальный проект года" в номинации "Лучший проект социального предпринимательства в
+									сфере поддержки и реабилитации людей с ограниченными возможностями здоровья" 2021
+									год</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="awards__item">
+								<div class="awards__item-img">
+									<span style="background-image: url('/images/demo/awards/prize3.png');"></span>
+								</div>
+								<p class="text-small">Центр Экзарта имеет статус Социального Предприятия</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="awards__item">
+								<div class="awards__item-img">
+									<span style="background-image: url('/images/demo/awards/prize1.png');"></span>
+								</div>
+								<p class="text-small">Центр Экзарта в 2020 году стал победителем в номинации «Лучший
+									социальный проект года» по Нижегородскому региону.</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="awards__item">
+								<div class="awards__item-img">
+									<span style="background-image: url('/images/demo/awards/prize2.png');"></span>
+								</div>
+								<p class="text-small">Финалист регионального этапа Всероссийского конкурса "Лучший
+									социальный проект года" в номинации "Лучший проект социального предпринимательства в
+									сфере поддержки и реабилитации людей с ограниченными возможностями здоровья" 2021
+									год</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="awards__slider-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="articles">
+			<div class="container">
+
+				<div class="articles__title title">
+					<h2 class="h1">Полезное о реабилитации читайте в нашем блоге</h2>
+					<a href="#" class="btn btn-header">
+						<span>Перейти в блог</span>
+					</a>
+				</div>
+
+				<div class="articles__wrapper">
+
+					<div class="articles__item">
+						<a href="#" class="articles__item-img">
+							<span style="background-image: url('/images/demo/reception.png');"></span>
+						</a>
+						<a href="#">
+							<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+						</a>
+						<div class="articles__item-button">
+							<a href="#" class="btn btn-white">
+								<span>читать</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="articles__item">
+						<a href="#" class="articles__item-img">
+							<span style="background-image: url('/images/demo/reception.png');"></span>
+						</a>
+						<a href="#">
+							<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+						</a>
+						<div class="articles__item-button">
+							<a href="#" class="btn btn-white">
+								<span>читать</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="articles__item">
+						<a href="#" class="articles__item-img">
+							<span style="background-image: url('/images/demo/reception.png');"></span>
+						</a>
+						<a href="#">
+							<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+						</a>
+						<div class="articles__item-button">
+							<a href="#" class="btn btn-white">
+								<span>читать</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="articles__swiper swiper">
+					<div class="articles__wrapper-mobile swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="articles__item">
+								<a href="#" class="articles__item-img">
+									<span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+								</a>
+								<a href="#">
+									<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+								</a>
+								<div class="articles__item-button">
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="articles__item">
+								<a href="#" class="articles__item-img">
+									<span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+								</a>
+								<a href="#">
+									<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+								</a>
+								<div class="articles__item-button">
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="articles__item">
+								<a href="#" class="articles__item-img">
+									<span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+								</a>
+								<a href="#">
+									<h3 class="h4">Название статьи в одну <br> или две строки</h3>
+								</a>
+								<div class="articles__item-button">
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="articles-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!--------------------- internal screens -------------------------------->
+
+		<section class="bread-crumbs">
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<i></i>
+					<span>Внутренняя страница</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="first-screen">
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<span>Внутренняя страница</span>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="first-screen__info">
+						<h1>Заголовок броский и интересный</h1>
+						<p>Таким образом рамки и место обучения кадров представляет собой интересный эксперимент
+							проверки новых предложений. Значимость этих настолько очевидна, что укрепление структуры
+							требуют анализа форм развития. </p>
+						<div class="button">
+							<a href="#" class="btn btn-red">
+								<span>записаться на прием</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="first-screen__image">
+						<span style="background-image: url('/images/demo/massage.png');"></span>
+					</div>
+					<div class="first-screen__button">
+						<a href="#" class="btn btn-red">
+							<span>целевая кнопка</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="first-screen with__promo">
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<span>Внутренняя страница</span>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="first-screen__info">
+						<h1>Лечение заболеваний опорно-двигательного аппарата</h1>
+
+						<div class="first-screen__service">
+							<p>Первичный прием и диагностика врача</p>
+							<div class="price">
+								<span>1000 рублей</span>
+								<div class="button-promo">
+									<a href="#" class="btn btn-red">
+										<span>Записаться на прием</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="first-screen__image">
+						<span style="background-image: url('/images/demo/massage.png');"></span>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="first-screen with__specialist">
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<a href="#">Внутренняя страница</a>
+					<i></i>
+					<span>Внутренняя страница</span>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="first-screen__info">
+						<h1>Дьякова Екатерина Валерьевна</h1>
+						<p>Заместитель главного врача по медицинской части, врач по лечебной физкультуре, врач-невролог
+						</p>
+						<div class="button">
+							<a href="#" class="btn btn-red">
+								<span>записаться на прием</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="first-screen__image">
+						<span style="background-image: url('/images/demo/dyakova.png');"></span>
+					</div>
+
+					<div class="first-screen__button">
+						<a href="#" class="btn btn-red">
+							<span>Записаться на прием</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="services-categoty">
+
+			<div class="container">
+
+				<div class="services-categoty__title title">
+					<h2 class="h1">Наши услуги</h2>
+				</div>
+
+				<div class="services-categoty__item">
+					<h2>Консультации</h2>
+					<div class="wrapper">
+						<div class="services-categoty__item-col red">
+							<ul>
+								<li><a href="#">Врач невролог</a></li>
+								<li><a href="#">Врач ЛФК</a></li>
+								<li><a href="#">Врач физиотерапевт</a></li>
+								<li><a href="#">Инструктор-методист ЛФК</a></li>
+								<li><a href="#">Врач травматолог-ортопед</a></li>
+							</ul>
+						</div>
+						<div class="services-categoty__item-col promo">
+
+							<div class="sale-title">
+								<a href="#">
+									<h2>Общий медицинский массаж (детский прием)</h2>
+								</a>
+								<div class="procent">%</div>
+							</div>
+							<div class="sale-price">
+								<div class="price"><span>2000 руб</span> 1800 руб</div>
+								<div class="limit"><span>Срок проведения:</span> c 25.07.2023 по 30.07.2023</div>
+							</div>
+
+							<a href="#" class="btn btn-white">
+								<span>записаться</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="services-categoty__item">
+					<h2>Профилактика</h2>
+					<div class="wrapper">
+						<div class="services-categoty__item-col">
+							<span>Дети:</span>
+							<ul>
+								<li><a href="#">Профилактика речевых нарушений</a></li>
+								<li><a href="#">Профилактика нарушений памяти и внимания</a></li>
+								<li><a href="#">Профилактика нарушений чтения и письма</a></li>
+								<li><a href="#">Профилактика нарушений осанки</a></li>
+								<li><a href="#">Профилактика нарушений в развитии детей из “группы риска”</a></li>
+								<li><a href="#">Профилактика плоскостопия</a></li>
+								<li><a href="#">Профилактика Х-образных ног</a></li>
+								<li><a href="#">Профилактика вальгусной установки стопы</a></li>
+								<li><a href="#">Профилактика спортивных травм</a></li>
+								<li><a href="#">Профилактика повышенной утомляемости</a></li>
+								<li><a href="#">Профилактика дискомфорта при статических нагрузках</a></li>
+								<li><a href="#">Подготовка к операциям</a></li>
+
+							</ul>
+						</div>
+						<div class="services-categoty__item-col">
+							<span>Взрослые:</span>
+							<ul>
+								<li><a href="#">Профилактика спортивных травм</a></li>
+								<li><a href="#">Профилактика повышенной утомляемости</a></li>
+								<li><a href="#">Профилактика повышенной утомляемости</a></li>
+								<li><a href="#">Профилактика повышенной утомляемости</a></li>
+								<li><a href="#">Профилактика повышенной утомляемости</a></li>
+								<li><a href="#">Индивидуальная программа “Сохранение красоты и здоровья женщины”</a>
+								</li>
+								<li><a href="#">Индивидуальная программа “Сохранение мужского здоровья”</a></li>
+								<li><a href="#">Коррекция веса</a></li>
+								<li><a href="#">Подготовка к операциям</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="services-categoty__item">
+					<h2>Лечение</h2>
+					<div class="wrapper">
+						<div class="services-categoty__item-col">
+							<span>Дети:</span>
+							<ul>
+								<li><a href="#">Лечение перинатального поражения центральной нервной системы
+										(ППЦНС)</a></li>
+								<li><a href="#">Лечение детского церебрального паралича (ДЦП)</a></li>
+								<li><a href="#">Лечение задержки моторного развития (ЗМР)</a></li>
+								<li><a href="#">Лечение задержки речевого развития (ЗРР)</a></li>
+								<li><a href="#">Лечение нарушений памяти и внимания</a></li>
+								<li><a href="#">Лечение нарушений чтения и письма</a></li>
+								<li><a href="#">Лечение нарушения осанки</a></li>
+								<li><a href="#">Лечение синдрома мышечной дистонии</a></li>
+								<li><a href="#">Лечение сколиоза</a></li>
+								<li><a href="#">Лечение дисплазии тазобедренных суставов</a></li>
+								<li><a href="#">Лечение кривошеи</a></li>
+								<li><a href="#">Лечение мышечной слабости</a></li>
+								<li><a href="#">Лечение головных болей</a></li>
+								<li><a href="#">Лечение болей в спине</a></li>
+								<li><a href="#">Лечение спортивных травм</a></li>
+								<li><a href="#">Лечение травм и переломов</a></li>
+								<li><a href="#">Лечение косоглазия</a></li>
+								<li><a href="#">Лечение плоскостопия</a></li>
+								<li><a href="#">Восстановление после операции</a></li>
+
+							</ul>
+						</div>
+						<div class="services-categoty__item-col">
+							<span>Взрослые:</span>
+							<ul>
+								<li><a href="#">Лечение неврологических заболеваний</a></li>
+								<li><a href="#">Лечение заболеваний опорно-двигательного аппарата</a></li>
+								<li><a href="#">Лечение дисфункции мышц тазового дна</a></li>
+								<li><a href="#">Лечение травм и переломов</a></li>
+								<li><a href="#">Лечение боли в стопе</a></li>
+								<li><a href="#">Лечение пяточной шпоры</a></li>
+								<li><a href="#">Лечение плоскостопия</a></li>
+								<li><a href="#">Лечение головных болей</a></li>
+								<li><a href="#">Лечение боли в спине</a></li>
+								<li><a href="#">Лечение боли в суставах</a></li>
+								<li><a href="#">Лечение дисфункции височно-челюстного сустава (ВНЧС)</a></li>
+								<li><a href="#">Лечение спортивных травм</a></li>
+								<li><a href="#">Восстановление после операции</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="services-categoty__item">
+					<h2>Реабилитация</h2>
+					<div class="wrapper">
+						<div class="services-categoty__item-col">
+							<span>Дети:</span>
+							<ul>
+								<li><a href="#">Реабилитация детей с дисплазией тазобедренного сустава</a></li>
+								<li><a href="#">Реабилитация детей с кривошеей</a></li>
+								<li><a href="#">Реабилитация детей с речевой патологией</a></li>
+								<li><a href="#">Реабилитация детей при задержке моторного развития (ЗМР)</a></li>
+								<li><a href="#">Реабилитация при детском церебральном параличе (ДЦП)</a></li>
+								<li><a href="#">Реабилитация детей с поражением периферической нервной системы</a></li>
+								<li><a href="#">Реабилитация детей с генетическими заболеваниями</a></li>
+								<li><a href="#">Реабилитация детей после онкологии</a></li>
+								<li><a href="#">Реабилитация детей после черепно-мозговой травмы (ЧМТ)</a></li>
+								<li><a href="#">Реабилитация детей с косоглазием</a></li>
+
+							</ul>
+						</div>
+						<div class="services-categoty__item-col">
+							<span>Взрослые:</span>
+							<ul>
+								<li><a href="#">Реабилитация после инсульта</a></li>
+								<li><a href="#">Реабилитация после черепно-мозговой травмы у взрослых (ЧМТ)</a></li>
+								<li><a href="#">Реабилитация после травмы позвоночника</a></li>
+								<li><a href="#">Реабилитация после операций на позвоночнике</a></li>
+								<li><a href="#">Реабилитация после замены сустава</a></li>
+								<li><a href="#">Реабилитация при переломе шейки бедра</a></li>
+								<li><a href="#">Реабилитация после эндопротезирования суставов</a></li>
+								<li><a href="#">Реабилитация после ортодонтических вмешательств</a></li>
+								<li><a href="#">Реабилитация пациентов с ДЦП</a></li>
+								<li><a href="#">Реабилитация после химиотерапии и облучения</a></li>
+								<li><a href="#">Реабилитация при заболевании рассеянный склероз</a></li>
+								<li><a href="#">Реабилитация после онкологии</a></li>
+								<li><a href="#">Реабилитация после инфекционных заболеваний</a></li>
+								<li><a href="#">Вестибулярная реабилитация</a></li>
+								<li><a href="#">Спортивная реабилитация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="services-categoty__item">
+					<h2>Дополнительные услуги</h2>
+					<div class="wrapper">
+						<div class="services-categoty__item-col red">
+							<ul>
+								<li><a href="#">Второе мнение</a></li>
+								<li><a href="#">Онлайн-реабилитация</a></li>
+								<li><a href="#">Школа реабилитации “Экзарта”</a></li>
+								<li><a href="#">Адаптация квартиры</a></li>
+								<li><a href="#">Кинезиотейпирование</a></li>
+								<li><a href="#">Массаж</a></li>
+								<li><a href="#">Лечебная физкультура (ЛФК)</a></li>
+								<li><a href="#">Изготовление индивидуальных ортопедических стелек Формтотикс</a></li>
+
+							</ul>
+						</div>
+						<div class="services-categoty__item-col red">
+							<ul>
+								<span>Физиолечение:</span>
+								<li><a href="#">Электротерапия</a></li>
+								<li><a href="#">Магнитотерапия</a></li>
+								<li><a href="#">Грязелечение</a></li>
+								<li><a href="#">Фанго-парафиновое нагревание (термовоздействие)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="article">
+
+			<div class="container">
+				<div class="article__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="article__content">
+					<p>Являясь всего лишь частью общей картины, тщательные исследования конкурентов будут обнародованы.
+						Имеется спорная точка зрения, гласящая примерно следующее: представители современных социальных
+						резервов, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их
+						существование приносит несомненную пользу обществу.
+						Также как социально-экономическое развитие
+						играет важную роль в формировании распределения внутренних резервов и ресурсов.
+						В частности, постоянный количественный рост и сфера нашей активности играет определяющее
+						значение
+						для соответствующих условий активизации. Высокий уровень вовлечения представителей целевой
+						аудитории
+						является четким доказательством простого факта: выбранный нами инновационный путь однозначно
+						фиксирует необходимость приоретизации разума над эмоциями. Но многие известные личности, вне
+						зависимости от их уровня, должны быть заблокированы в рамках своих собственных рациональных
+						ограничений. Таким образом, высокотехнологичная концепция общественного уклада играет важную
+						роль в
+						формировании поэтапного и последовательного развития общества. Противоположная точка зрения
+						подразумевает, что элементы политического процесса рассмотрены исключительно в разрезе
+						маркетинговых
+						и финансовых предпосылок. Следует отметить, что начало повседневной работы по формированию
+						позиции
+						влечет за собой процесс внедрения и модернизации филиала в Туле.
+					</p>
+				</div>
+
+				<div class="article__list">
+					<p class="text-bold">Список литературы:</p>
+					<ul>
+						<li>Гольдблат Ю. В. Основы реабилитации неврологических больных: монография - Санкт-Петербург:
+							СпецЛит, 2017</li>
+						<li>Кругляк Л. Г. Остеопороз : Тихая эпидемия XXI века: научно-популярное издание -
+							Санкт-Петербург:
+							Крылов, 2009</li>
+						<li>Маргазин В. А., Коромыслов А. В., Лобов А. Н., Епифанов В. А., Левин В. Н. Лечебная
+							физическая
+							культура при заболеваниях сердечно-сосудистой и дыхательной систем: учебное пособие -
+							Санкт-Петербург: СпецЛит, 2015
+							<ul>
+								<li>глава 21;</li>
+								<li>глава 45;</li>
+							</ul>
+						</li>
+						<li>Электромагнитотерапия : новые данные и технологии: монография - Минск: Беларуская навука,
+							2018
+						</li>
+						<li>Абрашина Н. А. Лечебный и профилактический массаж для детей с нарушениями развития:
+							практическое
+							пособие - Москва: ФЛИНТА, 2021</li>
+					</ul>
+
+					<p class="text-bold">Список литературы:</p>
+					<ol>
+						<li>Гольдблат Ю. В. Основы реабилитации неврологических больных: монография - Санкт-Петербург:
+							СпецЛит, 2017</li>
+						<li>Кругляк Л. Г. Остеопороз : Тихая эпидемия XXI века: научно-популярное издание -
+							Санкт-Петербург:
+							Крылов, 2009</li>
+						<li>Маргазин В. А., Коромыслов А. В., Лобов А. Н., Епифанов В. А., Левин В. Н. Лечебная
+							физическая
+							культура при заболеваниях сердечно-сосудистой и дыхательной систем: учебное пособие -
+							Санкт-Петербург: СпецЛит, 2015</li>
+						<li>Электромагнитотерапия : новые данные и технологии: монография - Минск: Беларуская навука,
+							2018
+						</li>
+						<li>Абрашина Н. А. Лечебный и профилактический массаж для детей с нарушениями развития:
+							практическое
+							пособие - Москва: ФЛИНТА, 2021</li>
+					</ol>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="article with__image-right">
+			<div class="container">
+
+				<div class="article__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="article__text">
+						<p>В центре «Экзарта» работают врачи реабилитологи с обширной практикой восстановления пациентов
+							после
+							сложнейших заболеваний ЦНС и опорно-двигательного аппарата. Это люди, которые понимают, как
+							на самом
+							деле работает тело, как связаны мышцы и как надо воздействовать на мягкие ткани, чтобы снять
+							боль и
+							полностью вернуть человеку двигательную активность, возможность говорить, есть, развиваться
+							самостоятельно и просто отлично себя чувствовать в каждый момент жизни. </p>
+
+						<p>Здесь работают специалисты с опытом реабилитации от 10 лет, некоторые посвятили этой
+							профессии всю
+							жизнь и продолжают развиваться в ней и находить новые возможности помогать пациентам.</p>
+					</div>
+
+					<div class="article__image">
+						<span style="background-image: url('/images/demo/father.png');"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="article with__image-left">
+			<div class="container">
+
+				<div class="article__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="article__image">
+						<span style="background-image: url('/images/demo/father.png');"></span>
+					</div>
+
+					<div class="article__text">
+						<p>В центре «Экзарта» работают врачи реабилитологи с обширной практикой восстановления пациентов
+							после
+							сложнейших заболеваний ЦНС и опорно-двигательного аппарата. Это люди, которые понимают, как
+							на самом
+							деле работает тело, как связаны мышцы и как надо воздействовать на мягкие ткани, чтобы снять
+							боль и
+							полностью вернуть человеку двигательную активность, возможность говорить, есть, развиваться
+							самостоятельно и просто отлично себя чувствовать в каждый момент жизни. </p>
+
+						<p>Здесь работают специалисты с опытом реабилитации от 10 лет, некоторые посвятили этой
+							профессии всю
+							жизнь и продолжают развиваться в ней и находить новые возможности помогать пациентам.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="methods-full">
+
+			<div class="container">
+
+				<div class="methods-full__title title">
+					<h2 class="h1">Методики, которые мы используем при работе с пациентами</h2>
+				</div>
+
+				<div class="methods__cards">
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Бобат- терапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/1.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Войта-терапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/2.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">Экзарта</span>
+						<span class="image" style="background-image: url('/images/demo/methods/3.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">нейрологопедия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/4.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">методика пнф</span>
+						<span class="image" style="background-image: url('/images/demo/methods/5.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">лимфодренаж</span>
+						<span class="text">по методу Воддера</span>
+						<span class="image" style="background-image: url('/images/demo/methods/6.png');"></span>
+					</a>
+
+
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">функциональная <br> терапия</span>
+						<span class="text">для детей</span>
+						<span class="image" style="background-image: url('/images/demo/methods/1.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">функциональная <br> терапия</span>
+						<span class="text">для взрослых</span>
+						<span class="image" style="background-image: url('/images/demo/methods/2.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">гимнастика seas</span>
+						<span class="image" style="background-image: url('/images/demo/methods/3.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">методика кальтенборна</span>
+						<span class="image" style="background-image: url('/images/demo/methods/4.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">физиотерапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/5.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">кинезиотейпирование</span>
+						<span class="image" style="background-image: url('/images/demo/methods/6.png');"></span>
+					</a>
+
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">микрополяризация</span>
+						<span class="image" style="background-image: url('/images/demo/methods/1.png');"></span>
+					</a>
+					<a href="#" class="methods__cards-item">
+						<span class="card-title">механотерапия</span>
+						<span class="image" style="background-image: url('/images/demo/methods/2.png');"></span>
+					</a>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="equipment">
+			<div class="container">
+
+				<div class="equipment__title title">
+					<h2 class="h1">Наше оборудование</h2>
+				</div>
+
+				<div class="equipment__slider swiper">
+					<div class="equipment__slider-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="equipment__item">
+								<div class="equipment__item-img">
+									<span style="background-image: url('/images/demo/ekzarta.png');"></span>
+								</div>
+								<div class="equipment__item-info">
+									<h3>Кинезитерапевтическая платформа “Экзарта”</h3>
+									<p>Специализированная подвесная система для комплексной реабилитации
+										опорно-двигательных
+										нарушений.</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="equipment__item">
+								<div class="equipment__item-img">
+									<span style="background-image: url('/images/demo/ekzarta.png');"></span>
+								</div>
+								<div class="equipment__item-info">
+									<h3>Виброплатформа “Галилео”</h3>
+									<p>Для укрепления мышцы-стабилизаторов, выравнивания координации движений.</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="equipment__item">
+								<div class="equipment__item-img">
+									<span style="background-image: url('/images/demo/ekzarta.png');"></span>
+								</div>
+								<div class="equipment__item-info">
+									<h3>Стабилоплатформа</h3>
+									<p>Для анализа способности человека управлять позой тела и обеспечения биологической
+										обратной связи по опорной реакции.</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="equipment__item">
+								<div class="equipment__item-img">
+									<span style="background-image: url('/images/demo/ekzarta.png');"></span>
+								</div>
+								<div class="equipment__item-info">
+									<h3>Кинезитерапевтическая платформа “Экзарта”</h3>
+									<p>Специализированная подвесная система для комплексной реабилитации
+										опорно-двигательных
+										нарушений.</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="equipment__item">
+								<div class="equipment__item-img">
+									<span style="background-image: url('/images/demo/ekzarta.png');"></span>
+								</div>
+								<div class="equipment__item-info">
+									<h3>Виброплатформа “Галилео”</h3>
+									<p>Для укрепления мышцы-стабилизаторов, выравнивания координации движений.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="equipment__slider-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="specialists-full">
+			<div class="container">
+
+				<div class="specialists-full__title title">
+					<h2 class="h1">Наши специалисты</h2>
+				</div>
+
+				<div class="wrapper">
+					<h3 class="h2">Медицинский персонал</h3>
+
+					<div class="specialists-full__personal">
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/kornouhov.png');"></span>
+							</div>
+							<h5>Корноухов Андрей Евгеньевич</h5>
+							<p class="text-small">Главный врач центра, врач невролог, мануальный терапевт</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/dyakova.png');"></span>
+							</div>
+							<h5>Дьякова Екатерина Валерьевна</h5>
+							<p class="text-small">Заместитель главного врача по медицинской части, врач по лечебно...
+							</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/fedorina.png');"></span>
+							</div>
+							<h5>Федорина Наталья Артуровна</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/dubrovina.png');"></span>
+							</div>
+							<h5>Дубровина Анна Ивановна</h5>
+							<p class="text-small">Инструктор — методист ЛФК</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/kuznecov.png');"></span>
+							</div>
+							<h5>Кузнецов Максим Станиславович</h5>
+							<p class="text-small">Врач по лечебной физкультуре и спортивной медицине</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/shevchenko.png');"></span>
+							</div>
+							<h5>Шевченко Марина Александровна</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/shevchenko.png');"></span>
+							</div>
+							<h5>Шевченко Марина Александровна</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image image-none">
+								<span style="background-image: url('/images/demo/underlay-red.png');">
+									@@include('../public/images/icons/bird.svg')
+								</span>
+							</div>
+							<h5>Когда Нет Фотографии</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrapper">
+					<h3 class="h2">Медицинский персонал</h3>
+
+					<div class="specialists-full__personal">
+						<div class="doctor">
+							<div class="image">
+								<span style="background-image: url('/images/demo/specialists/shevchenko.png');">
+								</span>
+							</div>
+							<h5>Шевченко Марина Александровна</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+
+						<div class="doctor">
+							<div class="image image-none">
+								<span style="background-image: url('/images/demo/underlay-red.png');">
+									@@include('../public/images/icons/bird.svg')
+								</span>
+							</div>
+							<h5>Когда Нет Фотографии</h5>
+							<p class="text-small">Врач невролог</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="faq bg__red">
+			<div class="container">
+
+				<div class="faq__title title">
+					<h2 class="h1">Вопросы и ответы</h2>
+				</div>
+
+				<div class="accordion">
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img"></div>
+							<span>Надо ли заниматься реабилитацией дома самостоятельно?</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, tenetur saepe
+								aliquid consequuntur est itaque recusandae molestiae qui rerum.</p>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img"></div>
+							<span>Как часто надо приходить на занятия к реабилитологу?</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<p>Частота визитов устанавливается индивидуально, чаще всего 2-3 раза в неделю. Курс состоит
+								из 10-15 занятий, контрольный визит через 1-1,5 месяца.</p>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img"></div>
+							<span>Можно ли заниматься на экзарте при острой боли в спине, если по МРТ диагностирована
+								грыжа диска или подождать пока спадет воспаление?</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, tenetur saepe
+								aliquid consequuntur est itaque recusandae molestiae qui rerum.</p>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img"></div>
+							<span>Планируется операция на суставе, есть ли смысл заниматься на экзарте до
+								операции?</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, tenetur saepe
+								aliquid consequuntur est itaque recusandae molestiae qui rerum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews with__swiper">
+			<div class="container">
+
+				<div class="reviews__title title">
+					<h2 class="h1">Видео-отзывы от пациентов медцентров из Нижнего Новгорода</h2>
+				</div>
+
+				<div class="psevdo-elements"></div>
+
+				<div class="reviews__slider swiper">
+					<div class="reviews__slider-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image">
+									<span style="background-image: url('/images/demo/reviews/video1.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image">
+									<span style="background-image: url('/images/demo/reviews/video2.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image">
+									<span style="background-image: url('/images/demo/reviews/video3.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Евгения о лечении ДЦП</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image">
+									<span style="background-image: url('/images/demo/reviews/video1.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__video-item">
+								<a href="#" class="reviews__video-image">
+									<span style="background-image: url('/images/demo/reviews/video2.png');"></span>
+								</a>
+								<a href="#" class="reviews__video-title">
+									<h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="reviews__slider-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="reviews with__text with__swiper">
+			<div class="container">
+
+				<div class="reviews__title title">
+					<h2 class="h1">Еще отзывы</h2>
+					<a href="#" class="btn btn-header">
+						<span>Оставить отзыв</span>
+					</a>
+				</div>
+
+				<p>Мы тщательно следим за обратной связью от наших клиентов о качестве работы наших специалистов и
+					персонала медцентра.
+					Будем благодарны, если вы оставите свой честный отзыв!</p>
+
+				<div class="wrapper">
+
+					<div class="select">
+						<div class="select-wrapper">
+							<select name="" id="" class="custom-select">
+								<option value="1">Выпадающий список</option>
+								<option value="2">Выпадающий список</option>
+								<option value="3">Выпадающий список</option>
+								<option value="4">Выпадающий список</option>
+								<option value="5">Выпадающий список</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="select">
+						<div class="select-wrapper">
+							<select name="" id="" class="custom-select">
+								<option value="1">Выпадающий список</option>
+								<option value="2">Выпадающий список</option>
+								<option value="3">Выпадающий список</option>
+								<option value="4">Выпадающий список</option>
+								<option value="5">Выпадающий список</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="reviews__slider-text swiper">
+					<div class="reviews__slider-text__wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="reviews__text-item">
+								<div class="reviews__text-title green">
+									<span>Наталья Николаева</span>
+									<span class="badge badge-small">консультация у логопеда</span>
+								</div>
+								<p>В июле 2022 г. мы с дочерью проходили курс реабилитации в центре Экзарта. Хочу
+									выразить благодарность за работу всему коллективу центра. Индивидуальное направление
+									в работе с ребенком дает хорошие результаты уже на курсе. Отзывчивость, внимание и
+									дружеская атмосфера помогли малышу быстро адаптироваться к работе. Спасибо, что
+									помогаете встать на ноги!</p>
+								<div class="reviews__text-down">
+									<span>19.07.2023</span>
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__text-item">
+								<div class="reviews__text-title green">
+									<span>Анжелика Голова</span>
+									<span class="badge badge-small">консультация у ортопеда</span>
+								</div>
+								<p>Сыну 17 лет. Плоскостопие, боли в спине, походка с наклоном вперед и на согнутых
+									ногах. В обычной поликлинике ортопед написал «без патологий». Обратились в Центр
+									Медицинской реабилитации ЭКЗАРТА на казанском шоссе по совету знакомых. Прошли курс
+									занятий на ЭКЗАРТЕ совместно с мануальной терапией и остались очень довольны.
+									Действительно, те мышцы, которые не работали и их сложно было «завести», начали
+									постепенно включаться с помощью волшебных рук докторов и новых упражнений на
+									установке. В итоге спина стало ровнее, боли стихли, стопа укрепилась, появилось
+									новое ощущение в позвоночнике. Продолжаем поддерживать результат домашними
+									тренировками по рекомендации наших прекрасных врачей: Дмитриевой Лилианы Игоревны
+									(врач-невролог) и Никитиной Екатерины Александровны (инструктор ЛФК).</p>
+								<div class="reviews__text-down">
+									<span>19.07.2023</span>
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__text-item">
+								<div class="reviews__text-title blue">
+									<span>Вильгельмина Христорождественская</span>
+									<span class="badge badge-small">реабилитация после инсульта</span>
+								</div>
+								<p>Сыну 17 лет. Плоскостопие, боли в спине, походка с наклоном вперед и на согнутых
+									ногах. В обычной поликлинике ортопед написал «без патологий». Обратились в Центр
+									Медицинской реабилитации ЭКЗАРТА на казанском шоссе по совету знакомых. Прошли курс
+									занятий на ЭКЗАРТЕ совместно с мануальной терапией и остались очень довольны.
+									Действительно, те мышцы, которые не работали и их сложно было «завести», начали
+									постепенно включаться с помощью волшебных рук докторов и новых упражнений на
+									установке. В итоге спина стало ровнее, боли стихли, стопа укрепилась, появилось
+									новое ощущение в позвоночнике. Продолжаем поддерживать результат домашними
+									тренировками по рекомендации наших прекрасных врачей: Дмитриевой Лилианы Игоревны
+									(врач-невролог) и Никитиной Екатерины Александровны (инструктор ЛФК).</p>
+								<div class="reviews__text-down">
+									<span>19.07.2023</span>
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__text-item">
+								<div class="reviews__text-title red">
+									<span>Наталья Николаева</span>
+									<span class="badge badge-small">консультация у логопеда</span>
+								</div>
+								<p>В июле 2022 г. мы с дочерью проходили курс реабилитации в центре Экзарта. Хочу
+									выразить благодарность за работу всему коллективу центра. Индивидуальное направление
+									в работе с ребенком дает хорошие результаты уже на курсе. Отзывчивость, внимание и
+									дружеская атмосфера помогли малышу быстро адаптироваться к работе. Спасибо, что
+									помогаете встать на ноги!</p>
+								<div class="reviews__text-down">
+									<span>19.07.2023</span>
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__text-item">
+								<div class="reviews__text-title blue">
+									<span>Анжелика Голова</span>
+									<span class="badge badge-small">консультация у ортопеда</span>
+								</div>
+								<p>Сыну 17 лет. Плоскостопие, боли в спине, походка с наклоном вперед и на согнутых
+									ногах. В обычной поликлинике ортопед написал «без патологий». Обратились в Центр
+									Медицинской реабилитации ЭКЗАРТА на казанском шоссе по совету знакомых. Прошли курс
+									занятий на ЭКЗАРТЕ совместно с мануальной терапией и остались очень довольны.
+									Действительно, те мышцы, которые не работали и их сложно было «завести», начали
+									постепенно включаться с помощью волшебных рук докторов и новых упражнений на
+									установке. В итоге спина стало ровнее, боли стихли, стопа укрепилась, появилось
+									новое ощущение в позвоночнике. Продолжаем поддерживать результат домашними
+									тренировками по рекомендации наших прекрасных врачей: Дмитриевой Лилианы Игоревны
+									(врач-невролог) и Никитиной Екатерины Александровны (инструктор ЛФК).</p>
+								<div class="reviews__text-down">
+									<span>19.07.2023</span>
+									<a href="#" class="btn btn-white">
+										<span>читать</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="reviews__slider-text__pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="error-404 bg__red">
+			<div class="container">
+
+				<div class="error-404__image"><span>404</span></div>
+
+				<h2 class="h1">Извините, но страница не найдена</h2>
+
+				<div class="error-404__subtitle">
+					<p>Пожалуйста, вернитесь на <a href="#">главную страницу</a></p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="prices bg__red">
+			<div class="container">
+
+				<div class="prices__title title">
+					<h2 class="h1">Стоимость услуг</h2>
+				</div>
+
+				<div class="accrodion">
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-first-aid.svg')
+							</div>
+							<span>Консультации</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-yoga-mat.svg')
+							</div>
+							<span>Индивидуальные занятия</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-plaster.svg')
+							</div>
+							<span>Кинезиотерапевтическое тейпирование</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-electromyography.svg')
+							</div>
+							<span>Низкочастотная и высокочастотная электротерапия</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+							</div>
+							<span>Светолечение</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-magnet-therapy.svg')
+							</div>
+							<span>Магнитотерапия</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-massage.svg')
+							</div>
+							<span>Массаж</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-gym-bars.svg')
+							</div>
+							<span>Лечебная физкультура с использованием тренажера</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-leg-thermal.svg')
+							</div>
+							<span>Термовоздействие</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-leg-mud-therapy.svg')
+							</div>
+							<span>Грязелечение</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-magnet-electrotherapy.svg')
+							</div>
+							<span>Магнитоэлектрофорез</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-massage-ball.svg')
+							</div>
+							<span>Функциональная терапия</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-joints.svg')
+							</div>
+							<span>Механотерапия пассивная разработка суставов</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-electrode.svg')
+							</div>
+							<span>Электрофорез</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__item-header">
+							<div class="accordion__item-header__img">
+								@@include('../public/images/icons/noun/noun-leg-gypsum.svg')
+							</div>
+							<span>Гипсование</span>
+							<div class="accordion__item-header__caret"></div>
+						</div>
+						<div class="accordion__item-content">
+							<div class="procedure">
+								<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+									ST-150</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">600 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Упражнения на тренажере Гросса</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+
+							<div class="procedure__horizontal-line"></div>
+
+							<div class="procedure">
+								<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+									реабилитационной перчатки</div>
+								<div class="procedure__time">30 мин</div>
+								<div class="procedure__cost">1000 руб</div>
+								<a href="#" class="btn btn-white">
+									<span>записаться на прием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="price-procedure">
+			<div class="container">
+
+				<div class="price-procedure__title title">
+					<h2 class="h1">Цены на массаж <br> в Нижнем Новгороде</h2>
+				</div>
+
+				<p>Стоимость лечения зависит от индивидуальных особенностей и клинического случая. Полную стоимость
+					лечения Вы получите после проведения очной консультации наших специалистов.</p>
+
+				<div class="price-procedure__card">
+
+					<div class="procedure">
+						<div class="procedure__name">Баланстерапия: тренировка равновесия на стабилотренажере
+							ST-150</div>
+						<div class="procedure__time">30 мин</div>
+						<div class="procedure__cost">600 руб</div>
+						<a href="#" class="btn btn-white">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+
+					<div class="procedure__horizontal-line"></div>
+
+					<div class="procedure">
+						<div class="procedure__name">Упражнения на тренажере Гросса</div>
+						<div class="procedure__time">30 мин</div>
+						<div class="procedure__cost">1000 руб</div>
+						<a href="#" class="btn btn-white">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+
+					<div class="procedure__horizontal-line"></div>
+
+					<div class="procedure">
+						<div class="procedure__name">Разработка руки и мелкой моторики с использованием
+							реабилитационной перчатки</div>
+						<div class="procedure__time">30 мин</div>
+						<div class="procedure__cost">1000 руб</div>
+						<a href="#" class="btn btn-white">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+
+					<div class="image">
+						@@include('../public/images/icons/leaf-green.svg')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts-map">
+			<div class="container">
+
+				<div class="wrapper">
+					<div class="contacts-map__title title">
+						<h2 class="h1">Казанское шоссе, <br> д. 18, корпус 1, п.2</h2>
+					</div>
+
+					<div class="contacts-map__subtitle">
+						<p class="text-bold">Общество с ограниченной ответственностью “Меден”</p>
+					</div>
+
+					<div class="contacts-map__info">
+						<a href="tel:+78314290115" class="contacts-map__phone">+7 (831) 429 01 15</a>
+
+						<div class="contacts-map__shedule">
+							<p><span class="text-bold">Пн-Пт:</span> с 8:00 до 20:00</p>
+							<p><span class="text-bold">Сб:</span> по записи, с 9:00 до 15:00</p>
+							<p><span class="text-bold">Вс:</span> выходной день</p>
+						</div>
+						<a href="mailto:nn@ekzarta.ru" class="contacts-map__mail">nn@ekzarta.ru</a>
+					</div>
+
+					<div class="contacts-map__social">
+						<a href="" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="" class="btn btn-social">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+					</div>
+
+					<div class="contacts-map__button">
+						<a href="#" class="btn btn-red">
+							<span>записаться на прием</span>
+						</a>
+					</div>
+				</div>
+
+				<div id="map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A571b80e79bfb77e29096e8c3a12e20cd0bb60dc8c1fa35613cd28597b0b3fe6a&amp;source=constructor"
+						width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+
+				<div class="contacts__title title">
+					<h2 class="h1">Контакты</h2>
+				</div>
+
+				<div class="contacts-tabheader">
+					<div class="contacts-tabheader__items">
+						<div class="h5 contacts-tabheader__item contacts-tabheader__item_active">Контакты</div>
+						<div class="h5 contacts-tabheader__item">Медцентры</div>
+						<div class="h5 contacts-tabheader__item">Информация</div>
+						<div class="h5 contacts-tabheader__item">Документы</div>
+					</div>
+				</div>
+
+				<div class="contacts-tabcontent">
+
+					<div class="contacts-tabcontent__instances">
+
+						<div class="instance">
+							<h2>Общество с ограниченной ответственностью “Меден”</h2>
+
+							<div class="wrapper">
+
+								<div class="instance__wrapper">
+									<div class="instance__address text-small">
+										<p class="text-bold">Юридический адрес:</p>
+										<p>603087, Нижний Новгород, Казанское шоссе, д. 18, корп. 1,
+											п.2
+										</p>
+										<p class="text-bold">Адрес осуществления медицинской деятельности:
+										</p>
+										<p>603087, Нижний Новгород, Казанское шоссе, д. 18, корп. 1, п.2</p>
+									</div>
+									<div class="instance__info">
+										<a href="tel:+78314290115" class="instance__phone">+7 (831) 429 01 15</a>
+										<div class="instance__shedule">
+											<p><span class="text-bold">Пн-Пт:</span> с 8:00 до 20:00</p>
+											<p><span class="text-bold">Сб:</span> по записи, с 9:00 до 15:00</p>
+											<p><span class="text-bold">Вс:</span> выходной день</p>
+										</div>
+										<a href="mailto:nn@ekzarta.ru" class="instance__mail">nn@ekzarta.ru</a>
+									</div>
+									<div class="instance__social">
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+									</div>
+								</div>
+
+								<div class="instance__director text-small green-red">
+									<h3>График приема руководителей:</h3>
+									<p><span class="text-bold">Главный врач:</span> Корноухов Андрей
+										Евгеньевич</p>
+									<p>г. Нижний Новгород, Казанское шоссе, д. 18к1, пом. 2</p>
+									<p><span class="text-bold">Четверг:</span> 15:00-16:00</p>
+									<p>Прием осуществляется по предварительной записи у
+										администратора по телефону: <a href="tel:+78314290115">8 (831) 429-01-15</a></p>
+								</div>
+							</div>
+
+							<div class="instance__license blue">
+								<div class="instance__license-details text-small">
+									<p class="text-bold">Лицензия на медицинскую деятельность:</p>
+									<p>Л041-01164-52/00302018 от 02.04.2015 г. выданная Министерством здравоохранения
+										Нижегородской области</p>
+									<div class="requisites">
+										<p><span class="text-bold">ИНН</span>5262254643</p>
+										<p><span class="text-bold">ОГРН</span>1105262006651</p>
+									</div>
+								</div>
+								<div class="instance__license-names text-small">
+									<div class="doctors">
+										<p class="text-bold">Главный врач</p>
+										<p>Корноухов Андрей Евгеньевич</p>
+										<p class="text-bold">Заместитель главного врача</p>
+										<p>Дьякова Екатерина Валерьевна</p>
+									</div>
+									<div class="director">
+										<p class="text-bold">Директор</p>
+										<p>Бурмистрова Марина Евгеньевна</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="instance">
+							<h2>Автономная некоммерческая организация Медицинских услуг «Артровита» (ЖИЗНЬ СУСТАВОВ)
+							</h2>
+
+							<div class="wrapper">
+
+								<div class="instance__wrapper">
+									<div class="instance__address text-small">
+										<p class="text-bold">Юридический адрес:</p>
+										<p>603089, Нижний Новгород, ул. Республиканская, д. 43,
+											корпус 2,
+											пом. 2
+										</p>
+									</div>
+									<div class="instance__info">
+										<a href="tel:+78314290115" class="instance__phone">+7 (831) 429 01 15</a>
+										<div class="instance__shedule">
+											<p><span class="text-bold">Пн-Пт:</span> с 8:00 до 20:00</p>
+											<p><span class="text-bold">Сб, Вс:</span> выходной день</p>
+										</div>
+										<a href="mailto:nn@ekzarta.ru" class="instance__mail">nn@ekzarta.ru</a>
+									</div>
+									<div class="instance__social">
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+									</div>
+								</div>
+
+								<div class="instance__director text-small red-blue">
+									<h3>График приема руководителей:</h3>
+									<p><span class="text-bold">Главный врач:</span> Корноухов Андрей
+										Евгеньевич</p>
+									<p>Нижний Новгород, ул. Республиканская, д. 43к2, пом. 2</p>
+									<p><span class="text-bold">Среда:</span> 15:00-16:00</p>
+									<p>Прием осуществляется по предварительной записи у
+										администратора по телефону: <a href="tel:+78314290115">8 (831) 429-01-15</a></p>
+								</div>
+							</div>
+
+							<div class="instance__license red">
+								<div class="instance__license-details text-small">
+									<p class="text-bold">Лицензия на медицинскую деятельность:</p>
+									<p>Л041-01164-52/00326220 выданная Министерством здравоохранения Нижегородской
+										области, 31.07.2018</p>
+									<div class="requisites">
+										<p><span class="text-bold">ИНН</span>5262350555</p>
+										<p><span class="text-bold">ОГРН</span>1175275056538</p>
+									</div>
+								</div>
+								<div class="instance__license-names text-small">
+									<div class="doctors">
+										<p class="text-bold">Главный врач</p>
+										<p>Корноухов Андрей Евгеньевич</p>
+									</div>
+									<div class="director">
+										<p class="text-bold">Директор</p>
+										<p>Корсукова Елена Павловна</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="contacts-tabcontent">
+					<div class="contacts-tabcontent__medcenters">
+
+						<div class="medcenter">
+							<h2>Центр медицинской реабилитации "Экзарта" на Казанском шоссе</h2>
+
+							<div class="wrapper">
+								<div class="medcenter__wrapper">
+									<div class="medcenter__subtitle">
+										<p class="text-bold">603087, Нижний Новгород, Казанское шоссе, д. 18, корп. 1,
+											п.2
+										</p>
+									</div>
+									<div class="medcenter__info">
+										<a href="tel:+78314290115" class="medcenter__phone">+7 (831) 429 01 15</a>
+										<div class="medcenter__shedule">
+											<p><span class="text-bold">Пн-Пт:</span> с 8:00 до 20:00</p>
+											<p><span class="text-bold">Сб:</span> по записи, с 9:00 до 15:00</p>
+											<p><span class="text-bold">Вс:</span> выходной день</p>
+										</div>
+										<a href="mailto:nn@ekzarta.ru" class="medcenter__mail">nn@ekzarta.ru</a>
+									</div>
+									<div class="medcenter__social">
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+									</div>
+									<div class="medcenter__button">
+										<a href="#" class="btn btn-red">
+											<span>записаться на прием</span>
+										</a>
+									</div>
+								</div>
+								<div class="medcenter__map" id="map-1">
+									<iframe
+										src="https://yandex.ru/map-widget/v1/?um=constructor%3A571b80e79bfb77e29096e8c3a12e20cd0bb60dc8c1fa35613cd28597b0b3fe6a&amp;source=constructor"
+										width="100%" height="100%" frameborder="0"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<div class="medcenter">
+							<h2>Центр медицинской реабилитации "Экзарта" на Республиканской</h2>
+
+							<div class="wrapper">
+								<div class="medcenter__wrapper">
+									<div class="medcenter__subtitle">
+										<p class="text-bold">603089, Нижний Новгород, ул. Республиканская, д. 43к2, пом.
+											2
+										</p>
+									</div>
+									<div class="medcenter__info">
+										<a href="tel:+78314290115" class="medcenter__phone">+7 (831) 429 01 15</a>
+										<div class="medcenter__shedule">
+											<p><span class="text-bold">Пн-Пт:</span> с 8:00 до 20:00</p>
+											<p><span class="text-bold">Сб:</span> по записи, с 9:00 до 15:00</p>
+											<p><span class="text-bold">Вс:</span> выходной день</p>
+										</div>
+										<a href="mailto:nn@ekzarta.ru" class="medcenter__mail">nn@ekzarta.ru</a>
+									</div>
+									<div class="medcenter__social">
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+										<a href="" class="btn btn-social">
+											@@include('../public/images/icons/vk.svg')
+										</a>
+									</div>
+									<div class="medcenter__button">
+										<a href="#" class="btn btn-red">
+											<span>записаться на прием</span>
+										</a>
+									</div>
+								</div>
+								<div class="medcenter__map" id="map-2">
+									<iframe
+										src="https://yandex.ru/map-widget/v1/?um=constructor%3A571b80e79bfb77e29096e8c3a12e20cd0bb60dc8c1fa35613cd28597b0b3fe6a&amp;source=constructor"
+										width="100%" height="100%" frameborder="0"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts-tabcontent">
+					<div class="contacts-tabcontent__information">
+
+						<div class="wrapper">
+							<h2>Прейскурант на услуги</h2>
+							<div class="price-info">
+								<div class="price-info__item">
+									<p>Стоимость услуг устанавливается и оплачивается согласно прейскуранту,
+										действующего на
+										момент оказания соответствующей услуги.</p>
+								</div>
+								<div class="price-info__item">
+									<p>Уточнить стоимость услуг согласно действующего прейскуранта Вы можете в
+										регистратуре
+										клиники или по телефону:</p>
+									<a href="tel:+78314290115">8 (831) 429-01-15</a>
+								</div>
+								<div class="price-info__item">
+									<p>Администрация медицинской организации принимает все меры по своевременному
+										обновлению
+										размещенного на сайте прейскуранта.</p>
+								</div>
+								<div class="price-info__item">
+									<p>При обращении по вопросам, затрагивающим сведения, составляющие врачебную тайну,
+										просим иметь при себе паспорт.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrapper">
+							<h2>Информация об органах государственной власти, уполномоченных осуществлять контроль и
+								надзор
+							</h2>
+
+							<div class="government-info">
+								<div class="government-info__item">
+									<div class="government-info__title">
+										<h3>Министерство здравоохранения Нижегородской области</h3>
+									</div>
+									<div class="government-info__description">
+										<div class="address">
+											<p> <span>Адрес:</span> 603022, г. Нижний Новгород, ул. Малая Ямская, д. 78
+											</p>
+											<p><span>E-mail: </span><a
+													href="mailto:official@zdrav.kreml.nnov.ru">official@zdrav.kreml.nnov.ru</a>
+											</p>
+											<p><span>Сайт: </span><a href="https://zdrav-nnov.ru/"
+													target="_blank">https://zdrav-nnov.ru/</a></p>
+											<p><span>Тел.: </span><a href="tel:+78312509403">8 (831) 250-94-03</a></p>
+											<p><span>Факс: </span><a href="tel:+78314353073">8 (831) 435-30-73</a></p>
+										</div>
+										<div class="shedule">
+											<p class="text-bold">Режим работы:</p>
+											<p>Пн-Чт: с 09:00 до 18:00</p>
+											<p>Пт: с 09:00 до 17:00</p>
+											<p>Сб, Вс: выходной</p>
+										</div>
+									</div>
+								</div>
+								<div class="government-info__item">
+									<div class="government-info__title">
+										<h3>Территориальный орган Федеральной службы по надзору в сфере здравоохранения
+											по Нижегородской области</h3>
+									</div>
+									<div class="government-info__description">
+										<div class="address">
+											<p> <span>Адрес: </span>603950, г. Нижний Новгород, ул. Варварская, д. 32
+											</p>
+											<p><span>E-mail: </span><a
+													href="mailto:info@52reg.roszdravnadzor.ru">info@52reg.roszdravnadzor.ru</a>
+											</p>
+											<p><span>Сайт: </span><a href="https://52reg.roszdravnadzor.ru/"
+													target="_blank">https://52reg.roszdravnadzor.ru/</a></p>
+											<p><span>Тел.: </span><a href="tel:+78314199204">8 (831) 419-92-04</a></p>
+											<p><span>Факс: </span><a href="tel:+78314118424">8 (831) 411-84-24</a></p>
+										</div>
+										<div class="shedule">
+											<p class="text-bold">Режим работы:</p>
+											<p>Пн-Чт: с 09:00 до 18:00</p>
+											<p>Пт: с 9:00 до 16:45</p>
+											<p>Сб, Вс: выходной</p>
+										</div>
+									</div>
+								</div>
+								<div class="government-info__item">
+									<div class="government-info__title">
+										<h3>Управление Федеральной службы по надзору в сфере защиты прав потребителей
+											и благополучия человека по Нижегородской области</h3>
+									</div>
+									<div class="government-info__description">
+										<div class="address">
+											<p> <span>Адрес: </span>603950, г. Нижний Новгород, ул. Тургенева, д. 1
+											</p>
+											<p><span>E-mail: </span><a href="mailto:sanepid@sinn.ru">sanepid@sinn.ru</a>
+											</p>
+											<p><span>Сайт: </span><a href="https://www.52.rospotrebnadzor.ru/"
+													target="_blank">https://www.52.rospotrebnadzor.ru/</a></p>
+											<p><span>Тел.: </span><a href="tel:+78314367890">8 (831) 436-78-90</a></p>
+											<p><span>Факс: </span><a href="tel:+78314367873">8 (831) 436-78-73</a></p>
+										</div>
+										<div class="shedule">
+											<p class="text-bold">Режим работы:</p>
+											<p>Пн-Чт: с 08:30 до 17:15</p>
+											<p>Пт: с 9:00 до 16:00</p>
+											<p>Сб, Вс: выходной</p>
+											<p>Перерыв: 12:00 до 13:00</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="contacts-tabcontent">
+					<div class="contacts-tabcontent__documents">
+						<ul class="ul">
+							<li><a href="#">Заявление на справку для получения налогового вычета (ФОРМА)</a></li>
+							<li><a href="#">Программа государственных гарантий бесплатного оказания населению
+									медицинской помощи</a></li>
+							<li><a href="#">Программа государственных гарантий бесплатного оказания населению
+									Нижегородской области медицинской помощи</a></li>
+							<li><a href="#">Правила записи на первичный прием/обследование</a></li>
+						</ul>
+
+						<ul class="ul">
+							<li><a href="#">Правила оказания медицинских услуг Исполнителя</a></li>
+							<li><a href="#">Правила оказания медицинских услуг</a></li>
+							<li><a href="#">О правах и обязанностях граждан в сфере охраны здоровья</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="tabs">
+			<div class="container">
+
+				<div class="tabs-tabheader">
+					<div class="tabs-tabheader__items">
+						<div class="h5 tabs-tabheader__item tabs-tabheader__item_active">Детям</div>
+						<div class="h5 tabs-tabheader__item">Взрослым</div>
+						<div class="h5 tabs-tabheader__item">Всем-всем</div>
+						<div class="h5 tabs-tabheader__item">Маме</div>
+						<div class="h5 tabs-tabheader__item">Папе</div>
+					</div>
+				</div>
+				<div class="tabs-tabcontent"></div>
+				<div class="tabs-tabcontent"></div>
+				<div class="tabs-tabcontent"></div>
+				<div class="tabs-tabcontent"></div>
+				<div class="tabs-tabcontent"></div>
+
+
+				<div class="tabsfull-tabheader">
+					<div class="tabsfull-tabheader__items">
+						<div class="h5 tabsfull-tabheader__item tabsfull-tabheader__item_active">Детям</div>
+						<div class="h5 tabsfull-tabheader__item">Взрослым</div>
+						<div class="h5 tabsfull-tabheader__item">Всем-всем</div>
+						<div class="h5 tabsfull-tabheader__item">Маме</div>
+						<div class="h5 tabsfull-tabheader__item">Папе</div>
+						<div class="h5 tabsfull-tabheader__item">Бабушке</div>
+						<div class="h5 tabsfull-tabheader__item">Дедушке</div>
+					</div>
+				</div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+				<div class="tabsfull-tabcontent"></div>
+
+			</div>
+		</section>
+
+		<section class="gallery">
+			<div class="container">
+
+				<div class="gallery__title title">
+					<h2 class="h1">Галерея</h2>
+				</div>
+
+				<div class="psevdo-elements">
+					<div class="image">
+						@@include('../public/images/icons/bird.svg')
+					</div>
+					<div class="image">
+						@@include('../public/images/icons/bird.svg')
+					</div>
+					<div class="image">
+						@@include('../public/images/icons/bird.svg')
+					</div>
+				</div>
+
+				<div class="gallery__slider swiper">
+					<div class="gallery__slider-wrapper swiper-wrapper">
+
+						<div class="swiper-slide">
+							<a href="#" class="gallery__image">
+								<span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="gallery__image">
+								<span style="background-image: url('/images/demo/gallery/image2.png');"></span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="gallery__image">
+								<span style="background-image: url('/images/demo/gallery/image3.png');"></span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="gallery__image">
+								<span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="gallery__image">
+								<span style="background-image: url('/images/demo/gallery/image2.png');"></span>
+							</a>
+						</div>
+
+					</div>
+
+					<div class="gallery__slider-pagination pagination">
+						<div class="btn-prev swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="btn-next swiper-button-next"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="cta">
+			<div class="container">
+
+				<div class="wrapper">
+					<div class="cta__image">
+						<span style="background-image: url('/images/demo/reception.png');"></span>
+					</div>
+					<div class="cta__write">
+						<div class="cta__write-info">
+							<h2 class="h1">Оставьте заявку</h2>
+							<div class="cta__write-subtitle">Экспресс-консультация в подарок</div>
+							<p>Наш консультант перезвонит вам и назначит время приема.</p>
+						</div>
+						<div class="cta__write-contacts">
+							<a href="tel:+78314290115" class="cta__write-phone">+7 (831) 429 01 15</a>
+							<div class="cta__write-message">
+								<a href="https://t.me/mamrkurs" target="_blank" class="cta__write-link">
+									<span class="cta__write-text">Написать в</span>
+									@@include('../public/images/icons/telegram-blue.svg')
+								</a>
+							</div>
+							<a href="#" class="btn btn-red">
+								<span>записаться на прием</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="list marked col-2">
+			<div class="container">
+
+				<div class="list__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list__button">
+					<a href="#" class="btn btn-red">
+						<span>записаться на прием</span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="list marked col-3">
+			<div class="container">
+
+				<div class="list__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-electrode.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							@@include('../public/images/icons/noun/noun-infrared-lamp.svg')
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list__button">
+					<a href="#" class="btn btn-red">
+						<span>записаться на прием</span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="counters red">
+
+			<div class="counters__bg">
+				<span style="background-image: url('/images/demo/counters_bg.png');"></span>
+			</div>
+
+			<div class="container">
+				<div class="counters__info">
+					<div class="counters__info-item">
+						<span class="count">2000</span>
+						<p>пациентов проходит реабилитацию в центре за год</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">10</span>
+						<p>опыт работы специалистов в сфере реабилитации</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">100%</span>
+						<p>результат лечения с ремиссией</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">2</span>
+						<p>специализированных центра в Нижнем Новгороде</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="counters blue">
+
+			<div class="counters__bg">
+				<span style="background-image: url('/images/demo/counters_bg.png');"></span>
+			</div>
+
+			<div class="container">
+				<div class="counters__info">
+					<div class="counters__info-item">
+						<span class="count">2000</span>
+						<p>пациентов проходит реабилитацию в центре за год</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">10</span>
+						<p>опыт работы специалистов в сфере реабилитации</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">100%</span>
+						<p>результат лечения с ремиссией</p>
+					</div>
+					<div class="counters__info-item">
+						<span class="count">2</span>
+						<p>специализированных центра в Нижнем Новгороде</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="list numbered col-2">
+			<div class="container">
+
+				<div class="list__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="list__item">
+						<div class="list__item-img">
+							1
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							2
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							3
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							4
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list__button">
+					<a href="#" class="btn btn-red">
+						<span>записаться на прием</span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="list numbered col-2">
+			<div class="container">
+
+				<div class="list__title title">
+					<h2 class="h1">Заголовок</h2>
+				</div>
+
+				<div class="wrapper">
+
+					<div class="list__item">
+						<div class="list__item-img">
+							1
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							2
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							3
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							4
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							5
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+
+					<div class="list__item">
+						<div class="list__item-img">
+							6
+						</div>
+						<div class="list__item-info">
+							<h5>Заголовок в одну строку</h5>
+							<p>Также как существующая теория позволяет выполнить важные задания по разработке
+								экспериментов, поражающих по своей масштабности и грандиозности.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list__button">
+					<a href="#" class="btn btn-red">
+						<span>записаться на прием</span>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="footer">
+
+				<div class="footer__cta">
+					<div class="footer__cta-social">
+						<a href="#" class="btn btn-social btn-small">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social btn-small">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social btn-small">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+						<a href="#" class="btn btn-social btn-small">
+							@@include('../public/images/icons/vk.svg')
+						</a>
+					</div>
+
+					<a href="#" class="btn btn-long">
+						<span>Выбрать медцентр</span>
+					</a>
+					<a href="#" class="btn btn-long">
+						<span>Интернет-магазин</span>
+					</a>
+					<a href="#" class="btn btn-long">
+						<span>Школа реабилитации "Экзарта"</span>
+					</a>
+				</div>
+
+				<div class="footer__main">
+
+					<p>Медицинская помощь по системе ОМС не осуществляется</p>
+
+					<div class="footer__main-contact">
+						<a href="#" class="footer__main-logo">
+							@@include('../public/images/logo.svg')
+						</a>
+						<a href="tel:+78314290115" class="footer__main-phone">+7 (831) 429 01 15</a>
+						<a href="#" class="btn btn-red">
+							<span>записаться на прием</span>
+						</a>
+						<a href="mailto:nn@ekzarta.ru" class="footer__main-mail">nn@ekzarta.ru</a>
+					</div>
+
+					<div class="footer__main-menu">
+						<div class="footer__main-about">
+							<ul class="ul-footer main">
+								<li><a href="#">О медцентрах в Нижнем Новгороде</a></li>
+								<li><a href="#">Направления деятельности "Экзарта"</a></li>
+								<li><a href="#">Наши статьи</a></li>
+								<li><a href="#">Акции и скидки</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<a href="#" class="specialButton">Версия для слабовидящих</a>
+						</div>
+
+						<div class="footer__main-cooperation">
+							<span>Сотрудничество:</span>
+
+							<ul class="ul-footer main">
+								<li><a href="#">Франшиза</a></li>
+								<li><a href="#">Благотворительным фондам</a></li>
+								<li><a href="#">Страховым медицинским организациям</a></li>
+								<li><a href="#">Для корпоративных клиентов</a></li>
+							</ul>
+							<p>Медицинская помощь по системе ОМС не <br> осуществляется</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__docs">
+
+					<div class="footer__docs-left">
+						<ul class="ul-footer docs">
+							<li>Лицензия на осуществление медицинской деятельности
+								Л041-01164-52/00302018
+							</li>
+							<li>Лицензия на осуществление медицинской деятельности
+								Л041-01164-52/00326220
+							</li>
+							<li><a href="#">Заявка на налоговый вычет</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__docs-right">
+						<ul class="ul-footer docs">
+							<li><a href="#">Порядок рассмотрения обращения граждан</a></li>
+							<li><a href="#">Политика обработки персональных данных</a></li>
+							<li><a href="#">Свидетельство на товарный знак № 744284 от 29.01.2020г</a></li>
+						</ul>
+						<ul class="ul-footer docs">
+							<li><a href="#">Политика конфиденциальности</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<div class="menu-overlay hide"></div>
+
+	<script src="/bundles/webpack/vendor.bundle.js"></script>
+	<script src="/bundles/webpack/app.bundle.js"></script>
+
+</body>
+
+</html>

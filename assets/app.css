@@ -1,0 +1,68 @@
+@import url(css/_reset.css);
+@import url(../public/node_modules/visually-impaired-plugin/css/special-hover.min.css);
+
+@import url(css/_mixin.css);
+@import url(css/_variables.css);
+@import url(css/_fonts.css);
+@import url(css/_swiper.css);
+
+@import url(css/_default.css);
+@import url(css/header.css);
+@import url(css/footer.css);
+@import url(css/admin.css);
+@import url(blocks/modal/bootstrap.css);
+@import url(blocks/modal/style.css);
+
+@import url(css/sections/start.css);
+@import url(css/sections/consultation.css);
+@import url(css/sections/diseases.css);
+@import url(css/sections/methods.css);
+@import url(css/sections/stages.css);
+@import url(css/sections/specialists.css);
+@import url(css/sections/reviews.css);
+@import url(css/sections/social.css);
+@import url(css/sections/promotion.css);
+@import url(css/sections/funds.css);
+@import url(css/sections/awards.css);
+@import url(css/sections/articles.css);
+
+@import url(css/sections/internal/first-screen.css);
+@import url(css/sections/internal/services-category.css);
+@import url(css/sections/internal/article.css);
+@import url(css/sections/internal/equipment.css);
+@import url(css/sections/internal/faq.css);
+@import url(css/sections/internal/error-404.css);
+@import url(css/sections/internal/prices.css);
+@import url(css/sections/internal/price-procedure.css);
+@import url(css/sections/internal/contacts.css);
+@import url(css/sections/internal/tabs.css);
+@import url(css/sections/internal/gallery.css);
+@import url(css/sections/internal/cta.css);
+@import url(css/sections/internal/list.css);
+@import url(css/sections/internal/counters.css);
+
+@import url(css/sections/medcenters/maincenter-start.css);
+@import url(css/sections/medcenters/maincenter-social.css);
+@import url(css/sections/medcenters/allcenter-start.css);
+@import url(css/sections/medcenters/allcenter-choose.css);
+@import url(css/sections/medcenters/allcenter-3d.css);
+@import url(css/sections/medcenters/allcenter-social.css);
+@import url(css/sections/medcenters/allcenter-gallery.css);
+@import url(css/sections/medcenters/nn_center-start.css);
+@import url(css/sections/medcenters/nn_center-choose.css);
+@import url(css/sections/medcenters/nn_center-3d.css);
+@import url(css/sections/medcenters/nn_center-social.css);
+@import url(css/sections/medcenters/nn_center-gallery.css);
+
+@import url(css/sections/online/online-start.css);
+@import url(css/sections/online/online-doctor.css);
+@import url(css/sections/online/online-feedback.css);
+@import url(css/sections/online/directions.css);
+@import url(css/sections/online/directions-list.css);
+@import url(css/sections/online/directions-article.css);
+@import url(css/sections/online/directions-graphics.css);
+@import url(css/sections/online/directions-reviews.css);
+@import url(css/sections/online/directions-funds.css);
+@import url(css/sections/online/directions-for.css);
+@import url(css/sections/online/directions-articles.css);
+@import url(css/sections/online/funds-info.css);

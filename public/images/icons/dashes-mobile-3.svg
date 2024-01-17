@@ -1,0 +1,9 @@
+<svg width="10" height="70" viewBox="0 0 10 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<circle id="Ellipse 66" cx="5" cy="5" r="5" fill="white"/>
+<rect id="Rectangle 182" x="4" y="15" width="2" height="10" rx="1" fill="white"/>
+<circle id="Ellipse 65" cx="5" cy="5" r="5" transform="matrix(1 0 0 -1 0 70)" fill="#FEECEC"/>
+<rect id="Rectangle 102" width="2" height="10" rx="1" transform="matrix(1 0 0 -1 4 55)" fill="#FEECEC"/>
+<rect id="Rectangle 104" width="2" height="10" rx="1" transform="matrix(1 0 0 -1 4 40)" fill="#FEECEC"/>
+</g>
+</svg>

@@ -1,0 +1,160 @@
+.article {
+
+    ul, ol {
+        list-style: disc;
+        margin-bottom: 23px;
+        margin-left: 15px;
+        padding-left: 10px;
+
+        ul {
+            list-style: circle;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            &::marker {
+                color: #3e5798;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    p {
+        margin-bottom: 30px;
+        
+        &.text-bold {
+            margin-bottom: 10px;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 570px;
+
+        p {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__image {
+        width: 570px;
+        height: 450px;
+
+        border-radius: 40px;
+        overflow: hidden;
+
+        position: relative;
+        right: 0;
+        top: 0;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            @mixin bgc;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .article {
+
+        .wrapper {
+            flex-direction: column;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            width: 100%;
+            order: 2;
+        }
+
+        &__image {
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+            order: 1;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            text-align: right;
+            display: block;
+            margin-top: 30px;
+        }
+
+        ul, ol {
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .article {
+
+        ul, ol {
+            margin-bottom: 29px;
+            margin-left: 19px;
+            padding-left: 13px;
+    
+            ul {
+                margin-top: 13px;
+            }
+    
+            li {
+                margin-bottom: 13px;
+            }
+        }
+
+        p {
+            margin-bottom: 38px;
+            
+            &.text-bold {
+                margin-bottom: 13px;
+            }
+        }
+
+        &__text {
+            width: 713px;
+    
+            p {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__image {
+            width: 713px;
+            height: 563px;
+            border-radius: 50px;
+        }
+    }
+}

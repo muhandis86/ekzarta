@@ -1,0 +1,102 @@
+{
+  "name": "oriflame-beauty",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "gulpfile.js",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Chrome >= 52",
+              "FireFox >= 44",
+              "Safari >= 7",
+              "Explorer 11",
+              "last 4 Edge versions"
+            ]
+          },
+          "useBuiltIns": true
+        }
+      ]
+    ],
+    "ignore": [
+      "node_modules"
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties",
+      "syntax-class-properties"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/w-not/oriflame-beauty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/w-not/oriflame-beauty#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.23.2",
+    "clean-webpack-plugin": "^0.1.18",
+    "exports-loader": "^0.6.4",
+    "expose-loader": "^0.7.4",
+    "gulp": "^4.0.0",
+    "gulp-cache-bust": "git+https://github.com/avlasof/gulp-cache-bust.git",
+    "gulp-clean": "^0.4.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-git": "^2.5.1",
+    "gulp-header": "^1.8.9",
+    "gulp-htmlhint": "^4.0.2",
+    "gulp-if": "^2.0.2",
+    "gulp-image": "^4.2.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-real-favicon": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-smushit": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "lost": "^8.2.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "postcss-assets": "^5.0.0",
+    "postcss-base64": "^0.7.1",
+    "postcss-cachebuster": "^0.1.6",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-csso": "^3.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^3.0.0",
+    "postcss-nested-ancestors": "^1.0.0",
+    "rucksack-css": "^1.0.2",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.29",
+    "cachebust": "^2.3.0",
+    "imask": "^6.6.3",
+    "jquery": "^3.3.1"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
+  }
+}

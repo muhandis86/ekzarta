@@ -1,0 +1,398 @@
+.modal {
+    background: rgba(225, 230, 255, 0.50);
+
+    &-dialog {
+        width: 570px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        min-height: calc(100% - 200px);
+    }
+
+    &-content {
+        position: relative;
+        padding: 51px 70px 70px 70px;
+        border-radius: 40px;
+        background: #FFF;
+        box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+        &:before {
+            content:'';
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            @mixin icon leaf-green;
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            transform: rotate(-90deg);
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: 0;
+            right: 0;
+            @mixin icon leaf-blue;
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            transform: rotate(-180deg);
+        }
+    }
+
+    &-video {
+        & .modal {
+            &-dialog {
+                margin: 0 auto;
+                margin-top: 30px;
+                width: 80vw;
+                height: calc(80vw / 16 * 9);
+            }
+
+            &-content {
+                padding: 50px 90px;
+                width: 80vw;
+                height: calc(80vw / 16 * 9);
+            }
+        }
+
+        &__iframe {
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;
+            top: 50px;
+            left: 90px;
+            width: calc(100% - 180px);
+            height: calc(100% - 100px);
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &.jsModalMessage {
+        .modal-content {
+            width: 100%;
+            padding: 50px 70px 80px;
+        }
+    }
+
+    &.jsModalReview {
+        .modal-dialog {
+            width: 770px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: -9px;
+            left: -20px;
+            z-index: -1;
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 40px 0px 40px 40px;
+            background: #FDDCDD;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    form p {
+        margin-bottom: 30px;
+        a {
+            color: #3E5798;
+        }
+    }
+
+    .form__button {
+        text-align: right;
+    }
+
+    &__box {
+        &-close {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            right: 25px;
+            z-index: 5;
+            background: none;
+            @mixin icon close;
+            @mixin bgc;
+            cursor: pointer;
+        }
+
+        &-message {
+            &__image {
+                width: 120px;
+                height: 97px;
+                margin: 0 auto 30px;
+
+                i {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    @mixin bgc;
+                }
+            }
+
+            h3 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 320px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .modal {
+        padding-left: 0 !important;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        &-dialog {
+            width: calc(100vw - 30px);
+            margin-top: 80px;
+        }
+
+        &-content {
+            padding: 50px 20px;
+            border-radius: 25px;
+            box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+
+            &:before, &:after {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &-video {
+            
+            & .modal {
+                &-dialog {
+                    margin: 0 auto;
+                    margin-top: 80px;
+                    width: 90vw;
+                    height: calc(90vw / 16 * 9);
+                }
+    
+                &-content {
+                    padding: 25px 35px;
+                    width: 90vw;
+                    height: calc(90vw / 16 * 9);
+                }
+            }
+
+            &__iframe {
+                top: 20px;
+                left: 30px;
+                width: calc(100% - 60px);
+                height: calc(100% - 40px);
+            }
+        }
+
+        &.jsModalFeedback {
+            .modal-content {
+                max-width: 560px;
+            }
+        }
+
+        &.jsModalMessage {
+            .modal-content {
+                max-width: 400px;
+                padding: 50px 20px;
+            }
+        }
+
+        &.jsModalReview {
+            .modal-dialog {
+                width: calc(100vw - 30px);
+            }
+
+            .modal-content {
+                max-width: 560px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            padding-left: 10px;
+
+            &:before {
+                top: -9px;
+                left: -5px;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px 0px 25px 25px;
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    
+        form p {
+            margin-bottom: 20px;
+        }
+
+        .form__button {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__box {
+            &-close {
+                width: 20px;
+                height: 20px;
+                top: 15.5px;
+                right: 15.5px;
+            }
+
+            &-message {
+                &__image {
+                    width: 100px;
+                    height: 77px;
+                    margin: 0 auto 20px;
+                }
+
+                p {
+                    width: auto;
+                    max-width: 280px;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .modal {
+        &-dialog {
+            width: 713px;
+            margin-top: 150px;
+            margin-bottom: 125px;
+            min-height: calc(100% - 250px);
+        }
+
+        &-content {
+            padding: 64px 88px 88px 88px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+    
+            &:before {
+                width: 100px;
+                height: 100px;    
+            }
+    
+            &:after {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &-video {
+            & .modal {
+                &-dialog {
+                    margin-top: 38px;
+                }
+    
+                &-content {
+                    padding: 63px 113px;
+                }
+            }
+    
+            &__iframe {
+                border-radius: 13px;
+            }
+        }
+
+        &.jsModalMessage {
+            .modal-content {
+                padding: 63px 88px 100px;
+            }
+        }
+    
+        &.jsModalReview {
+            .modal-dialog {
+                width: 963px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 63px;
+    
+            &:before {
+                top: -11px;
+                left: -25px;
+                width: 88px;
+                height: 88px;
+                border-radius: 50px 0px 50px 50px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+    
+        form p {
+            margin-bottom: 38px;
+        }
+
+        &__box {
+            &-close {
+                width: 38px;
+                height: 38px;
+                top: 31px;
+                right: 31px;
+            }
+    
+            &-message {
+                &__image {
+                    width: 150px;
+                    height: 121px;
+                    margin: 0 auto 38px;
+                }
+    
+                h3 {
+                    margin-bottom: 13px;
+                }
+    
+                p {
+                    width: 400px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}

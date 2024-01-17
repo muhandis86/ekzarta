@@ -1,0 +1,243 @@
+.online-doctor {
+
+    &__personal {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+
+        .doctor {
+            display: flex;
+            gap: 20px;
+            width: 570px;
+            min-height: 513px;
+            flex-shrink: 0;
+            position: relative;
+            padding: 40px 30px 50px;
+            border-radius: 40px;
+            background: #FFFEFE;
+            box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+            &__image {
+
+                .image {
+                    position: relative;
+                    flex-shrink: 0;
+                    z-index: 2;
+                    margin-bottom: 50px;
+                    width: 170px;
+                    height: 170px;
+                    
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        @mixin icon leaf-blue;
+                        width: 70px;
+                        height: 70px;
+                        background-size: contain;
+                    }
+            
+                    &:after {
+                        content:'';
+                        position: absolute;
+                        bottom: -20px;
+                        left: 90px;
+                        z-index: -1;
+                        @mixin icon leaf-green;
+                        width: 80px;
+                        height: 80px;
+                        background-size: contain;
+                        transform: scaleX(-1);
+                    }    
+    
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 85px 85px 85px 0px;
+                        background: lightgray 50% / cover no-repeat;
+    
+                        svg {
+                            width: 111px;
+                            height: 91px;
+        
+                            path {
+                                fill: rgba(255, 60, 98, 0.50);
+                            }
+                        }
+                    }
+                }
+
+                &-button {
+                    text-align: center;
+                }
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    color: #3E5798;
+                }
+
+                h4 {
+                    margin-top: 40px;
+                    span {
+                        color: #4B5658;
+                    }
+                }
+
+                &-button {
+                    text-align: right;
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .online-doctor {
+
+        &__personal {
+            row-gap: 40px;
+
+            .doctor {
+                width: 100%;
+                min-height: auto;
+                border-radius: 85px 20px 20px 20px;
+                padding: 20px 30px 80px 10px;
+
+                                   
+
+                &__image {
+
+                    .image {
+                        width: 130px;
+                        height: 130px;
+                        margin-bottom: 0;
+    
+                        &:before, &:after {
+                            display: none;
+                        }
+    
+                        span {
+                            svg {
+                                width: 91px;
+                                height: 71px;
+                            }
+                        }
+                    }
+
+                    &-button {
+                        margin-top: 20px;
+                        .btn span {
+                            font-size: 12px;
+                        }
+                    }
+                }    
+
+                &__info {
+                    width: 100%;
+                    gap: 15px;
+
+                    p {
+                        font-size: 12px;
+                    } 
+
+                    span {
+                        font-size: 14px;
+                    }
+    
+                    h4 {
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                    }
+    
+                    &-button {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin-bottom: 20px;
+                        transform: translateX(-50%);
+                    }
+                }           
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .online-doctor {
+
+        &__personal {
+            row-gap: 63px;
+    
+            .doctor {
+                gap: 25px;
+                width: 713px;
+                min-height: 641px;
+                padding: 50px 38px 63px;
+                border-radius: 50px;
+                box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                &__image {
+    
+                    .image {
+                        margin-bottom: 63px;
+                        width: 213px;
+                        height: 213px;
+                        
+                        &:before {
+                            width: 88px;
+                            height: 88px;
+                        }
+                
+                        &:after {
+                            bottom: -25px;
+                            left: 113px;
+                            width: 100px;
+                            height: 100px;
+                        }    
+        
+                        span {
+                            border-radius: 106px 106px 106px 0px;
+        
+                            svg {
+                                width: 139px;
+                                height: 114px;
+                            }
+                        }
+                    }
+                }
+    
+                &__info {
+    
+                    h3 {
+                        margin-bottom: 25px;
+                    }
+    
+                    h4 {
+                        margin-top: 50px;
+                    }
+    
+                    &-button {
+                        margin-top: 88px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.tabs {
+
+    &-tabheader, &full-tabheader {
+
+        margin-bottom: 50px;
+        text-align: center;
+
+        &__items {
+            display: inline-flex;
+            border-radius: 20px;
+            background: #F6F9FF;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            color: #4B5658;
+            cursor: pointer;
+            padding: 9px 50px;
+            white-space: nowrap;
+
+            &_active {
+                border-radius: 20px;
+                background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+                box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.15);
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .tabs {
+
+        &-tabheader, &full-tabheader {
+        
+            overflow-x: scroll;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+
+            &__item {
+                font-size: 14px;
+                padding: 7px 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .tabs {
+
+        &-tabheader, &full-tabheader {
+            margin-bottom: 63px;
+    
+            &__items {
+                border-radius: 25px;
+            }
+    
+            &__item {
+                padding: 11px 63px;
+    
+                &_active {
+                    border-radius: 25px;
+                    box-shadow: 0px 0px 38px 0px rgba(62, 87, 152, 0.15);
+                }
+            }
+        }
+    }
+}

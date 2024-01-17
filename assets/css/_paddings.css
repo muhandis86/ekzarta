@@ -1,0 +1,27 @@
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-t-30 {
+    padding-top: 30px;
+}
+
+
+@media (min-width: 1920px) {
+
+    .p-t-10 {
+        padding-top: 13px !important;
+    }
+    
+    .p-t-20 {
+        padding-top: 25px !important;
+    }
+    
+    .p-t-30 {
+        padding-top: 38px !important;
+    }
+}

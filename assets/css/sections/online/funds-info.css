@@ -1,0 +1,203 @@
+.funds-info {
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 570px;
+        min-height: 379px;
+        flex-shrink: 0;
+        border-radius: 40px;
+        background: #FFFEFE;
+        box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+        padding: 40px 40px 50px 30px;
+        display: flex;
+        gap: 20px;
+
+        position: relative;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            z-index: 1;
+            @mixin icon leaf-blue;
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: 150.13px;
+            left: 125.13px;
+            z-index: 1;
+            @mixin icon circle-red;
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+            transform: rotate(67.064deg);
+        }
+
+        &-img {
+            width: 170px;
+            height: 170px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.50);
+            box-shadow: 0px 0px 50px rgba(62, 87, 152, 0.10);
+            border-radius: 85px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            z-index: 5;
+
+            span {
+                width: 90%;
+                height: 90%;
+                @mixin bgc;
+            }
+        }
+
+        &-descr {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h3 {
+                margin-bottom: 40px;
+            }
+
+            a {
+                color: #3E5798;
+            }
+
+            .phone {
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .foot {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .funds-info {
+
+        .wrapper {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__item {
+
+            width: 100%;
+            flex-direction: column;
+            min-height: auto;
+            border-radius: 25px;
+            padding: 20px 20px 30px;
+            gap: 30px;
+
+            &:before {
+                top: 30px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                transform: translateX(calc(-50% - 50px));
+            }
+    
+            &:after {
+                top: 105.13px;
+                left: calc(50% + 15px);
+                width: 50px;
+                height: 50px;
+                transform: rotate(67.064deg);
+            }
+    
+            &-img {
+                width: 130px;
+                height: 130px;
+                flex-shrink: 0;
+    
+                margin: 0 auto;
+            }
+
+            &-descr {
+                gap: 30px;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+    
+                a {
+                    font-size: 14px;
+                }
+    
+                .phone {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+    
+                .foot {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .funds-info {
+
+        &__item {
+            width: 713px;
+            min-height: 474px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+            padding: 50px 50px 63px 38px;
+            gap: 25px;
+    
+            &:before {
+                top: 50px;
+                left: 38px;
+                width: 88px;
+                height: 88px;
+            }
+    
+            &:after {
+                top: 188px;
+                left: 156px;
+                width: 88px;
+                height: 88px;
+            }
+    
+            &-img {
+                width: 213px;
+                height: 213px;
+                box-shadow: 0px 0px 63px rgba(62, 87, 152, 0.10);
+                border-radius: 106px;
+            }
+    
+            &-descr {
+    
+                h3 {
+                    margin-bottom: 50px;
+                }
+    
+                .phone {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}

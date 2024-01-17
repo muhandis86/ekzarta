@@ -1,0 +1,1111 @@
+.contacts {
+
+    &-tabheader {
+
+        margin-bottom: 50px;
+        text-align: center;
+
+        &__items {
+            display: inline-flex;
+            border-radius: 20px;
+            background: #F6F9FF;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            color: #4B5658;
+            cursor: pointer;
+            padding: 9px 50px;
+            white-space: nowrap;
+
+            &_active {
+                border-radius: 20px;
+                background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+                box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.15);
+            }
+        }
+    }
+
+    &-tabcontent {
+
+        &__instances {
+
+            .instance {
+                margin-bottom: 100px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                h2 {
+                    margin-bottom: 50px;
+                }
+
+                .wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+                }
+
+                &__address {
+                    margin-bottom: 32px;
+                    p {
+                        margin-bottom: 20px;
+                        &.text-bold {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                &__info {
+                    margin-bottom: 20px;
+                }
+
+                &__phone {
+                    color: #3E5798;
+                    font-size: 28px;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                }
+
+                &__shedule {
+                    margin: 20px 0;
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+        
+                &__mail {
+                    color: #3E5798;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 20px;
+                }
+        
+                &__social {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                &__director {
+                    width: 570px;
+                    min-height: 331px;
+                    padding: 40px;
+                    position: relative;
+                    border-radius: 30px;
+                    background: rgba(255, 255, 255, 0.20);
+                    box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+                    p {
+                        margin-bottom: 20px;
+                        position: relative;
+                        z-index: 3;
+                    }
+
+                    a {
+                        color: #3E5798;
+                    }
+
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        bottom: -33px;
+                        left: -30px;
+                        width: 100px;
+                        height: 100px;
+                        opacity: .7;
+                    }
+
+                    &:after {
+                        content:'';
+                        position: absolute;
+                        top: -38px;
+                        right: -30px;
+                        width: 100px;
+                        height: 100px;
+                        opacity: .7;
+                    }
+
+                    &.green-red {
+                        &:before {
+                            @mixin icon leaf-green;
+                        }
+                        &:after {
+                            @mixin icon leaf-red;
+                        }
+                    }
+
+                    &.red-blue {
+                        &:before {
+                            @mixin icon leaf-red;
+                        }
+                        &:after {
+                            @mixin icon leaf-blue;
+                            transform: scaleX(-1);
+                        }
+                    }
+                }
+
+                &__license {
+
+                    display: flex;
+                    gap: 71px;
+                    width: 1290px;
+                    min-height: 217px;
+                    margin-left: -60px;
+                    padding: 40px 60px;
+                    
+                    border-radius: 40px;
+                    position: relative;
+                    overflow: hidden;
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        display: block;
+                        width: 1290px;
+                        height: 217px;
+                        opacity: .5; 
+                    }
+
+                    &.red:before{
+                        background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+                    }
+
+                    &.blue:before {
+                        background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+                    }
+
+                    &.green:before {
+                        background: url("/images/demo/underlay-green.png") lightgray 50% / cover no-repeat;
+                    }
+
+                    &-details {
+                        width: 529px;
+                        p {
+                            margin-bottom: 10px;
+                            span {
+                                margin-right: 10px;
+                            }
+                        }
+                        .requisites {
+                            margin-top: 30px;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-right: 69px;
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    &-names {
+                        display: flex;
+                        p {
+                            margin-bottom: 20px;
+                            &.text-bold {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .doctors {
+                            width: 299px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__medcenters {
+
+            .medcenter {
+                
+                margin-bottom: 100px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                h2 {
+                    margin-bottom: 50px;
+                }
+
+                > .wrapper {
+                    min-height: 500px;
+                }
+
+                &__wrapper {
+                    width: 50%;
+                }
+        
+                &__info {
+                    margin: 30px 0;
+                }
+        
+                &__shedule {
+                    margin: 20px 0;
+        
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+        
+                &__phone {
+                    color: #3E5798;
+                    font-size: 28px;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                }
+        
+                &__mail {
+                    color: #3E5798;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 20px;
+                }
+        
+                &__social {
+                    margin-bottom: 51px;
+                    display: flex;
+                    gap: 20px;
+                }
+        
+                &__map {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 500px;
+                    
+                    overflow:hidden;
+                    border-radius: 40px;
+                    box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+                }
+            }
+        }
+
+        &__information {
+
+            h2 {
+                width: 764px;
+                margin-bottom: 50px;
+            }
+
+            .price-info {
+
+                display: flex;
+                justify-content:space-between;
+                flex-wrap: wrap;
+                row-gap: 50px;
+                margin-bottom: 100px;
+
+                &__item {
+                    position: relative;
+                    width: 570px;
+                    padding: 30px 70px 40px 100px;
+                    border-radius: 40px;
+                    background: #FDFDFD;
+                    box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+                    a {
+                        color: #3E5798;
+                    }
+
+                    &:before {
+                        content:'!';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 40px 0 40px 40px;
+                        background: #D2F8E6;
+
+                        color: #3E5798;
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .government-info {
+
+                &__item {
+                    display: flex;
+                    gap: 30px;
+                    margin-bottom: 50px;
+                    border-radius: 40px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__title {
+                    padding: 0 50px;
+                    display: flex;
+                    align-items: center;
+                    width: 370px;
+                    border-radius: 40px;
+                    background: url(/images/demo/underlay-blue.png) lightgray 50% / cover no-repeat;
+                    
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__description {
+                    display: flex;
+                    padding: 50px 0;
+                    gap: 30px;
+
+                    .address {
+                        width: 370px;
+
+                        p {
+                            margin-bottom: 20px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        span {
+                            font-weight: 500;
+                        }
+
+                        a {
+                            color: #3E5798;
+                        }
+                    }
+
+                    .shedule {
+                        width: 370px;
+
+                        p {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__documents {
+
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                width: 570px;
+
+                li {
+                    margin-bottom: 20px;
+                    padding-left: 30px;
+                    position: relative;
+                    a {
+                        color: #3E5798;
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        @mixin icon fluent_document;
+                        width: 20px;
+                        height: 20px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &-map {
+
+        min-height: 826px;
+        position: relative;
+
+        .wrapper {
+            width: 50%;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__info {
+            margin: 30px 0;
+        }
+
+        &__shedule {
+            margin: 20px 0;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__phone {
+            color: #3E5798;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        &__mail {
+            color: #3E5798;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 20px;
+        }
+
+        &__social {
+            margin-bottom: 51px;
+            display: flex;
+            gap: 20px;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            max-width: 945px;
+            height: 726px;
+            
+            overflow:hidden;
+            border-radius: 40px 0px 0px 40px;
+            box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .contacts {
+
+        &-tabheader {
+            overflow-x: auto;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+
+
+            &__item {
+                font-size: 14px;
+                padding: 7px 40px;
+            }
+        }
+
+        &-tabcontent {
+
+            &__instances {
+
+                .instance {
+                    margin-bottom: 70px;
+
+                    h2 {
+                        margin-bottom: 30px;
+                    }
+
+                    .wrapper {
+                        flex-wrap: wrap;
+                        gap: 50px;
+                    }
+
+                    &__address {
+                        margin-bottom: 25px;
+                    }
+
+                    &__director {
+
+                        width: 100%;
+                        height: auto;
+                        padding: 20px 20px 30px 20px;
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+
+                        &:before, &:after {
+                            display: none;
+                        }
+
+                        p {
+                            margin-bottom: 15px;
+
+                            &:last-child {
+                            margin-bottom: 0;
+                            }
+                        }
+
+                        a {
+                            display: block;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    &__license {
+                        width: 100%;
+                        height: auto;
+                        flex-wrap: wrap;
+                        gap: 30px;
+
+                        margin-left: 0;
+                        padding: 20px 20px 30px 20px;
+                        border-radius: 20px;                        
+
+                        &:before {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &-details {
+                            width: 100%;
+                            p {
+                                span {
+                                    margin-right: 6px;
+                                }
+                            }
+                            .requisites {
+                                margin-top: 15px;
+                                padding-right: 0;
+                                p {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+
+                        &-names {
+                            width: 100%;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            row-gap: 15px;
+
+                            p {
+                                margin-bottom: 15px;
+                                &.text-bold {
+                                    margin-bottom: 5px;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            .doctors {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__medcenters {
+
+                .medcenter {
+                    margin-bottom: 70px;
+
+                    h2 {
+                        margin-bottom: 30px;
+                    }
+
+                    > .wrapper {
+                        min-height: auto;
+                    }
+
+                    &__wrapper {
+                        width: 100%;
+                    }
+
+                    &__info {
+                        margin: 20px 0;
+                    }
+
+                    &__shedule {
+                        margin: 15px 0;
+            
+                        p {
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &__social {
+                        margin-bottom: 30px;
+                    }
+
+                    &__button {
+                        text-align: right;
+                    }
+
+                    &__map {
+                        position: static;
+                        width: 100%;
+                        height: 350px;
+                        margin-top: 50px;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+                    }
+                }
+            }
+
+            &__information {
+
+                h2 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .price-info {
+                    row-gap: 30px;
+                    margin-bottom: 50px;
+
+                    &__item {
+                        width: 100%;
+                        padding: 20px 20px 20px 60px;
+                        box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+                        border-radius: 20px;
+
+                        &:before {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 20px 0 20px 20px;
+                            font-size: 30px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            margin-top: 5px;
+                            display: block;
+                        }
+                    }
+                }
+                
+                .government-info {
+
+                    &__item {
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        margin-bottom: 30px;
+                        border-radius: 20px;
+                    }
+
+                    &__title {
+                        width: 100%;
+                        padding: 15px;
+                        border-radius: 20px;
+                    }
+
+                    &__description { 
+                        padding: 0 15px 20px 15px;
+                        gap: 20px;
+                        flex-wrap: wrap;
+
+                        .address {
+                            width: 100%;
+    
+                            p {
+                                margin-bottom: 10px;
+                            }
+                        }
+    
+                        .shedule {
+                            width: 100%;
+    
+                            p {
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__documents {
+
+                flex-direction: column;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        margin-bottom: 10px;
+                        padding-left: 25px;
+                        font-size: 14px;
+
+                        &:before {
+                            width: 15px;
+                            height: 15px;
+                            top: 3px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-map {
+            min-height: auto;
+
+            .wrapper {
+                width: 100%;
+            }
+
+            &__social {
+                margin-bottom: 30px;
+            }
+
+            &__button {
+                text-align: right;
+            }
+
+            #map {
+                position: static;
+                width: 100%;
+                height: 400px;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .contacts {
+
+        &-tabheader {
+            margin-bottom: 63px;
+    
+            &__items {
+                border-radius: 25px;
+            }
+    
+            &__item {
+                padding: 11px 63px;
+    
+                &_active {
+                    border-radius: 25px;
+                    box-shadow: 0px 0px 38px 0px rgba(62, 87, 152, 0.15);
+                }
+            }
+        }
+
+        &-tabcontent {
+
+            &__instances {
+    
+                .instance {
+                    margin-bottom: 125px;
+    
+                    h2 {
+                        margin-bottom: 63px;
+                    }
+    
+                    .wrapper {
+                        margin-bottom: 63px;
+                    }
+    
+                    &__address {
+                        margin-bottom: 40px;
+                        p {
+                            margin-bottom: 25px;
+                            &.text-bold {
+                                margin-bottom: 13px;
+                            }
+                        }
+                    }
+    
+                    &__info {
+                        margin-bottom: 25px;
+                    }
+    
+                    &__phone {
+                        font-size: 35px;
+                        margin-bottom: 25px;
+                    }
+    
+                    &__shedule {
+                        margin: 25px 0;
+                        p {
+                            margin-bottom: 13px;
+                        }
+                    }
+            
+                    &__mail {
+                        font-size: 23px;
+                        margin-top: 25px;
+                    }
+            
+                    &__social {
+                        gap: 25px;
+                    }
+    
+                    &__director {
+                        width: 713px;
+                        height: 414px;
+                        padding: 50px;
+                        border-radius: 38px;
+                        box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                        p {
+                            margin-bottom: 25px;
+                        }
+    
+                        &:before {
+                            bottom: -41px;
+                            left: -38px;
+                            width: 125px;
+                            height: 125px;
+                        }
+    
+                        &:after {
+                            top: -48px;
+                            right: -38px;
+                            width: 125px;
+                            height: 125px;
+                        }
+
+                        &.green-red {
+                            &:before {
+                                background-size: contain;
+                            }
+                            &:after {
+                                background-size: contain;
+                            }
+                        }
+    
+                        &.red-blue {
+                            &:before {
+                                background-size: contain;
+                            }
+                            &:after {
+                                background-size: contain;
+                            }
+                        }
+                    }
+    
+                    &__license {
+                        gap: 89px;
+                        width: 1613px;
+                        height: 271px;
+                        margin-left: -75px;
+                        padding: 50px 75px;
+                        border-radius: 50px;
+
+                        &:before {
+                            width: 1613px;
+                            height: 271px;
+                        }
+    
+                        &-details {
+                            width: 661px;
+                            p {
+                                margin-bottom: 13px;
+                                span {
+                                    margin-right: 13px;
+                                }
+                            }
+                            .requisites {
+                                margin-top: 38px;
+                                padding-right: 86px;
+                            }
+                        }
+    
+                        &-names {
+                            p {
+                                margin-bottom: 25px;
+                                &.text-bold {
+                                    margin-bottom: 13px;
+                                }
+                            }
+                            .doctors {
+                                width: 374px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &__medcenters {
+    
+                .medcenter {
+                    margin-bottom: 125px;
+    
+                    h2 {
+                        margin-bottom: 63px;
+                    }
+    
+                    > .wrapper {
+                        min-height: 625px;
+                    }
+            
+                    &__info {
+                        margin: 38px 0;
+                    }
+            
+                    &__shedule {
+                        margin: 25px 0;
+            
+                        p {
+                            margin-bottom: 13px;
+                        }
+                    }
+            
+                    &__phone {
+                        font-size: 35px;
+                        margin-bottom: 25px;
+                    }
+            
+                    &__mail {
+                        font-size: 23px;
+                        margin-top: 25px;
+                    }
+            
+                    &__social {
+                        margin-bottom: 64px;
+                        gap: 25px;
+                    }
+            
+                    &__map {
+                        height: 625px;
+                        border-radius: 50px;
+                        box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+                    }
+                }
+            }
+    
+            &__information {
+    
+                h2 {
+                    width: 955px;
+                    margin-bottom: 63px;
+                }
+    
+                .price-info {
+                    row-gap: 63px;
+                    margin-bottom: 125px;
+    
+                    &__item {
+                        width: 713px;
+                        padding: 38px 88px 50px 125px;
+                        border-radius: 50px;
+                        box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+    
+                        &:before {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50px 0 50px 50px;
+                            font-size: 75px;
+                        }
+                    }
+                }
+    
+                .government-info {
+    
+                    &__item {
+                        gap: 38px;
+                        margin-bottom: 63px;
+                        border-radius: 50px;
+                        box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+                    }
+    
+                    &__title {
+                        padding: 0 63px;
+                        width: 463px;
+                        border-radius: 50px;
+                    }
+    
+                    &__description {
+                        padding: 63px 0;
+                        gap: 38px;
+    
+                        .address {
+                            width: 463px;
+    
+                            p {
+                                margin-bottom: 25px;
+                            }
+                        }
+    
+                        .shedule {
+                            width: 463px;
+    
+                            p {
+                                margin-bottom: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &__documents {
+    
+                ul {
+                    width: 713px;
+    
+                    li {
+                        margin-bottom: 25px;
+                        padding-left: 38px;
+    
+                        &:before {
+                            width: 25px;
+                            height: 25px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-map {
+            min-height: 1033px;
+    
+            &__title {
+                margin-bottom: 63px;
+            }
+    
+            &__info {
+                margin: 38px 0;
+            }
+    
+            &__shedule {
+                margin: 25px 0;
+    
+                p {
+                    margin-bottom: 13px;
+                }
+            }
+    
+            &__phone {
+                font-size: 35px;
+                margin-bottom: 25px;
+            }
+    
+            &__mail {
+                font-size: 23px;
+                margin-top: 25px;
+            }
+    
+            &__social {
+                margin-bottom: 64px;
+                gap: 25px;
+            }
+    
+            #map {
+                max-width: 1181px;
+                height: 908px;
+                border-radius: 50px 0px 0px 50px;
+                box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+            }
+        }
+    }
+}

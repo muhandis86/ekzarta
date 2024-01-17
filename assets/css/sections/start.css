@@ -1,0 +1,260 @@
+.start {
+    padding-top: 40px;
+
+    .container {
+        position: relative;
+    }
+
+    &__main {
+        padding-top: 53px;
+
+        &-info {
+            padding: 50px 80px;
+            width: 689px;
+            height: 433px;
+            background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+            border-radius: 40px;
+            margin-left: -60px;
+    
+            h1 {
+                line-height: 1.3;
+                margin-bottom: 30px;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    top: -9px;
+                    left: -20px;
+                    width: 70px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    border-radius: 40px 0px 40px 40px;
+                    background: #FFFBFB;
+                }
+            }
+    
+            p {
+                margin-bottom: 30px;
+                font-size: 20px;
+                line-height: normal;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        right: -60px;
+        z-index: 4;
+        width: 660px;
+        height: 560px;
+        overflow: hidden;
+        border-radius: 40px;
+        box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10); 
+        
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            @mixin bgc;
+            background-size: cover;
+        }
+    }
+
+    &__stamp {
+        position: absolute;
+        top: 350px;
+        left: 50%;
+        transform: translateX(-60%);
+        z-index: 5;
+        width: 168px;
+        height: 168px;
+        @mixin icon stamp;
+        background-size: contain;
+    }
+
+    &__benefits {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 124px;
+
+        &-item {
+            max-width: 371px;
+            position: relative;
+            padding-top: 26px;
+            padding-left: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70px;
+                height: 70px;
+                @mixin icon leaf-blue;
+                background-size: contain;
+                z-index: -1;                
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+
+    .start {
+        padding-top: 30px;
+
+        &__main {
+            padding-top: 0;
+            
+            &-info {
+                padding: 30px 20px;
+                width: 100%;
+                height: 295px;
+                border-radius: 20px 20px 0px 0px;
+                margin: 0;
+                
+                h1 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+
+                    &:before {
+                        top: -6px;
+                        left: -5px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px 0px 20px 20px;
+                    }
+                }
+                
+                p {
+                    font-size: 14px;
+                }
+
+                .btn {
+                    float: right;
+                }
+            }
+        }
+
+        &__image {
+            position: static;
+            margin-top: -20px;
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px 0px rgba(62, 87, 152, 0.10);
+        }
+
+        &__stamp {
+            top: 234px;
+            left: 16px;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            transform: none;
+        }
+
+        &__benefits {
+            flex-direction: column;
+            margin-top: 30px;
+            gap: 30px;
+
+            &-item {
+                padding-top: 10px;
+                padding-left: 15px;
+                max-width: 560px;
+
+                &:before {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    font-size: 16px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .start {
+        padding-top: 50px;
+    
+        &__main {
+            padding-top: 66px;
+    
+            &-info {
+                padding: 63px 100px;
+                width: 861px;
+                height: 554px;
+                border-radius: 50px;
+                margin-left: -75px;
+        
+                h1 {
+                    margin-bottom: 38px;
+    
+                    &:before {
+                        top: -11px;
+                        left: -25px;
+                        width: 88px;
+                        height: 88px;
+                        border-radius: 50px 0px 50px 50px;
+                    }
+                }
+        
+                p {
+                    margin-bottom: 38px;
+                    font-size: 25px;
+                }
+            }
+        }
+    
+        &__image {
+            right: -75px;
+            width: 825px;
+            height: 700px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10); 
+        }
+    
+        &__stamp {
+            top: 438px;
+            width: 210px;
+            height: 210px;
+        }
+    
+        &__benefits {
+            margin-top: 155px;
+    
+            &-item {
+                max-width: 464px;
+                padding-top: 33px;
+                padding-left: 25px;
+    
+                &:before {
+                    width: 88px;
+                    height: 88px;     
+                }
+    
+                p {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}

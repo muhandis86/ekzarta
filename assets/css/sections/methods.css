@@ -1,0 +1,189 @@
+.methods {
+
+    &__subtitle{
+        color: #3E5798;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+
+        span:first-child {
+            display: block;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__text {
+        p {
+            &:first-child {
+                margin-top: 50px;
+            }
+            &:last-child {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+        margin-top: 50px;
+        
+        &-item {
+            display: block;
+            width: 370px;
+            height: 230px;
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            padding: 30px;
+
+            &:nth-child(odd) {
+                background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+            }
+            &:nth-child(even) {
+                background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+            }
+
+            span {
+                &.card-title {
+                    display: block;
+                    color: #3E5798;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+
+                &.text {
+                    color: #4B5658;
+                }
+
+                &.image {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                }
+            }            
+        }
+    }
+
+    &-full {
+        span.card-title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .methods {
+
+        &__subtitle {
+            display: none;
+        }
+
+        &__cards {
+            row-gap: 30px;
+
+            &-item {
+                width: 100%;
+                height: 100px;
+                padding: 18px 20px;
+                border-radius: 20px;
+
+                span {
+                    &.card-title {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        padding-right: 50px;
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    &.text {
+                        font-size: 14px;
+                    }
+    
+                    &.image {
+                        height: 80%;
+                        background-size: contain;
+
+                        &.rotate {
+                            width: 170.357px;
+                            height: 110.824px;
+                            transform: rotate(-15deg);
+                            bottom: -15px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .methods {
+
+        &__subtitle{
+            font-size: 45px;
+    
+            span:first-child {
+                margin-bottom: 14px;
+            }
+        }
+
+        &__text {
+            p {
+                &:first-child {
+                    margin-top: 63px;
+                }
+                &:last-child {
+                    margin-top: 13px;
+                }
+            }
+        }
+
+        &__cards {
+            row-gap: 63px;
+            column-gap: 38px;
+            margin-top: 63px;
+            
+            &-item {
+                width: 462px;
+                height: 288px;
+                border-radius: 50px;
+                padding: 38px;
+    
+                span {
+                    &.card-title {
+                        font-size: 30px;
+                        margin-bottom: 6px;
+                    }
+
+                    &.image {
+                        height: 80%;
+                        background-size: contain;
+                    }
+                }   
+            }
+        }
+
+        &-full {
+            span.card-title {
+                font-size: 25px;
+            }
+        }
+    }
+}

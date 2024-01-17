@@ -1,0 +1,171 @@
+.diseases {
+
+    &__slider {
+        position: relative;
+
+        &-img {
+            position: absolute;
+            top: 40px;
+            left: -200px;
+            z-index: 2;
+            width: 400px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 40px;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: lightgray 50% / cover no-repeat;
+            }
+        }
+
+        &-item {
+            width: 965px;
+            min-height: 501px;
+            border-radius: 40px;
+            background: url("/images/demo/underlay-green.png") lightgray 50% / cover no-repeat;
+
+            padding: 40px 0px 40px 231px;
+            position: relative;
+            float: right;
+
+            h2 {
+                position:relative;
+                z-index: 5;
+                padding-right: 50px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: 31px;
+                left: 211px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px 0px 50px 50px;
+                background: #F4FFFA;
+            }
+        }
+
+        &-info {
+            display: flex;
+            ul {
+                width: 367px;
+            }
+        }
+
+        &-pagination {
+            position: absolute;
+            bottom: 40px;
+            left: 230px;            
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .diseases {
+        padding-bottom: 30px;
+
+        &__slider {
+
+            &-img {
+                display: none;
+            }
+
+            &-item {
+                width: 100%;
+                min-height: auto;
+                border-radius: 20px;
+                padding: 40px 30px;
+
+                h2 {
+                    padding-right: 0;
+                    br {
+                        display: none;
+                    }
+                }
+    
+                &:before {
+                    top: 30px;
+                    left: 20px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100px 0px 100px 100px;
+                    background: #F4FFFA;
+                }
+            }
+
+            &-info {
+                flex-direction: column;
+
+                ul {
+                    width: 100%;
+                    padding-left: 8px;
+                    li {
+                        font-size: 14px;
+                        &:last-child {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            &-pagination {
+                position: static;          
+                margin: 50px auto 30px auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .diseases {
+
+        &__slider {
+
+            &-img {
+                top: 50px;
+                left: -250px;
+                width: 500px;
+                height: 438px;
+                border-radius: 50px;
+            }
+
+            &-item {
+                width: 1206px;
+                min-height: 626px;
+                border-radius: 50px;
+                padding: 50px 0px 50px 289px;
+
+                h2 {
+                    padding-right: 63px;
+                }
+    
+                &:before {
+                    top: 39px;
+                    left: 264px;
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 63px 0px 63px 63px;
+                }
+            }
+
+            &-info {
+                ul {
+                    width: 459px;
+                }
+            }
+
+            &-pagination {
+                bottom: 50px;
+                left: 288px;            
+            }
+
+        }
+    }
+}

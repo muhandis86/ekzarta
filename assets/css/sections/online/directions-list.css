@@ -1,0 +1,149 @@
+.directions-list {
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 60px;
+    }
+
+    h2 {
+        max-width: 100%;
+    }
+
+    &.col-2 {
+
+        .directions-list__item {
+            width: 570px;
+        }
+    }
+
+    &.col-3 {
+
+        .directions-list__item {
+            width: 370px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+
+        span {
+            color: #3E5798;
+            font-weight: 500;
+        }
+
+        &-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            
+            svg {
+                width: 50px;
+                height: 50px;
+                path {
+                    fill: #3E5798;
+                }
+            }
+        }
+    }
+
+    &.marked {
+        .directions-list__item-img {
+            background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+        }
+    }
+
+    &.numbered {
+        .directions-list__item-img {
+            background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+        
+            color: #3E5798;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .directions-list {
+
+        .wrapper {
+            row-gap: 30px;
+        }
+
+        &.col-2, &.col-3 {
+            .directions-list__item {
+                width: 100%;
+            }
+        }
+
+        &__item {
+            gap: 15px;
+    
+            &-img {
+                width: 50px;
+                height: 50px;
+                border-radius: 20px;
+                
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        &.numbered {
+            .directions-list__item-img {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .directions-list {
+
+        .wrapper {
+            column-gap: 38px;
+            row-gap: 75px;
+        }
+
+        &.col-2 {
+
+            .directions-list__item {
+                width: 712px;
+            }
+        }
+    
+        &.col-3 {
+    
+            .directions-list__item {
+                width: 462px;
+            }
+        }
+
+        &__item {
+            gap: 25px;
+    
+            &-img {
+                width: 88px;
+                height: 88px;
+                border-radius: 31px;
+                
+                svg {
+                    width: 63px;
+                    height: 63px;
+                }
+            }
+        }
+    }
+}

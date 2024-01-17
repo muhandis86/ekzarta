@@ -1,0 +1,234 @@
+.directions-reviews {
+
+    &__video {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &-mobile {
+            display: none;
+        }
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 35px;
+            left: -50px;
+            z-index: -1;
+            @mixin icon leaf-green;
+            width: 100px;
+            height: 100px;
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: 118px;
+            right: -65px;
+            z-index: -1;
+            @mixin icon leaf-blue;
+            width: 100px;
+            height: 100px;
+            transform: scaleX(-1);
+        }
+
+        &-item {
+            width: 370px;
+        }
+
+        &-title {
+            margin-top: 40px;
+            display: block;
+
+            h3 {
+                margin-left: 20px;
+                position: relative;
+                margin-bottom: 0;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    z-index: -1;
+                    top: -10px;
+                    left: -20px;
+                    flex-shrink: 0;
+                    @mixin icon circle-green;
+                }
+            }
+        }
+        
+        &-image {
+            display: block;
+            width: 370px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 40px;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                @mixin bgc;
+                background-size: cover;
+                @mixin t;
+                transition-duration: 1s;
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                background: rgba(253, 220, 221, 0.50);
+                border-radius: 40px;
+                @mixin t;
+                transition-duration: 1s;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 3;
+                top: 50%;
+                left: 50%;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                transform: translate(-50%, -50%);
+                @mixin icon play;
+                @mixin bgc;
+            }
+
+            &:hover {
+                &:before {
+                    opacity: .6;
+                }
+
+                span {
+                    transform: scale(1.1);
+                }
+            }
+
+            &.red {
+                &:before {
+                    background: rgba(253, 220, 221, 0.50);
+                    border-radius: 20px;
+                }
+            }
+
+            &.green {
+                &:before {
+                    background: rgba(211, 255, 234, 0.50);
+                    border-radius: 20px;
+                }
+            }
+
+            &.blue {
+                &:before {
+                    background: rgba(225, 230, 255, 0.50);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .directions-reviews {
+        padding-bottom: 30px;
+
+        &__video {
+            display: none;
+        }         
+    }
+}
+
+@media (min-width: 1920px) {
+    .directions-reviews {
+
+        &__video {
+
+            &:before {
+                top: 44px;
+                left: -63px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+    
+            &:after {
+                top: 148px;
+                right: -81px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+    
+            &-item {
+                width: 463px;
+            }
+    
+            &-title {
+                margin-top: 50px;
+    
+                h3 {
+                    margin-left: 25px;
+    
+                    &:before {
+                        width: 50px;
+                        height: 50px;
+                        top: -13px;
+                        left: -25px;
+                        background-size: contain;
+                    }
+                }
+            }
+            
+            &-image {
+                width: 463px;
+                height: 313px;
+                border-radius: 50px;
+    
+                &:before {
+                    border-radius: 50px;
+                }
+    
+                &:after {
+                    width: 75px;
+                    height: 75px;
+                }
+    
+                &.red {
+                    &:before {
+                        border-radius: 25px;
+                    }
+                }
+    
+                &.green {
+                    &:before {
+                        border-radius: 25px;
+                    }
+                }
+    
+                &.blue {
+                    &:before {
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

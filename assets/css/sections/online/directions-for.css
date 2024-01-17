@@ -1,0 +1,70 @@
+.directions-for {
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+
+        padding: 30px 30px 50px;
+        width: 370px;
+        min-height: 206px;
+        border-radius: 40px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+        
+        &.green {
+            background: url("/images/demo/underlay-green.png") lightgray 50% / cover no-repeat;
+        }
+        &.red {
+            background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+            
+        }
+        &.blue {
+            background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+            
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .directions-for {
+
+        .wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    
+        &__item {
+    
+            padding: 20px 20px 30px;
+            width: 100%;
+            min-height: auto;
+            border-radius: 25px;
+    
+            h3 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .directions-for {
+
+        &__item {
+            padding: 38px 38px 63px;
+            width: 463px;
+            min-height: 258px;
+            border-radius: 50px;
+    
+            h3 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

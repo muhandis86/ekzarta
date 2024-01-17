@@ -1,0 +1,793 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Онлайн услуги</title>
+
+    <link href="/bundles/css/app.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="margin-none">
+
+        <section class="online-start">
+            <div class="container">
+
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <i></i>
+                    <a href="#">Внутренняя страница</a>
+                    <i></i>
+                    <a href="#">Внутренняя страница</a>
+                    <i></i>
+                    <span>Внутренняя страница</span>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="online-start__info">
+                        <h1>Онлайн-услуги</h1>
+                        <p>После записи вам придёт ссылка на видеозвонок с доктором.</p>
+                        <div class="button">
+                            <a href="#" class="btn btn-red">
+                                <span>целевая кнопка</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="online-start__image">
+                        <span style="background-image: url('/images/demo/iMac.png');"></span>
+                    </div>
+
+                </div>
+
+                <div class="online-start__benefits">
+                    <div class="online-start__benefits-item">
+                        <p>Вы можете находиться территориально в любой точке мира.</p>
+                    </div>
+                    <div class="online-start__benefits-item">
+                        <p>Специалисты с опытом более 10 лет в области реабилитации.</p>
+                    </div>
+                    <div class="online-start__benefits-item">
+                        <p>Подберём удобное для вас время звонка.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="online-doctor">
+            <div class="container">
+
+                <div class="online-doctor__personal">
+
+                    <div class="doctor">
+                        <div class="doctor__image">
+                            <div class="image">
+                                <span style="background-image: url('/images/demo/specialists/dyakova.png');"></span>
+                            </div>
+                            <div class="doctor__image-button">
+                                <a href="#" class="btn btn-long">
+                                    <span>Подробнее <br> о специалисте</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="doctor__info">
+                            <div class="doctor__info-top">
+                                <h3>Дьякова Екатерина Валерьевна</h3>
+                                <p>Врач невролог, врач ЛФК, врач физиотерапевт, заместитель главного
+                                    врача по лечебной физкультуре</p>
+                            </div>
+                            <div class="doctor__info-foot">
+                                <span>Стаж работы 18 лет</span>
+                                <h4>Второе мнение: <span>6000 руб</span></h4>
+                                <div class="doctor__info-button">
+                                    <a href="#" class="btn btn-red">
+                                        <span>оставить заявку</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor">
+                        <div class="doctor__image">
+                            <div class="image">
+                                <span style="background-image: url('/images/demo/specialists/fedorina.png');"></span>
+                            </div>
+                            <div class="doctor__image-button">
+                                <a href="#" class="btn btn-long">
+                                    <span>Подробнее <br>о специалисте</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doctor__info">
+                            <div class="doctor__info-top">
+                                <h3>Федорина Наталья Артуровна</h3>
+                                <p>Врач невролог</p>
+                            </div>
+                            <div class="doctor__info-foot">
+                                <span>Стаж работы 10 лет</span>
+                                <h4>Второе мнение: <span>6000 руб</span></h4>
+                                <div class="doctor__info-button">
+                                    <a href="#" class="btn btn-red">
+                                        <span>оставить заявку</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="online-feedback">
+            <div class="container">
+
+                <div class="wrapper">
+
+                    <div class="online-feedback__info">
+                        <div class="title">
+                            <h2 class="h1">Получите второе мнение врача онлайн!</h2>
+                        </div>
+                        <div class="description">
+                            <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
+                            <p>Мы изучим ваш случай и согласуем с вами дату созвона.</p>
+                        </div>
+                    </div>
+
+                    <div class="online-feedback__form">
+                        <form action="#">
+                            <div class="form__input icon">
+                                <i class="user"></i>
+                                <input type="text" placeholder="Как к вам обращаться?" required>
+                            </div>
+                            <div class="form__input icon">
+                                <i class="city"></i>
+                                <input type="text" placeholder="Город" required>
+                            </div>
+                            <div class="form__input icon">
+                                <i class="phone"></i>
+                                <input type="text" placeholder="Телефон" required>
+                            </div>
+
+                            <div class="form__textarea">
+                                <textarea name="message" placeholder="Опишите ваше состояние" required></textarea>
+                            </div>
+                            <div class="form__upload">
+                                <div class="form__input upload">
+                                    <span id="file-name">Прикрепите выписку</span>
+                                    <input type="file" name="file" id="file-input"
+                                        accept="image/jpeg,image/png,image/gif" required>
+                                    <label for="file-input">Выберите файл</label>
+                                </div>
+                                <p class="subtext">Вы можете загрузить файлы в формате JPG, GIF или PNG.</p>
+                            </div>
+                            <div class="form__checkbox">
+                                <label>
+                                    <input type="checkbox" class="real-checkbox" name="agreement" checked required>
+                                    <span class="custom-checkbox"></span>
+                                    <p class="text">
+                                        Нажимая кнопку “Оформить”, вы даете согласие на <a href="#">обработку своих
+                                            персональных данных</a></p>
+                                </label>
+                            </div>
+                            <div class="form__checkbox">
+                                <label>
+                                    <input type="checkbox" class="real-checkbox" name="agreement" checked required>
+                                    <span class="custom-checkbox"></span>
+                                    <p class="text">
+                                        Я ознакомлен(а) <a href="#">с офертой</a></p>
+                                </label>
+                            </div>
+                            <div class="form__button">
+                                <button type="submit" class="btn btn-red"><span>оставить заявку</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions">
+            <div class="container">
+
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <i></i>
+                    <a href="#">Внутренняя страница</a>
+                    <i></i>
+                    <a href="#">Внутренняя страница</a>
+                    <i></i>
+                    <span>Внутренняя страница</span>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="directions__info">
+                        <h1>“Экзарта” объединяет под своим названием сразу три взаимосвязанных направления деятельности
+                        </h1>
+                    </div>
+
+                    <div class="directions__image">
+                        <div class="directions__image-ellipse">
+                            <span style="background-image: url('/images/demo/logo-bird.png');"></span>
+                        </div>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="directions-list marked col-2">
+            <div class="container">
+
+                <div class="directions-list__title title">
+                    <h2 class="h1">Такой комплекстный подход позволяет</h2>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="directions-list__item">
+                        <div class="directions-list__item-img">
+                            @@include('../public/images/icons/check-circle.svg')
+                        </div>
+                        <div class="directions-list__item-info">
+                            <p><span>Эффективно развивать</span> возможности реабилитации для пациентов любого возраста.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="directions-list__item">
+                        <div class="directions-list__item-img">
+                            @@include('../public/images/icons/check-circle.svg')
+                        </div>
+                        <div class="directions-list__item-info">
+                            <p>Обучать как <span>можно большее число специалистов</span> по всей стране и за рубежом
+                                работе по этой
+                                методике.</p>
+                        </div>
+                    </div>
+
+                    <div class="directions-list__item">
+                        <div class="directions-list__item-img">
+                            @@include('../public/images/icons/check-circle.svg')
+                        </div>
+                        <div class="directions-list__item-info">
+                            <p>Оборудовать клиники <span>эффективными аппаратами</span> для реабилитации.</p>
+                        </div>
+                    </div>
+
+                    <div class="directions-list__item">
+                        <div class="directions-list__item-img">
+                            @@include('../public/images/icons/check-circle.svg')
+                        </div>
+                        <div class="directions-list__item-info">
+                            <p>Внедрять новые методы и получить <span>значимые клинические результаты</span> на базе
+                                собственного
+                                центра.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="directions-graphics red">
+
+            <div class="directions-graphics__bg">
+                <span style="background-image: url('/images/demo/directions_bg.png');"></span>
+            </div>
+
+            <div class="container">
+                <div class="directions-graphics__info">
+                    <div class="directions-graphics-item">
+                        <div class="icon">
+                            @@include('../public/images/icons/noun/noun-standard.svg')
+                        </div>
+                        <p>простота применения</p>
+                    </div>
+                    <div class="directions-graphics-item">
+                        <div class="icon">
+                            @@include('../public/images/icons/noun/noun-rehabilitation.svg')
+                        </div>
+                        <p>надёжность конструкции</p>
+                    </div>
+                    <div class="directions-graphics-item">
+                        <div class="icon">
+                            @@include('../public/images/icons/noun/noun-dna.svg')
+                        </div>
+                        <p>безопасность работы с собственным весом тела</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions-article with__button">
+            <div class="container">
+                <div class="directions-article__text">
+                    <p>Как производитель оборудования бренда «Экзарта» (ООО НПФ «Реабилитационные технологии») мы
+                        осуществляем поставку и интеграцию нашей подвесной установки в медицинские центры в любой
+                        город России и СНГ.</p>
+                    <p>Мы даем гарантию и проводим комплексное сервисное обслуживание подвесного оборудования
+                        «Экзарта». Оставьте заявку на оборудование для вашей клиники, и наш менеджер
+                        проконсультирует вас по вопросам поставки и работы с установкой.</p>
+                </div>
+                <div class="directions-article__button">
+                    <a href="#" class="btn btn-red">
+                        <span>оставить заявку на оборудование</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions-article with__image-right">
+            <div class="container">
+
+                <div class="directions-article__title title">
+                    <h2 class="h1">Заголовок</h2>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="directions-article__text">
+                        <p>В центре «Экзарта» работают врачи реабилитологи с обширной практикой восстановления пациентов
+                            после
+                            сложнейших заболеваний ЦНС и опорно-двигательного аппарата. Это люди, которые понимают, как
+                            на самом
+                            деле работает тело, как связаны мышцы и как надо воздействовать на мягкие ткани, чтобы снять
+                            боль и
+                            полностью вернуть человеку двигательную активность, возможность говорить, есть, развиваться
+                            самостоятельно и просто отлично себя чувствовать в каждый момент жизни. </p>
+
+                        <p>Здесь работают специалисты с опытом реабилитации от 10 лет, некоторые посвятили этой
+                            профессии всю
+                            жизнь и продолжают развиваться в ней и находить новые возможности помогать пациентам.</p>
+                    </div>
+
+                    <div class="directions-article__image">
+                        <span style="background-image: url('/images/demo/father.png');"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions-article with__image-left">
+            <div class="container">
+
+                <div class="directions-article__title title">
+                    <h2 class="h1">Заголовок</h2>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="directions-article__image">
+                        <span style="background-image: url('/images/demo/father.png');"></span>
+                    </div>
+
+                    <div class="directions-article__text">
+                        <p>В центре «Экзарта» работают врачи реабилитологи с обширной практикой восстановления пациентов
+                            после
+                            сложнейших заболеваний ЦНС и опорно-двигательного аппарата. Это люди, которые понимают, как
+                            на самом
+                            деле работает тело, как связаны мышцы и как надо воздействовать на мягкие ткани, чтобы снять
+                            боль и
+                            полностью вернуть человеку двигательную активность, возможность говорить, есть, развиваться
+                            самостоятельно и просто отлично себя чувствовать в каждый момент жизни. </p>
+
+                        <p>Здесь работают специалисты с опытом реабилитации от 10 лет, некоторые посвятили этой
+                            профессии всю
+                            жизнь и продолжают развиваться в ней и находить новые возможности помогать пациентам.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions-article">
+
+            <div class="container">
+                <div class="directions-article__title title">
+                    <h2 class="h1">Заголовок</h2>
+                </div>
+
+                <div class="directions-article__content">
+                    <p>Являясь всего лишь частью общей картины, тщательные исследования конкурентов будут обнародованы.
+                        Имеется спорная точка зрения, гласящая примерно следующее: представители современных социальных
+                        резервов, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их
+                        существование приносит несомненную пользу обществу.
+                        Также как социально-экономическое развитие
+                        играет важную роль в формировании распределения внутренних резервов и ресурсов.
+                        В частности, постоянный количественный рост и сфера нашей активности играет определяющее
+                        значение
+                        для соответствующих условий активизации. Высокий уровень вовлечения представителей целевой
+                        аудитории
+                        является четким доказательством простого факта: выбранный нами инновационный путь однозначно
+                        фиксирует необходимость приоретизации разума над эмоциями. Но многие известные личности, вне
+                        зависимости от их уровня, должны быть заблокированы в рамках своих собственных рациональных
+                        ограничений. Таким образом, высокотехнологичная концепция общественного уклада играет важную
+                        роль в
+                        формировании поэтапного и последовательного развития общества. Противоположная точка зрения
+                        подразумевает, что элементы политического процесса рассмотрены исключительно в разрезе
+                        маркетинговых
+                        и финансовых предпосылок. Следует отметить, что начало повседневной работы по формированию
+                        позиции
+                        влечет за собой процесс внедрения и модернизации филиала в Туле.
+                    </p>
+                </div>
+
+                <div class="directions-article__list">
+                    <p class="text-bold">Список литературы:</p>
+                    <ul>
+                        <li>Гольдблат Ю. В. Основы реабилитации неврологических больных: монография - Санкт-Петербург:
+                            СпецЛит, 2017</li>
+                        <li>Кругляк Л. Г. Остеопороз : Тихая эпидемия XXI века: научно-популярное издание -
+                            Санкт-Петербург:
+                            Крылов, 2009</li>
+                        <li>Маргазин В. А., Коромыслов А. В., Лобов А. Н., Епифанов В. А., Левин В. Н. Лечебная
+                            физическая
+                            культура при заболеваниях сердечно-сосудистой и дыхательной систем: учебное пособие -
+                            Санкт-Петербург: СпецЛит, 2015
+                            <ul>
+                                <li>глава 21;</li>
+                                <li>глава 45;</li>
+                            </ul>
+                        </li>
+                        <li>Электромагнитотерапия : новые данные и технологии: монография - Минск: Беларуская навука,
+                            2018
+                        </li>
+                        <li>Абрашина Н. А. Лечебный и профилактический массаж для детей с нарушениями развития:
+                            практическое
+                            пособие - Москва: ФЛИНТА, 2021</li>
+                    </ul>
+
+                    <p class="text-bold">Список литературы:</p>
+                    <ol>
+                        <li>Гольдблат Ю. В. Основы реабилитации неврологических больных: монография - Санкт-Петербург:
+                            СпецЛит, 2017</li>
+                        <li>Кругляк Л. Г. Остеопороз : Тихая эпидемия XXI века: научно-популярное издание -
+                            Санкт-Петербург:
+                            Крылов, 2009</li>
+                        <li>Маргазин В. А., Коромыслов А. В., Лобов А. Н., Епифанов В. А., Левин В. Н. Лечебная
+                            физическая
+                            культура при заболеваниях сердечно-сосудистой и дыхательной систем: учебное пособие -
+                            Санкт-Петербург: СпецЛит, 2015</li>
+                        <li>Электромагнитотерапия : новые данные и технологии: монография - Минск: Беларуская навука,
+                            2018
+                        </li>
+                        <li>Абрашина Н. А. Лечебный и профилактический массаж для детей с нарушениями развития:
+                            практическое
+                            пособие - Москва: ФЛИНТА, 2021</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="directions-reviews">
+            <div class="container">
+
+                <div class="directions-reviews__title title">
+                    <h2 class="h1">Отзывы</h2>
+                    <a href="#" class="btn btn-header">
+                        <span>Смотреть все видео-отзывы</span>
+                    </a>
+                </div>
+
+                <div class="directions-reviews__video">
+                    <div class="directions-reviews__video-item">
+                        <a href="#" class="directions-reviews__video-image red">
+                            <span style="background-image: url('/images/demo/reviews/video1.png');"></span>
+                        </a>
+                        <a href="#" class="directions-reviews__video-title">
+                            <h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+                        </a>
+                    </div>
+                    <div class="directions-reviews__video-item">
+                        <a href="#" class="directions-reviews__video-image green">
+                            <span style="background-image: url('/images/demo/reviews/video2.png');"></span>
+                        </a>
+                        <a href="#" class="directions-reviews__video-title">
+                            <h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+                        </a>
+                    </div>
+                    <div class="directions-reviews__video-item">
+                        <a href="#" class="directions-reviews__video-image blue">
+                            <span style="background-image: url('/images/demo/reviews/video3.png');"></span>
+                        </a>
+                        <a href="#" class="directions-reviews__video-title">
+                            <h3 class="h4">Отзыв Евгения о лечении ДЦП</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reviews__video-mobile swiper">
+                    <div class="reviews__video-wrapper swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="reviews__video-item">
+                                <a href="#" class="reviews__video-image red">
+                                    <span style="background-image: url('/images/demo/start.png');"></span>
+                                </a>
+                                <a href="#" class="reviews__video-title">
+                                    <h3 class="h4">Отзыв Елены о реабилитации после инсульта</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__video-item">
+                                <a href="#" class="reviews__video-image green">
+                                    <span style="background-image: url('/images/demo/start.png');"></span>
+                                </a>
+                                <a href="#" class="reviews__video-title">
+                                    <h3 class="h4">Отзыв Ольги о лечении ДЦП</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__video-item">
+                                <a href="#" class="reviews__video-image blue">
+                                    <span style="background-image: url('/images/demo/start.png');"></span>
+                                </a>
+                                <a href="#" class="reviews__video-title">
+                                    <h3 class="h4">Отзыв Евгения о лечении ДЦП</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__video-pagination pagination">
+                        <div class="btn-prev swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="btn-next swiper-button-next"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="directions-funds">
+            <div class="container">
+
+                <div class="directions-funds__title title">
+                    <h2 class="h1">Работа с фондами</h2>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="directions-funds__specialist">
+                        <div class="directions-funds__specialist-image">
+                            <span style="background-image: url('/images/demo/funds.png');"></span>
+                        </div>
+                        <div class="directions-funds__specialist-label">
+                            <h3 class="h6">Специалист по работе с благотворительными фондами</h3>
+                            <p>Абрамова Екатерина Сергеевна</p>
+                        </div>
+                    </div>
+
+                    <div class="directions-funds__info">
+                        <p>Реабилитация — это длительный процесс, требующий множество сил и средств от семей, чьи дети
+                            или
+                            взрослые родственники нуждаются в восстановлении двигательных возможностей.</p>
+
+                        <p>Медицинский центр «Экзарта» старается оказать помощь всем, кому требуется реабилитация, и
+                            вернуть
+                            радость самостоятельного передвижения. Для этого мы сотрудничаем с фондами, которые помогают
+                            собрать необходимые средства для регулярных курсов и интенсивной работы пациентов со
+                            специалистами.</p>
+
+                        <div class="directions-funds__info-btns">
+                            <a href="#" class="btn btn-white">
+                                <span>оставить заявку</span>
+                            </a>
+                            <a href="#" class="btn btn-link">
+                                <span>выбрать фонд</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="directions-for">
+            <div class="container">
+
+                <div class="directions-for__title title">
+                    <h2 class="h1">Для кого мы работаем</h2>
+                </div>
+
+                <div class="wrapper">
+                    <div class="directions-for__item green">
+                        <h3 class="h4">Медицинские и реабилитационные центры</h3>
+                        <p>Расширяем границы для эффективной реабилитации</p>
+                    </div>
+                    <div class="directions-for__item red">
+                        <h3 class="h4">Пациенты с нарушениями ЦНС и опорно-двигательного аппарата</h3>
+                        <p>Помогаем достигать результатов</p>
+                    </div>
+                    <div class="directions-for__item blue">
+                        <h3 class="h4">Врачи-реабилитологи, неврологи, ортопеды, массажисты</h3>
+                        <p>Делимся опытом и знаниями</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="directions-articles">
+            <div class="container">
+
+                <div class="directions-articles__title title">
+                    <h2 class="h1">Полезное о реабилитации читайте в нашем блоге</h2>
+                    <a href="#" class="btn btn-header">
+                        <span>Перейти в блог</span>
+                    </a>
+                </div>
+
+                <div class="directions-articles__wrapper">
+
+                    <div class="directions-articles__item">
+                        <a href="#" class="directions-articles__item-img">
+                            <span style="background-image: url('/images/demo/reception.png');"></span>
+                        </a>
+                        <a href="#">
+                            <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                        </a>
+                        <div class="directions-articles__item-button">
+                            <a href="#" class="btn btn-white">
+                                <span>читать</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="directions-articles__item">
+                        <a href="#" class="directions-articles__item-img">
+                            <span style="background-image: url('/images/demo/reception.png');"></span>
+                        </a>
+                        <a href="#">
+                            <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                        </a>
+                        <div class="directions-articles__item-button">
+                            <a href="#" class="btn btn-white">
+                                <span>читать</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="directions-articles__item">
+                        <a href="#" class="directions-articles__item-img">
+                            <span style="background-image: url('/images/demo/reception.png');"></span>
+                        </a>
+                        <a href="#">
+                            <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                        </a>
+                        <div class="directions-articles__item-button">
+                            <a href="#" class="btn btn-white">
+                                <span>читать</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles__swiper swiper">
+                    <div class="articles__wrapper-mobile swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="articles__item">
+                                <a href="#" class="articles__item-img">
+                                    <span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+                                </a>
+                                <a href="#">
+                                    <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                                </a>
+                                <div class="articles__item-button">
+                                    <a href="#" class="btn btn-white">
+                                        <span>читать</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="articles__item">
+                                <a href="#" class="articles__item-img">
+                                    <span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+                                </a>
+                                <a href="#">
+                                    <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                                </a>
+                                <div class="articles__item-button">
+                                    <a href="#" class="btn btn-white">
+                                        <span>читать</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="articles__item">
+                                <a href="#" class="articles__item-img">
+                                    <span style="background-image: url('/images/demo/gallery/image1.png');"></span>
+                                </a>
+                                <a href="#">
+                                    <h3 class="h4">Название статьи в одну <br> или две строки</h3>
+                                </a>
+                                <div class="articles__item-button">
+                                    <a href="#" class="btn btn-white">
+                                        <span>читать</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="articles-pagination pagination">
+                        <div class="btn-prev swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="btn-next swiper-button-next"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="funds-info">
+            <div class="container">
+
+                <div class="funds-info__title title">
+                    <h2 class="h1">Благотворительные фонды</h2>
+                </div>
+
+                <div class="wrapper">
+                    <div class="funds-info__item">
+                        <div class="funds-info__item-img">
+                            <!-- @@include('../public/images/icons/fund1.png') -->
+                            <span style="background-image: url('/images/icons/fund1.svg');"></span>
+                        </div>
+                        <div class="funds-info__item-descr">
+                            <div class="top">
+                                <h3 class="h4">Благотворительный фонд помощи детям-инвалидам «Движение вверх»</h3>
+                                <span class="phone">+7 (495) 500-45-50</span>
+                                <a href="https://movementup.ru/" target="_blank" class="site">https://movementup.ru/</a>
+                            </div>
+                            <div class="foot">
+                                <a href="#" class="btn btn-white">
+                                    <span>подробнее о фонде</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funds-info__item">
+                        <div class="funds-info__item-img">
+                            <!-- @@include('../public/images/icons/fund2.png') -->
+                            <span style="background-image: url('/images/icons/fund2.svg');"></span>
+                        </div>
+                        <div class="funds-info__item-descr">
+                            <div class="top">
+                                <h3 class="h4">Благотворительный фонд «Нижегородский»</h3>
+                                <a href="https://movementup.ru/" target="_blank" class="site">https://movementup.ru/</a>
+                            </div>
+                            <div class="foot">
+                                <a href="#" class="btn btn-white">
+                                    <span>подробнее о фонде</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/bundles/webpack/vendor.bundle.js"></script>
+    <script src="/bundles/webpack/app.bundle.js"></script>
+
+</body>
+
+</html>

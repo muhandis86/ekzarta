@@ -1,0 +1,29 @@
+:root {
+
+    --font-base: 'Euclid Circular A', serif;
+
+    --color-default: #4B5658;
+    --color-link: #5871B1;    
+    --color-white: #FFFFFF;
+    --color-blue: #3E5798;
+    --color-blue-light: #EAEFFC;
+    --color-blue-light2: #D7DEFE;
+    --gradient-red: linear-gradient(180deg, #FDB6C3 0%, #F55157 26.56%, #F55157 71.35%, #FDB6C3 100%);
+
+
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-preloader-color: var(--swiper-theme-color);
+    --swiper-centered-offset-before: 0px;
+    --swiper-centered-offset-after: 0px;
+    --swiper-virtual-size: 0px;
+}

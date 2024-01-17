@@ -1,0 +1,210 @@
+.allcenter-gallery {
+
+    padding-bottom: 50px;
+
+    &__address {
+        margin-bottom: 50px;
+    }
+
+    .psevdo-elements {
+
+        width: 1290px;
+        height: 310px;
+
+        position: absolute;
+        margin-left: -60px;
+        border-radius: 40px;
+        background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+        box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 262px;
+        
+        .image {
+            svg {
+                width: 138px;
+                height: 113px;
+
+                path {
+                    fill: rgba(255, 60, 98, 0.50);
+                }
+            }
+        }
+
+        &:before {
+            content:'';
+            position: absolute;
+            bottom: 30px;
+            left: -50px;
+            z-index: -1;
+            @mixin icon leaf-green;
+            width: 100px;
+            height: 100px;
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+            @mixin icon leaf-blue;
+            width: 100px;
+            height: 100px;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__image {
+
+        display: block;
+        width: 370px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            @mixin bgc;
+            background-size: cover;
+            @mixin t;
+            transition-duration: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__slider {
+
+        .swiper-slide {
+            padding: 30px 0;
+        }
+
+        &-pagination {
+            margin: 50px auto;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .allcenter-gallery {
+
+        padding-bottom: 30px;
+
+        .psevdo-elements {
+            width: calc(100% - 32px);
+            height: 260px;
+            right: 16px;
+            margin-left: 0;
+            border-radius: 20px;
+            gap: 0;
+
+            &:before, &:after {
+                display: none;
+            }
+        
+            .image {
+                svg {
+                    width: 110px;
+                    height: 98px;
+                }
+
+                &:not(:first-child) {
+                    display:none;
+                }
+            }
+        }
+
+        &__address {
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &__image {
+            width: calc(100% - 40px);
+            height: 200px;
+            border-radius: 20px;
+            margin-left: 20px;
+        }
+
+        &__slider {
+    
+            &-pagination {
+                position: static;    
+                margin: 50px auto 30px auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .allcenter-gallery {
+        padding-bottom: 63px;
+
+        &__address {
+            margin-bottom: 63px;
+        }
+
+        .psevdo-elements {
+            width: 1613px;
+            height: 388px;
+            margin-left: -75px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+            gap: 328px;
+            
+            .image {
+                svg {
+                    width: 173px;
+                    height: 141px;
+                }
+            }
+    
+            &:before {
+                bottom: 38px;
+                left: -63px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+    
+            &:after {
+                top: -63px;
+                right: -63px;
+                width: 125px;
+                height: 125px;
+                background-size: contain;
+            }
+        }
+
+        &__image {
+            width: 463px;
+            height: 313px;
+            border-radius: 50px;
+        }
+
+        &__slider {
+            .swiper-slide {
+                padding: 38px 0;
+            }
+    
+            &-pagination {
+                margin: 68px auto;
+            }
+        }
+    }
+}

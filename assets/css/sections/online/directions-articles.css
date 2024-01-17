@@ -1,0 +1,118 @@
+.directions-articles {
+
+    &__title {
+        .btn {
+            margin-top: 11px;
+            align-self: flex-start;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__swiper {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+        padding: 380px 40px 40px 40px;
+        width: 370px;
+        min-height: 542px;
+        border-radius: 40px;
+        background: url("/images/demo/underlay-red.png") lightgray 50% / cover no-repeat;
+
+        &-img {
+            width: 100%;
+            height: 330px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            border-radius: 40px;            
+
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                @mixin t;
+                transition-duration: 1s;
+                @mixin bgc;
+                background-size: cover;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        h3 {
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                z-index: -1;
+                top: -10px;
+                left: -20px;
+                flex-shrink: 0;
+                @mixin icon circle-green;
+            }
+        }
+
+        &-button {
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .directions-articles {
+
+        padding-bottom: 30px;
+
+        &__wrapper {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .directions-articles {
+
+        &__title {
+            .btn {
+                margin-top: 14px;
+            }
+        }
+
+        &__item {
+            padding: 475px 50px 50px 50px;
+            width: 463px;
+            min-height: 678px;
+            border-radius: 50px;
+    
+            &-img {
+                height: 413px;
+                border-radius: 50px;
+            }
+    
+            h3 {
+                &:before {
+                    width: 50px;
+                    height: 50px;
+                    top: -13px;
+                    left: -25px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

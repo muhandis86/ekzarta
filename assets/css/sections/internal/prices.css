@@ -1,0 +1,329 @@
+.prices {
+
+    position: relative;
+    z-index: 0;
+
+    .accordion {
+
+        &__item {
+
+            min-height: 100px;
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.active {
+
+                .accordion__item-header {
+
+                    background: url("/images/demo/underlay-green.png") lightgray 50% / cover no-repeat;
+                    transition: .3s;
+
+                    &__caret {
+                        transform: scaleY(-1);
+                        transition: .3s;
+                    }
+                }
+
+                .accordion__item-content {
+                    height: auto;
+                    overflow: visible;
+                    padding: 100px 40px;
+                }
+            }
+
+            &-header {
+                min-height: 100px;
+                cursor: pointer;
+                background: url("/images/demo/underlay-blue.png") lightgray 50% / cover no-repeat;
+                box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+                border-radius: 40px;
+                transition: .3s;
+
+                position: relative;
+                z-index: 5;
+
+                display: flex;
+                align-items: center;
+                padding-left: 155px;
+
+                &__img {
+
+                    position: absolute;
+                    top: 15px;
+                    left: 30px;
+                    width: 70px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    border-radius: 35px;
+                    background: #FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        @mixin bgc;
+                    }
+
+                    svg {
+                        width: 50px;
+                        height: 50px;
+
+                        path {
+                            fill: #3E5798;
+                        }
+                    }
+                }
+
+                span {
+                    color: #3E5798;
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+
+                &__caret {
+
+                    position: absolute;
+                    top: calc(50% - 15px);
+                    right: 30px;
+                    width: 30px;
+                    height: 30px;
+                    @mixin icon angle-down;
+                    transition: .3s;
+                }
+            }
+
+            &-content {
+                padding: 0 40px;
+                height: 0;
+                overflow: hidden;
+                transition: .3s;
+
+                position: relative;
+                margin-top: -50px;
+                border-radius: 0px 0px 40px 40px;
+                box-shadow: 0px 0px 50px 0px rgba(62, 87, 152, 0.10);
+
+                background: #FFF;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 77px;
+
+                    border-radius: 0px 0px 40px 40px;
+                    background: url(/images/demo/underlay-green.png) lightgray 50%/cover no-repeat;
+                }
+
+                &:after {
+                    content:'';
+                    position: absolute;
+                    bottom: -10px;
+                    right: 0;
+                    @mixin icon leaf-green;
+                    width: 80px;
+                    height: 80px;
+                    background-size: contain;
+                }
+
+                .procedure {
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &__name {
+                        width: 430px;
+                    }
+
+                    &__cost {
+                        color: #3E5798;
+                    }
+
+                    &__horizontal-line {
+                        width: 1089px;
+                        height: 1px;
+                        background: #D7DEFE;
+                        margin: 40px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .prices {
+
+        .accordion {
+
+            &__item {
+                min-height: 80px;
+                margin-bottom: 30px;
+
+                &.active {
+
+                    .accordion__item-content {
+                        padding: 70px 20px 30px 20px;
+                    }
+                }
+
+                &-header {
+                    min-height: 80px;
+                    border-radius: 20px;
+                    padding: 0 30px 0 20px;
+
+                    &__img {
+                        display: none;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+
+                    &__caret {
+                        top: calc(50% - 7.5px);
+                        right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        background-size: contain;
+                    }
+                }
+
+                &-content {
+
+                    padding: 0 20px;
+                    border-radius: 0px 0px 20px 20px;
+
+                    &:before {
+
+                        border-radius: 0px 0px 20px 20px;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+
+                    .procedure {
+
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        column-gap: 60px;
+                        font-size: 12px;
+
+                        &__name {
+                            width: 100%;
+                        }
+
+                        &__horizontal-line {
+                            width: 100%;
+                            margin: 30px 0;
+                        }
+
+                        .btn {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .prices {
+
+        .accordion {
+
+            &__item {
+                min-height: 125px;
+                margin-bottom: 63px;
+
+                &.active {
+
+                    .accordion__item-content {
+                        padding: 125px 50px;
+                    }
+                }
+
+                &-header {
+                    min-height: 125px;
+                    box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+                    border-radius: 50px;
+                    padding-left: 194px;
+
+                    &__img {
+                        top: 19px;
+                        left: 38px;
+                        width: 88px;
+                        height: 88px;
+                        border-radius: 44px;
+
+                        svg {
+                            width: 63px;
+                            height: 63px;
+                        }
+                    }
+
+                    span {
+                        font-size: 38px;
+                    }
+
+                    &__caret {
+                        top: calc(50% - 19px);
+                        right: 38px;
+                        width: 38px;
+                        height: 38px;
+                        background-size: contain;
+                    }
+                }
+
+                &-content {
+                    padding: 0 45px;
+                    margin-top: -63px;
+                    border-radius: 0px 0px 50px 50px;
+                    box-shadow: 0px 0px 63px 0px rgba(62, 87, 152, 0.10);
+
+                    &:before {
+                        bottom: -13px;
+                        height: 96px;
+                        border-radius: 0px 0px 50px 50px;
+                    }
+
+                    &:after {
+                        bottom: -13px;
+                        width: 100px;
+                        height: 100px;
+                        background-size: contain;
+                    }
+
+                    .procedure {
+
+                        &__name {
+                            width: 538px;
+                        }
+
+                        &__horizontal-line {
+                            width: 1361px;
+                            height: 1.25px;
+                            margin: 50px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

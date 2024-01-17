@@ -1,0 +1,331 @@
+footer {
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    background: #FEF9F8;
+    box-shadow: 5px 0px 50px -40px #003859;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 58px 0;
+
+    &__cta {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        &-social {
+            display: flex;
+            gap: 20px;
+            
+            /* a.btn-social {
+                width: 30px;
+                height: 30px;
+    
+                svg {
+                    width: 19px;
+                    height: 11px;
+                    flex-shrink: 0;
+                }
+            } */
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        > p {
+            display: none;
+        }
+
+        &-contact {
+            display: flex;
+            flex-direction: column;   
+            align-items: flex-start; 
+        }
+
+        &-logo {
+            display: block;
+            width: 138px;
+            height: 147px;
+            margin-top: -80px;
+            margin-bottom: 37px;
+
+            svg {
+
+                width: 100%;
+                height: 100%;
+
+                path {
+                    fill: #3E5798;
+                    &#Vector {
+                        fill: #FF3C62;
+                    } 
+                }
+            }
+        }
+
+        &-phone {
+            color: #3E5798;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        &-mail {
+            color: #3E5798;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 20px;
+        }
+
+        &-menu {
+            display: flex;
+            width: 770px;
+            justify-content: space-between;
+        }
+
+        &-about {
+            width: 360px;
+            > a {
+                color: #3E5798;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        &-cooperation {
+            width: 360px;
+            span {
+                display: block;
+                color: #3E5798;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__docs {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 31px;
+
+        color: #3E5798;
+        
+        &-left {
+            width: 370px;
+        }
+
+        &-right {
+            display: flex;
+            justify-content: space-between;
+            width: 770px;
+            ul {
+                width: 360px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+
+    footer {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .footer {   
+        position: relative;
+        padding: 357px 0 80px 0;
+
+        &__cta {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__main {
+            flex-direction: column;
+            margin-top: 30px;
+
+            > p {
+                display: block;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            &-contact {
+                width: 100%;
+                align-items: center;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &-logo {
+                width: 100px;
+                height: 106px;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            &-phone {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+
+            &-mail {
+                margin-top: 30px;
+            }
+
+            &-menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &-about {
+                width: 100%;
+                > a {
+                    display: none;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &-cooperation {
+                width: 100%;
+                > p {
+                    display: none;
+                }
+
+                span {
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                }
+
+                ul {
+                    margin-bottom: 0 !important;
+
+                    li {
+                        margin-bottom: 12px !important;
+
+                        &:last-child {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__docs {
+            flex-direction: column;
+            margin-top: 40px;
+            
+            &-left {
+                width: 100%;
+            }
+
+            &-right {
+                width: 100%;
+                flex-direction: column;
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+
+    footer {
+        border-radius: 50px 50px 0px 0px;
+        box-shadow: 6px 0px 63px -50px #003859;
+    }
+
+    .footer {
+        padding: 63px 0 73px 0;
+
+        &__cta {
+            gap: 38px;
+    
+            &-social {
+                gap: 25px;
+            }
+        }
+
+        &__main {
+            margin-top: 63px;
+    
+            &-logo {
+                width: 173px;
+                height: 184px;
+                margin-top: -100px;
+                margin-bottom: 46px;
+            }
+    
+            &-phone {
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+    
+            &-mail {
+                font-size: 23px;
+                margin-top: 25px;
+            }
+    
+            &-menu {
+                width: 963px;
+            }
+    
+            &-about {
+                width: 450px;
+            }
+    
+            &-cooperation {
+                width: 450px;
+                span {
+                    margin-bottom: 13px;
+                }
+    
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__docs {
+            margin-top: 39px;
+            
+            &-left {
+                width: 463px;
+            }
+    
+            &-right {
+                width: 963px;
+                ul {
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
