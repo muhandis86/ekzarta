@@ -30,10 +30,10 @@ Modals: [Try for demo](http://ekzarta.zaur-dev.ru/html/modals.html)
 5. Run the project:
    `gulp`
 6. In your browser's URL line, enter the following:
-    -`http://localhost:3000/html/` - for open main page
-    -`http://localhost:3000/html/medcenters.html` - for open medcenters page
-    -`http://localhost:3000/html/online.html` - for open online-services page
-    -`http://localhost:3000/html/modals.html` - for open modals page
+    - for open main page: `http://localhost:3000/html/`
+    - for open medcenters page: `http://localhost:3000/html/medcenters.html`
+    - for open online-services page: `http://localhost:3000/html/online.html`
+    - for open modals page: `http://localhost:3000/html/modals.html`
    
    
 
