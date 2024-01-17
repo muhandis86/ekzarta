@@ -7,13 +7,17 @@ Stack:
 3. Gulp, Babel, Webpack;
 4. Git, GitGraph, Bitbucket.
 
-# What is inside
+## What is inside
 - Tabs, Accordions, Sliders(Swiper), Modals(Bootstrap), Maps, Phone mask.
 
 Main page: [Try for demo](http://ekzarta.zaur-dev.ru/html/)
+
 Medcenters: [Try for demo](http://ekzarta.zaur-dev.ru/html/medcenters.html)
+
 Online-services: [Try for demo](http://ekzarta.zaur-dev.ru/html/online.html)
+
 Modals: [Try for demo](http://ekzarta.zaur-dev.ru/html/modals.html)
+
 
 ## Open project
 
